@@ -1,7 +1,7 @@
 .jaqueslogo {
     background-color: aqua;
-    width: 170px;
-    height: 70px;
+    width: 200px;
+    height: 100px;
     display: block;
     margin: 0 auto;
     margin-top: 10px;
@@ -23,4 +23,5 @@
 .topofnav nav ul li {
     margin-top: 10px;
     display: inline-block;
+    color: white;
 }
