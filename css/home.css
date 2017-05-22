@@ -1,4 +1,24 @@
 .jaqueslogo {
     background-color: aqua;
-    width: 100px;
+    width: 170px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.topofnav h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.topofnav {
+    background-color: dodgerblue;
+    padding-top: 10px;
+    color: white;
+}
+
+.topofnav nav ul li {
+    float: left;
+    margin-top: 10px;
 }
