@@ -10,12 +10,13 @@
 .topofnav h1 {
     text-align: center;
     margin-top: 10px;
+    color: white;
+    padding-bottom: 10px;
 }
 
 .topofnav {
     background-color: dodgerblue;
     padding-top: 10px;
-    color: white;
 }
 
 .topofnav nav ul li {
