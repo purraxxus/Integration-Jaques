@@ -8,7 +8,15 @@ body{margin:0;
 }
 
 .profielFoto img{
+    position: relative;
     width:100%;
+}
+
+.profielFoto h1{
+    text-align: center;
+    position: absolute;
+    padding-top:60%;
+    top:0;
 }
 
 .linksProfiel ul{
@@ -20,8 +28,13 @@ body{margin:0;
     text-align: center;
 }
 
+hr{
+    width:70%;
+}
+
 #naam{
     margin:0;
-    color:grey;
+    color:white;
     text-align: center;
 }
+
