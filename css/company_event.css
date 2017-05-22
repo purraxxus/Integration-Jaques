@@ -37,13 +37,25 @@
 
 .example_item {}
 
+
 /*met daarin: ---*/
 
-.example_item_date {}
+.example_item_date {
+  font-variant: small-caps;
+  padding: 3em 3em; 
+  display: inline-block;
+  background-size: cover;
+  background-image: url(../img/Placeholder.jpg);
+  
+}
 
-.example_item_title{}
+.example_item_title {
+  font-weight: bold;
+  padding: 35px;
+  display: inline;
+}
 
-.example_item_description {}
+.example_item_description {display: inline;}
 
 
 /* ------ 2. EVENT: ------------*/
@@ -96,7 +108,7 @@ button.accordion {
 
 button.accordion.active,
 button.accordion:hover {
-  background-color: #ddd;
+  background-color: skyblue;
 }
 
 
@@ -105,8 +117,8 @@ button.accordion:hover {
 div.panel {
   padding: 0 18px;
   background-color: white;
-/*  display: none;*/
+  /*  display: none;*/
   max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
