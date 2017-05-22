@@ -1,74 +1,109 @@
+/*
+1. company profile
+2. event 
+3. accordion menu
+*/
 
 
-/* ------ COMPANY PROFILE: ------------*/
+/* ------ 1. COMPANY PROFILE: ------------*/
+
 
 /*dit is de h1 met naam van het initiatief*/
+
 .company_header {}
 
+
 /*dit is het blokje met adres en contact*/
+
 .company_info {}
 
+
 /*dit is de accordion titel voor de verschillende sub-onderwerpjes*/
+
 .accordion {}
 
+
 /*dit komt in de accordion, het opgevouwen gedeelte zeg maar*/
+
 .panel {}
 
+
 /*hartje*/
+
 .subscribe_button {}
 
-/*---------------- alles voor accordionmenu, via w3schools ----------*/
 
- /* Style the buttons that are used to open and close the accordion panel */
-button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
+/*dit zijn de evenementen die in het accordion onder EVENTS komen*/
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
-}
+.example_event {}
 
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-   max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-} 
+/*met daarin: ---*/
+
+.example_event_date {}
+
+.example_event_title{}
+
+.example_event_description {}
 
 
-
-
-/* ------ EVENT: ------------*/
+/* ------ 2. EVENT: ------------*/
 
 
 /*dit is de h1 met de naam van het evenement*/
+
 .event_header {}
 
+
 /*Ook hier een .company info en daar zit een aparte p in met de naam van het initiatief*/
+
 .company_name_event {}
 
+
 /*de datum en tijd zitten in*/
-.event_date{}
+
+.event_date {}
+
 
 /*beschrijvend tekstje over het event*/
+
 .event_description {}
 
+
 /*dit is een accordeonmenu met h3s zoals bij de company profile, samen stijlen?*/
+
 .event_accordeon {}
 
 
+/*---------------- 3. alles voor accordionmenu, via w3schools ----------*/
 
 
+/* Style the buttons that are used to open and close the accordion panel */
 
+button.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+button.accordion.active,
+button.accordion:hover {
+  background-color: #ddd;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+div.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+}
