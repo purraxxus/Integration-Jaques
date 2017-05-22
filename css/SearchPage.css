@@ -1,10 +1,28 @@
+.imgInsSlider {
+  width: 250px;
+  display: inline-block;
+  float: left;
+  background-color: rgba(106, 162, 228, 1);
+}
+
 .SliderImg h3 {
-  position: absolute;
   background-color: rgba(106, 162, 228, 1);
   padding: 0.4em 0em;
-  width: 50%;
+  width: 250px;
+  top: -10;
 }
 
 .SliderImg img {
-  width: 50%;
+  width: 250px;
+  height: 150px
+}
+
+div.SliderImg {
+  display: inline-flex;
+  width: calc(250 * 6)px;
+}
+
+section.Slider {
+  width: 100%;
+  overflow-x: scroll;
 }
