@@ -1,9 +1,37 @@
+body{margin:0;
+}
+
+.hoofddingLogin{
+    background-color:blue;
+    text-align: center;
+}
+
 .loginGegevens{
+    text-align: center;
+}
+
+#foto{
+    width:100%;
+}
+
+.socialMediaIcons ul{
+    list-style: none;
+    text-align: center;
     
 }
 
-
-.socialMediaIcons{
-    display: block;
+.socialMediaIcons ul li{
+    display: inline-block;
     
 }
+
+.socialMediaIcons ul li img{
+    width:40px;
+    height: 40px;
+}
+
+
+p{
+    text-align: center;
+}
+
