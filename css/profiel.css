@@ -1,0 +1,23 @@
+body{margin:0;
+}
+
+.hoofddingProfiel{
+    background-color:blue;
+    text-align: center;
+}
+
+.profielFoto img{
+    width:100%;
+}
+
+.linksProfiel ul{
+    list-style: none;
+}
+
+.linksProfiel ul li{
+    text-align: center;
+}
+
+#naam{
+    text-align: center;
+}
