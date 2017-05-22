@@ -1,6 +1,6 @@
 input {
   width: 90%;
-  margin: 1em 1em;
+  margin: 3em 1em;
   border: solid rgba(220, 220, 220, 1) 0.6px;
   padding: 0.5em;
 }
@@ -9,12 +9,12 @@ input {
   width: 250px;
   display: inline-block;
   float: left;
-  background-color: rgba(106, 162, 228, 1);
+  background-color: rgba(97, 88, 186, 1);
   margin-right: 5px;
 }
 
 .SliderImg h3 {
-  background-color: rgba(106, 162, 228, 1);
+  background-color: rgba(97, 88, 186, 1);
   padding: 0.4em 0em;
   width: 250px;
   top: -10;
@@ -38,12 +38,11 @@ section.Slider {
 section li {
   position: relative;
   padding: 1em 1em 1em 2em;
-  border-bottom: solid rgba(220, 220, 220, 1) 0.2px;
-  border-right: solid rgba(220, 220, 220, 1) 0.2px;
+  border: solid rgba(220, 220, 220, 1) 0.6px;
 }
 
 section li:first-child {
-  border-top: solid rgba(220, 220, 220, 1) 0.2px;
+  border-top: solid rgba(22O, 22O, 22O, 1) 0.2px;
 }
 
 section ul {
@@ -58,15 +57,9 @@ span.before {
   left: 0;
   top: 0;
   padding: 0.85em 0.3em;
-  background-color: aqua;
+  background-color: rgba(97, 88, 186, 1);
   z-index: -7;
   height: 45%;
   transform-origin: left;
   transition: width 0.25s ease;
-}
-
-span:hover {
-  transform-origin: left;
-  transition: width 0.25s ease;
-  width: 99%;
 }
