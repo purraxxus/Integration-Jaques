@@ -4,7 +4,7 @@ body {
 }
 
 .nav {
-    background-color: lightgreen;
+    background: linear-gradient(red, yellow);
     text-align: center;
     position: fixed;
     width: 100%;
