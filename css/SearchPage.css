@@ -1,0 +1,10 @@
+.SliderImg h3 {
+  position: absolute;
+  background-color: rgba(106, 162, 228, 1);
+  padding: 0.4em 0em;
+  width: 50%;
+}
+
+.SliderImg img {
+  width: 50%;
+}
