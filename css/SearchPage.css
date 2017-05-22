@@ -3,6 +3,7 @@
   display: inline-block;
   float: left;
   background-color: rgba(106, 162, 228, 1);
+  margin-right: 5px;
 }
 
 .SliderImg h3 {
