@@ -2,6 +2,7 @@ body {
     overflow-x: hidden;
     padding-bottom: 40px;
     font-family: "Open Sans", Verdana, Tahoma, sans-serif;
+    font-weight: 300;
 }
 
 .nav {
