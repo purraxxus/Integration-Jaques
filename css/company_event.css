@@ -1,0 +1,33 @@
+
+
+/* ------ COMPANY PROFILE: ------------*/
+
+/*dit is de h1 met naam van het initiatief*/
+.company_header {}
+
+/*dit is het blokje met adres en contact*/
+.company_info {}
+
+/*dit is de h3 met de verschillende sub-onderwerpjes*/
+.company_accordeon {}
+
+
+
+
+/* ------ EVENT: ------------*/
+
+
+/*dit is de h1 met de naam van het evenement*/
+.event_header {}
+
+/*Ook hier een .company info en daar zit een aparte p in met de naam van het initiatief*/
+.company_name_event {}
+
+/*de datum en tijd zitten in*/
+.event_date{}
+
+/*beschrijvend tekstje over het event*/
+.event_description {}
+
+/*dit is een accordeonmenu zoals bij de company profile, samen stijlen?*/
+.event_accordeon {}
