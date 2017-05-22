@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/profielLogIn.css">
      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
      
-    <script src="#"></script>
+    <script src="/js/profielLogIn.js"></script>
 </head>
 
 <body>
@@ -20,10 +20,10 @@
 <div class="loginGegevens">
     
     <p>Username</p>
-    <input type="text" id="naam" onblur="testAlles()" />
+    <input type="text" id="username" onclick="dropdownUsername()" onblur="clickOutUsername() "/>
     
     <p>Password</p>
-    <input type="text" id="naam" onblur="testAlles()" />
+    <input type="text" id="password" onclick="dropdownPassword()" onblur="clickOutPassword() " />
     
 </div>
 
@@ -35,13 +35,13 @@
 
 <br>
   
-<p>want to join? <a id="linkRegisterHere" href="#">Register here.</a> It's free!</p>   
+<p id="registerHere">want to join? <a id="linkRegisterHere" href="#">Register here.</a> It's free!</p>   
  
  <div class="socialMediaIcons">
      <ul>
-         <li><img src="/img/Placeholder.jpg"/></li>
-         <li><img src="/img/Placeholder.jpg"/></li>
-         <li><img src="/img/Placeholder.jpg"/></li>
+         <li><a href="https://www.facebook.com"><img src="/img/Placeholder.jpg"/></a></li>
+         <li><a href="https://accounts.google.com/signin/v2/sl/pwd?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities&followup=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="/img/Placeholder.jpg"/></a></li>
+         <li><a href="https://twitter.com"><img src="/img/Placeholder.jpg"/></a></li>
      </ul>
      
  </div>
