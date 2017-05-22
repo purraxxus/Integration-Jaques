@@ -33,17 +33,17 @@
 .subscribe_button {}
 
 
-/*dit zijn de evenementen die in het accordion onder EVENTS komen*/
+/*dit zijn de items (evenementen, jobs, producten) die in het accordion komen*/
 
-.example_event {}
+.example_item {}
 
 /*met daarin: ---*/
 
-.example_event_date {}
+.example_item_date {}
 
-.example_event_title{}
+.example_item_title{}
 
-.example_event_description {}
+.example_item_description {}
 
 
 /* ------ 2. EVENT: ------------*/
