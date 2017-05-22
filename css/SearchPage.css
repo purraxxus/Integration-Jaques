@@ -27,3 +27,27 @@ section.Slider {
   width: 100%;
   overflow-x: scroll;
 }
+
+section li {
+  padding: 1em 1em 1em 0;
+  border-bottom: solid rgba(220, 220, 220, 1) 0.2px;
+  border-right: solid rgba(220, 220, 220, 1) 0.2px;
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+section li:first-child {
+  border-top: solid rgba(220, 220, 220, 1) 0.2px;
+}
+
+section ul {
+  margin-top: 2em;
+}
+
+span.before {
+  width: 0.1em;
+  margin-right: 2em;
+  left: 0;
+  padding: 0.85em 0.3em;
+  background-color: aqua;
+}
