@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial- scale=1, minimum-scale=1">
   <title> Event Name Here | App Name Here</title>
-</head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> </head>
 
 <body>
   <header>
@@ -16,34 +16,69 @@
   <main>
     <h1 class="event_header">BottleMania @ Anderlecht Brewery</h1>
     <section class="company_info">
-<!--      hier ook company_profile_photo?-->
+      <!--      hier ook company_profile_photo?-->
       <p class="company_name_event">Anderlecht Brewery</p>
       <p>Nijverheidskaai 01 3000 Brussel</p>
       <p><a href="mailto:info@kittybons.com">contact</a></p>
-      <p> (aantal subscribers)</p>
-      <a href="subscribe_button">(hartje)</a>
-<!--         hier nog iconfont installeren voor hartje-->
+      <p> (aantal subscribers)</p> <a href="subscribe_button">(hartje)</a>
+      <!--         hier nog iconfont installeren voor hartje-->
     </section>
     <section class="event_date">
       <p>25 juni 2017</p>
       <p>13:00 tot 16:00</p>
     </section>
     <section class="event_description">Help us bottle the first batch of AnderBier. An amazing afternoon with theatre for kids and beer and lemonade for the adults. </section>
-    <!--    deze h3's worden accordeon-menu van het bedrijf-->
-    <h3 class="event_accordeon">Reviews</h3>
-    <!--    hebben we dit ook nodig op company page? of bijv. 3 suggestie events in de buurt?-->
-    <h3 class="event_accordeon">Other events</h3>
-    <h3 class="event_accordeon">Jobs</h3>
-    <h3 class="event_accordeon">Products</h3>
-    <h3 class="event_accordeon"></h3>
-    <h3 class="event_accordeon"></h3> </main>
- <footer class="nav">
-        <ul>
-            <li><a href="#"> <img src="/img/Placeholder.jpg" /></a></li>
-            <li><a href="#"><img src="/img/Placeholder.jpg" /></a></li>
-            <li><a href="#"><img src="/img/Placeholder.jpg" /></a></li>
-        </ul>
-    </footer>
+    
+    
+    <!--    dit wordt accordeon-menu van het event-->
+     <button class="accordion">Reviews from previous events</button>
+    <div class="panel">
+      <p>inhoud van het vouw-menu</p>
+    </div>
+    <button class="accordion">Other events</button>
+    <div class="panel">
+      <div class="example_event">
+        <div class="example_event_date">25 may 2017 </div>
+        <div class="example_event_title">BierGarten Brussels</div>
+        <div class="example_event_description">A wonderful friday night at the gardens of Anderlecht. Beer and bratwurst, jawohl.</div>
+      </div>
+      <div class="example_event">
+        <div class="example_event_date">25 june 2017 </div>
+        <div class="example_event_title">BottleMania </div>
+        <div class="example_event_description">Help us bottle the first batch of AnderBier. An amazing afternoon with theatre for kids and beer and lemonade for the adults.</div>
+      </div>
+    </div>
+    <button class="accordion">Related products</button>
+    <div class="panel">
+      <p>inhoud van het vouw-menu</p>
+    </div>
+    <button class="accordion"> Jobs at this start-up</button>
+    <div class="panel">
+      <p>inhoud van het vouw-menu</p>
+    </div>
+    <button class="accordion">Other start-ups in the neighbourhood</button>
+    <div class="panel">
+      <p>inhoud van het vouw-menu</p>
+    </div>
+  
+  
+  
+  
+  </main>
+  <footer class="nav">
+    <ul>
+      <li>
+        <a href="#"> <img src="/img/Placeholder.jpg" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="/img/Placeholder.jpg" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="/img/Placeholder.jpg" /></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="../js/accordion_menu_company.js"></script>
 </body>
 
 </html>
