@@ -29,5 +29,6 @@ body {
 }
 
 header{
-    height:50px;
+    height:auto;
+    padding: 4% 0% 4% 0%;
 }
