@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../css/SearchPage.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/SearchPage.js"></script>
   <title> Search </title>
 </head>
 
@@ -36,24 +38,24 @@
   <section>
     <h1>Filters</h1>
     <ul>
-      <li> <span class="before"></span>Food &amp; Drinks</li>
-      <li><span class="before"></span>Beauty</li>
-      <li><span class="before"></span>Social initiatives</li>
-      <li><span class="before"></span> Clothing &amp; accessories</li>
-      <li><span class="before"></span>DIY</li>
-      <li><span class="before"></span>Hobbies</li>
+      <li onclick="ToggleFilters(event)" id="notToggled"> <span class="before"></span>Food &amp; Drinks</li>
+      <li onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span>Beauty</li>
+      <li onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span>Social initiatives</li>
+      <li onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span> Clothing &amp; accessories</li>
+      <li onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span>DIY</li>
+      <li onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span>Hobbies</li>
     </ul>
   </section>
   <footer class="nav">
     <ul>
       <li>
-        <a href="#"> <img src="/img/Placeholder.jpg" /></a>
+        <a href="#"> <img src="../img/Placeholder.jpg" /></a>
       </li>
       <li>
-        <a href="#"><img src="/img/Placeholder.jpg" /></a>
+        <a href="#"><img src="../img/Placeholder.jpg" /></a>
       </li>
       <li>
-        <a href="#"><img src="/img/Placeholder.jpg" /></a>
+        <a href="#"><img src="../img/Placeholder.jpg" /></a>
       </li>
     </ul>
   </footer>

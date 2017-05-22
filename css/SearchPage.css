@@ -1,3 +1,10 @@
+input {
+  width: 90%;
+  margin: 1em 1em;
+  border: solid rgba(220, 220, 220, 1) 0.6px;
+  padding: 0.5em;
+}
+
 .imgInsSlider {
   width: 250px;
   display: inline-block;
@@ -29,11 +36,10 @@ section.Slider {
 }
 
 section li {
-  padding: 1em 1em 1em 0;
+  position: relative;
+  padding: 1em 1em 1em 2em;
   border-bottom: solid rgba(220, 220, 220, 1) 0.2px;
   border-right: solid rgba(220, 220, 220, 1) 0.2px;
-  margin-left: 1em;
-  margin-right: 2em;
 }
 
 section li:first-child {
@@ -42,12 +48,25 @@ section li:first-child {
 
 section ul {
   margin-top: 2em;
+  margin: 2em 2em;
+  overflow: hidden;
 }
 
 span.before {
-  width: 0.1em;
-  margin-right: 2em;
+  position: absolute;
+  width: 0%;
   left: 0;
+  top: 0;
   padding: 0.85em 0.3em;
   background-color: aqua;
+  z-index: -7;
+  height: 45%;
+  transform-origin: left;
+  transition: width 0.25s ease;
+}
+
+span:hover {
+  transform-origin: left;
+  transition: width 0.25s ease;
+  width: 99%;
 }
