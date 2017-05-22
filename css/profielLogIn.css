@@ -3,6 +3,7 @@ body{margin:0;
 
 .hoofddingLogin{
     background-color:blue;
+    color:white;
     text-align: center;
 }
 
@@ -15,12 +16,14 @@ body{margin:0;
 }
 
 .socialMediaIcons ul{
+     padding:0;
     list-style: none;
     text-align: center;
     
 }
 
 .socialMediaIcons ul li{
+    margin:3%;
     display: inline-block;
     
 }
