@@ -5,6 +5,7 @@ __https://stackoverflow.com/questions/9012537/how-to-get-the-element-clicked-for
 */
 var Bedrijven;
 var zoekWaarde;
+var Filterwaarde;
 var newBedrijven;
 $(function () {
   $.ajax({
@@ -23,14 +24,14 @@ function onSuccess(data) {
 
 function ToggleFilters(e) {
   var listItems = e.target;
-  if (listItems.id == "notToggled") {
-    listItems.id = ("toggled");
-    var spanItem = $("#toggled span")
+  if (listItems.className == "notToggled") {
+    listItems.className = ("toggled");
+    var spanItem = $(".toggled span");
     spanItem.width(110 + "%");
   }
-  else if (listItems.id == "toggled") {
-    listItems.id = ("notToggled");
-    var spanItem = $("#notToggled span")
+  else if (listItems.className == "toggled") {
+    listItems.className = ("notToggled");
+    var spanItem = $(".notToggled span");
     spanItem.width(0 + "%");
   }
   Filterwaardes();
@@ -50,20 +51,14 @@ function zoek() {
         filterArray.push(Bedrijven)
       }
     });
-    if (filterArray.length == 0) {
-      newBedrijven = [];
-    }
-    else {
-      newBedrijven = filterArray;
-    }
+    newBedrijven = filterArray;
   }
-  else {}
 }
 
 function genereerLijstMetBedrijven() {
   newBedrijven = Bedrijven;
-  zoek();
   Filter();
+  zoek();
   var htmlString = "";
   if (newBedrijven.length) {
     for (i = 0; i < newBedrijven.length; i++) {
@@ -78,8 +73,32 @@ function genereerLijstMetBedrijven() {
 }
 
 function Filterwaardes() {
-  Filterwaarde = listFilterItemsID[i].textContent;
-  genereerLijstMetBedrijven();
+  FilterwaardeArray = "";
+  var filters = $(".toggled");
+  for (i = 0; i < filters.length; i++) {
+    if (i == 0) {
+      FilterwaardeArray += '(';
+      FilterwaardeArray += filters[0].textContent.replace(/\s/g, "");
+      FilterwaardeArray += ')'
+    }
+    else if (i !== 0) {
+      FilterwaardeArray += '|(';
+      FilterwaardeArray += filters[i].textContent.replace(/\s/g, "");
+      FilterwaardeArray += ')'
+    }
+  }
+  Filterwaarde = FilterwaardeArray;
 }
 
-function Filter() {}
+function Filter() {
+  if (Filterwaarde != null) {
+    var filterArray = [];
+    Bedrijven.forEach(function (Bedrijven) {
+      var zoekRegex = new RegExp(Filterwaarde, "gi");
+      if (Bedrijven.properties.Category.match(zoekRegex)) {
+        filterArray.push(Bedrijven)
+      }
+    });;
+    newBedrijven = filterArray;
+  }
+}

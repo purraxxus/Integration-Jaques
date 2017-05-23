@@ -1,4 +1,5 @@
  {
+<<<<<<< Updated upstream
      "type": "FeatureCollection",
      "features": [{
              "type": "feature",
@@ -27,6 +28,36 @@
                  "type": "Point",
                  "coordinates": [4.320446, 50.839536, 0]
              }
+=======
+   "type": "FeatureCollection"
+   , "features": [{
+       "type": "feature"
+       , "properties": {
+         "Naam": "Anderlechts Brewery"
+         , "Category": "Food&Drinks"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.422760, 50.841815, 0]
+       }
+    }
+    , {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Brewery Kiekens"
+         , "Category": "Food&Drinks"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+>>>>>>> Stashed changes
     }, {
              "type": "feature",
              "properties": {
@@ -54,6 +85,7 @@
                  "coordinates": [4.329611, 50.835518, 0]
              }
     }, {
+<<<<<<< Updated upstream
              "type": "feature",
              "properties": {
                  "Naam": "Bakery Vermeulen",
@@ -92,6 +124,46 @@
                  "type": "Point",
                  "coordinates": [4.300268, 50.848831, 0]
              }
+=======
+       "type": "feature"
+       , "properties": {
+         "Naam": "Bakery Vermeulen"
+         , "Category": "Food&Drinks"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Butcher Karel"
+         , "Category": "Food&Drinks"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Heylens Jewelery"
+         , "Category": "Clothing&Accessories"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+>>>>>>> Stashed changes
     }, {
              "type": "feature",
              "properties": {
@@ -119,6 +191,7 @@
                  "coordinates": [4.316661, 50.845589, 0]
              }
     }, {
+<<<<<<< Updated upstream
              "type": "feature",
              "properties": {
                  "Naam": "Bycicles Jacques",
@@ -131,6 +204,20 @@
                  "type": "Point",
                  "coordinates": [4.329021, 50.836863, 0]
              }
+=======
+       "type": "feature"
+       , "properties": {
+         "Naam": "Bycicles Jacques"
+         , "Category": "Hobbies"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+>>>>>>> Stashed changes
     }, {
              "type": "feature",
              "properties": {
@@ -145,6 +232,7 @@
                  "coordinates": [4.326017, 50.838110, 0]
              }
     }, {
+<<<<<<< Updated upstream
              "type": "feature",
              "properties": {
                  "Naam": "SharingPoint Anderlecht",
@@ -157,5 +245,19 @@
                  "type": "Point",
                  "coordinates": [4.342582, 50.837405, 0]
              }
+=======
+       "type": "feature"
+       , "properties": {
+         "Naam": "SharingPoint Anderlecht"
+         , "Category": "Socialinitiatives"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+>>>>>>> Stashed changes
     }]
  }
