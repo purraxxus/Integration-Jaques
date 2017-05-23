@@ -18,7 +18,7 @@ $(function () {
 });
 
 function onSuccess(data) {
-  Bedrijven = data.Bedrijven;
+  Bedrijven = data.features.properties;
   console.log(Bedrijven);
 }
 
