@@ -5,7 +5,7 @@ __https://stackoverflow.com/questions/9012537/how-to-get-the-element-clicked-for
 */
 var Bedrijven;
 var zoekWaarde;
-var responseObject;
+var newBedrijven;
 $(function () {
   $.ajax({
     url: '../JSON/Bedrijven.json'
@@ -18,8 +18,8 @@ $(function () {
 });
 
 function onSuccess(data) {
-  responseObject = data.Bedrijven;
-  console.log(responseObject);
+  Bedrijven = data.Bedrijven;
+  console.log(Bedrijven);
 }
 
 function ToggleFilters(e) {
@@ -47,18 +47,36 @@ function zoek() {
     var filterArray = [];
     Bedrijven.forEach(function (Bedrijven) {
       var zoekRegex = new RegExp(zoekWaarde, "gi");
-      if (Bedrijven.naam.match(zoekRegex)) {
+      if (Bedrijven.Naam.match(zoekRegex)) {
         filterArray.push(Bedrijven)
       }
     });
-    Bedrijven = filterArray;
+    console.log(filterArray.length);
+    if (filterArray.length == 0) {
+      newBedrijven = [];
+      console.log('lengte is nu:' + newBedrijven.length);
+    }
+    else {
+      newBedrijven = filterArray;
+    }
   }
+  else {}
 }
 
 function genereerLijstMetBedrijven() {
+  newBedrijven = Bedrijven;
   zoek();
-  for (i = 0; i < Bedrijven.length; i++) {
-    //    if ()
-    console.log(Bedrijven)
+  //Filter
+  var htmlString = "";
+  if (newBedrijven.length) {
+    for (i = 0; i < newBedrijven.length; i++) {
+      htmlString += '<img src="' + newBedrijven[i].source + '">'
+      htmlString += '<p>' + newBedrijven[i].Naam + '</p>'
+      $("#content").html(htmlString);
+      console.log(newBedrijven[i].source);
+    }
+  }
+  else {
+    $('main#content').empty();
   }
 }
