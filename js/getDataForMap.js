@@ -4,8 +4,10 @@ var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
-        center: new google.maps.LatLng(50.842209, 4.322831),
+        center: new google.maps.LatLng(50.837, 4.322831),
         mapTypeId: 'terrain',
+        disableDefaultUI: true,
+
         styles: [
             {
                 elementType: 'geometry',
