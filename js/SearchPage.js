@@ -3,8 +3,9 @@ __https://stackoverflow.com/questions/9012537/how-to-get-the-element-clicked-for
 
 
 */
-var schilderijen;
+var Bedrijven;
 var zoekWaarde;
+var responseObject;
 $(function () {
   $.ajax({
     url: '../JSON/Bedrijven.json'
@@ -15,7 +16,11 @@ $(function () {
     }
   });
 });
-$(function () {});
+
+function onSuccess(data) {
+  responseObject = data.Bedrijven;
+  console.log(responseObject);
+}
 
 function ToggleFilters(e) {
   var listItems = e.target;
@@ -40,12 +45,20 @@ function zoekWaardeVeranderen() {
 function zoek() {
   if (zoekWaarde != null) {
     var filterArray = [];
-    schilderijen.forEach(function (schilderij) {
+    Bedrijven.forEach(function (Bedrijven) {
       var zoekRegex = new RegExp(zoekWaarde, "gi");
-      if (schilderij.naam.match(zoekRegex)) {
-        filterArray.push(schilderij)
+      if (Bedrijven.naam.match(zoekRegex)) {
+        filterArray.push(Bedrijven)
       }
     });
-    schilderijen = filterArray;
+    Bedrijven = filterArray;
+  }
+}
+
+function genereerLijstMetBedrijven() {
+  zoek();
+  for (i = 0; i < Bedrijven.length; i++) {
+    //    if ()
+    console.log(Bedrijven)
   }
 }
