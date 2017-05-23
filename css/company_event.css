@@ -4,6 +4,15 @@
 3. accordion menu
 */
 
+.clearfix:after {
+   content: " ";
+   display: block;
+   clear: both;
+   visibility: hidden;
+   line-height: 0;
+   height: 0;
+ }
+
 
 /* ------ 1. COMPANY PROFILE: ------------*/
 
@@ -98,7 +107,7 @@ a {
 }
 
 
-/*dit zijn de items (evenementen, jobs, producten) die in het accordion komen*/
+/*dit zijn de ITEMS (evenementen, jobs, producten) die in het accordion komen*/
 
 .example_item {}
 
@@ -106,21 +115,31 @@ a {
 /*met daarin: ---*/
 
 .example_item_date {
-  font-variant: small-caps;
-  padding: 3em 3em;
-  display: inline-block;
+  display: block;
   background-size: cover;
+  width: 30%;
+  height: 4.5em;
+  float: left;
   background-image: url(../img/Placeholder.jpg);
+}
+
+.example_item_title_on_image{
+  font-variant: small-caps;
+  padding-right: 8px;
+  padding-bottom: 0;
+  background-color: dodgerblue;
+  display: block;
 }
 
 .example_item_title {
   font-weight: bold;
-  padding: 35px;
   display: inline;
+  width: 60%;
 }
 
 .example_item_description {
-  display: inline;
+  font-size: 0.7em;
+  width: 100%;
 }
 
 
