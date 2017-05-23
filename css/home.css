@@ -19,7 +19,7 @@
 .topofnav {
     background-color: dodgerblue;
     padding-top: 10px;
-    padding-bottom: 15px
+    padding-bottom: 15px;
 }
 
 .topofnav nav ul li {
@@ -56,7 +56,11 @@ button:hover {
 }
 
 #map {
-    height: 400px;
+    height: 100%;
     width: 100%;
-    background-color: aqua
+    background-color: aqua;
+}
+
+body {
+    overflow-y: hidden;
 }
