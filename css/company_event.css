@@ -29,7 +29,9 @@ a {
 .location_link {
   text-decoration: none;
   float: left;
-  display: inline-block;
+  display: inline;
+  width: 10%;
+  padding: 1.2em 0em;
 }
 
 
@@ -39,16 +41,20 @@ a {
   float: left;
   display: block;
   font-size: 0.8em;
-  line-height: 0.8;
-  margin: 0.8em;
+  line-height: 0.9;
+/*  margin: 0em 0.8em;*/
+  width: 50%;
 }
 
 
 /*dit is de sectie met hartje en aantal subscribers*/
 
 .connect_users {
+  line-height: 0.6;
   display: inline-block;
-  margin: 0em 2em;
+/*  margin: 0em 2em;*/
+  padding: 1.2em 0em;
+  width: 30%;
 }
 
 
@@ -117,7 +123,7 @@ a {
 
 /*Ook hier een .company info en daar zit een aparte p in met de naam van het initiatief*/
 
-.company_name_event {display: inline-block;}
+.company_name_event {font-weight: bold; line-height: 0.9;}
 
 
 /*de datum en tijd zitten in*/
