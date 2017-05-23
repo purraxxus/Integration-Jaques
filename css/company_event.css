@@ -7,21 +7,38 @@
 
 /* ------ 1. COMPANY PROFILE: ------------*/
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+}
+
 
 /*dit is de h1 met naam van het initiatief*/
 
-.company_header {}
+#naam{position: absolute;
+    width:100%;
+    padding-top:60%;
+    top:0;
+    margin:0;
+    color:white;
+    text-align: center;
+}
+
 
 /*dit is het icoontje wat terug naar de map leidt*/
-.location_link{text-decoration: none; float: left; display: inline-block;}
+
+.location_link {
+  text-decoration: none;
+  float: left;
+  display: inline-block;
+}
+
 
 /*dit is het blokje met adres en contact*/
 
 .company_info {
   float: left;
-  display:block;
-  font-size: 0.8em; 
+  display: block;
+  font-size: 0.8em;
   line-height: 0.8;
   margin: 0.8em;
 }
@@ -47,10 +64,21 @@ a {text-decoration: none;}
 
 /*hartje*/
 
-.subscribe_button {text-decoration: none;}
-.subscribe_button:hover {color: red;}
-.subscribe_button:link {color: red;}
-.subscribe_button:visited {color: red;}
+.subscribe_button {
+  text-decoration: none;
+}
+
+.subscribe_button:hover {
+  color: red;
+}
+
+.subscribe_button:link {
+  color: red;
+}
+
+.subscribe_button:visited {
+  color: red;
+}
 
 
 /*dit zijn de items (evenementen, jobs, producten) die in het accordion komen*/
@@ -89,7 +117,7 @@ a {text-decoration: none;}
 
 /*Ook hier een .company info en daar zit een aparte p in met de naam van het initiatief*/
 
-.company_name_event {}
+.company_name_event {display: inline-block;}
 
 
 /*de datum en tijd zitten in*/
@@ -104,15 +132,19 @@ a {text-decoration: none;}
 
 .event_description {
   font-size: 0.8em;
+  padding: 1.2em 0em;
 }
 
 
 /*---------------- 3. alles voor accordionmenu, via w3schools ----------*/
 
 
+.content_accordion{margin-bottom: 10%;}
+
 /* Style the buttons that are used to open and close the accordion panel */
 
 button.accordion {
+  font: "Open Sans", sans-serif;
   background-color: white;
   color: #000;
   cursor: pointer;
