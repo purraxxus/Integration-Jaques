@@ -7,15 +7,32 @@
 
 /* ------ 1. COMPANY PROFILE: ------------*/
 
+a {text-decoration: none;}
 
 /*dit is de h1 met naam van het initiatief*/
 
 .company_header {}
 
+/*dit is het icoontje wat terug naar de map leidt*/
+.location_link{text-decoration: none; float: left; display: inline-block;}
 
 /*dit is het blokje met adres en contact*/
 
-.company_info {}
+.company_info {
+  float: left;
+  display:block;
+  font-size: 0.8em; 
+  line-height: 0.8;
+  margin: 0.8em;
+}
+
+
+/*dit is de sectie met hartje en aantal subscribers*/
+
+.connect_users {
+  display: inline-block;
+  margin: 0em 2em;
+}
 
 
 /*dit is de accordion titel voor de verschillende sub-onderwerpjes*/
@@ -30,7 +47,10 @@
 
 /*hartje*/
 
-.subscribe_button {}
+.subscribe_button {text-decoration: none;}
+.subscribe_button:hover {color: red;}
+.subscribe_button:link {color: red;}
+.subscribe_button:visited {color: red;}
 
 
 /*dit zijn de items (evenementen, jobs, producten) die in het accordion komen*/
@@ -42,11 +62,10 @@
 
 .example_item_date {
   font-variant: small-caps;
-  padding: 3em 3em; 
+  padding: 3em 3em;
   display: inline-block;
   background-size: cover;
   background-image: url(../img/Placeholder.jpg);
-  
 }
 
 .example_item_title {
@@ -55,7 +74,9 @@
   display: inline;
 }
 
-.example_item_description {display: inline;}
+.example_item_description {
+  display: inline;
+}
 
 
 /* ------ 2. EVENT: ------------*/
@@ -73,17 +94,17 @@
 
 /*de datum en tijd zitten in*/
 
-.event_date {}
+.event_date {
+  float: none;
+  clear: left;
+}
 
 
 /*beschrijvend tekstje over het event*/
 
-.event_description {}
-
-
-/*dit is een accordeonmenu met h3s zoals bij de company profile, samen stijlen?*/
-
-.event_accordeon {}
+.event_description {
+  font-size: 0.8em;
+}
 
 
 /*---------------- 3. alles voor accordionmenu, via w3schools ----------*/
