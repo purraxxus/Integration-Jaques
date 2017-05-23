@@ -1,3 +1,5 @@
+var niks="sdlf";
+
 function dropdownUsername() {
 
     $("#username").css("margin-top", "5%").css("transition", "1s").css("height", "100%");
@@ -31,10 +33,24 @@ function send() {
 
     var pass = document.getElementById("password").value;
 
-    if (user == "jos" && pass == 1234) {
+    if (sessionStorage.getItem('naam') == user && sessionStorage.getItem('passwoord') == pass) {
         window.location.assign("/html/profiel.html")
+        user === '';
+       pass === '';
+    }else{
+        pass === '';
+        var fouteLogin = "";
+        var innerHtmlFout = document.getElementById("fouteLoginGegeven").innerHTML;
+        
+             fouteLogin += '<br><br><p>Dit is een foute username of password</p>';
+        
+            if(innerHtmlFout == ""){
+        
+               $('#fouteLoginGegeven').append(fouteLogin);               
+            }
+        
     }
-
-    console.log(user);
-    console.log(pass);
 }
+
+
+
