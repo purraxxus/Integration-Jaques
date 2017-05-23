@@ -12,7 +12,8 @@
     <script src="../js/getDataForMap.js">
     </script>
 </head>
-< body>
+
+<body>
     <div class="topofnav">
         <img src="/img/placeholder.jpg" class="jaqueslogo">
         <h1> The start of our community
@@ -29,35 +30,6 @@
     <div id="map">
     </div>
 
-    <script>
-        var map;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
-                center: new google.maps.LatLng(50.842209, 4.322831),
-                mapTypeId: 'terrain'
-            });
-            var script = document.createElement('script');
-            script.src = '../JSON/Bedrijven.json';
-            document.getElementsByTagName('head')[0].appendChild(script);
-        }
-        window.eqfeed_callback = function (results) {
-            for (var i = 0; i < results.features.length; i++) {
-                var coords = results.features[i].geometry.coordinates;
-                var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                var marker = new google.maps.Marker({
-                    position: latLng,
-                    icon: iconBase + '',
-                    map: map
-                });
-            }
-        }
-    </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQuIByXHJ4l9R68WBcsLR8LHWAJqYZ24s&callback=initMap">
-    </script>
-
     <footer class="nav">
         <ul>
             <li>
@@ -72,6 +44,10 @@
         </ul>
     </footer>
 
-    </body>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQuIByXHJ4l9R68WBcsLR8LHWAJqYZ24s&callback=initMap">
+    </script>
+
+
+</body>
 
 </html>
