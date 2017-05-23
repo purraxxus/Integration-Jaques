@@ -1,16 +1,161 @@
-eqfeed_callback({
-    "type": "FeatureCollection",
-    "features": [{
-        "type": "feature",
-        "properties": {
-            "Naam": "Anderlechts Brewery",
-            "source": "../img/Placeholder.jpg",
-            "Adres": "Goedestraat 25,1070 Anderlecht",
-            "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh.",
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [4.322760, 50.841815, 0]
-        }
+ {
+   "type": "FeatureCollection"
+   , "features": [{
+       "type": "feature"
+       , "properties": {
+         "Naam": "Anderlechts Brewery"
+         , "Category": "food&Drinks"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }
+    , {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Brewery Kiekens"
+         , "Category": "food&Drinks"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Flowers Jos"
+         , "Category": "Hobbies"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Azerty Hardware store"
+         , "Category": "DIY"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Bakery Vermeulen"
+         , "Category": "food&Drinks"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Butcher Karel"
+         , "Category": "food&Drinks"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Heylens Jewelery"
+         , "Category": "clothing&Accessories"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Barbershop Jef"
+         , "Category": "Beauty"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Foncé Sportswear"
+         , "Category": "Hobbies"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "Bycicles Jacques"
+         , "Category": "food&Drinks"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "I fix IT"
+         , "Category": "Hobbies"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
+    }, {
+       "type": "feature"
+       , "properties": {
+         "Naam": "SharingPoint Anderlecht"
+         , "Category": "socialInitiatives"
+         , "source": "../img/Placeholder.jpg"
+         , "Adres": "Goedestraat 25,1070 Anderlecht"
+         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus. Etiam velit nulla, porta quis aliquam vel, sollicitudin sed justo. Nam feugiat molestie erat. Nulla eleifend vestibulum ante, et mattis turpis tempor quis. Aliquam erat volutpat. Mauris viverra consectetur sem. Proin sagittis enim et enim vulputate porttitor ac vel tortor. Maecenas at tincidunt enim, et volutpat sem. Pellentesque ac orci nec enim ornare sollicitudin. Nulla interdum purus sit amet nisl dapibus, sed cursus metus varius. Etiam id ullamcorper nibh."
+       }
+       , "geometry": {
+         "type": "Point"
+         , "coordinates": [4.322760, 50.841815, 0]
+       }
     }]
-});
+ }
