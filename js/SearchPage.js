@@ -18,13 +18,11 @@ $(function () {
 });
 
 function onSuccess(data) {
-  Bedrijven = data.features.properties;
-  console.log(Bedrijven);
+  Bedrijven = data.features;
 }
 
 function ToggleFilters(e) {
   var listItems = e.target;
-  console.log(listItems.getElementsByTagName("span"));
   if (listItems.id == "notToggled") {
     listItems.id = ("toggled");
     var spanItem = $("#toggled span")
@@ -35,6 +33,7 @@ function ToggleFilters(e) {
     var spanItem = $("#notToggled span")
     spanItem.width(0 + "%");
   }
+  Filterwaardes();
 }
 /*---____---____---___---____---____---___---____---____---___---____---____---___---____---____---___---____---____---___---____---____---___---____---____---___---____---____---___*/
 function zoekWaardeVeranderen() {
@@ -47,14 +46,12 @@ function zoek() {
     var filterArray = [];
     Bedrijven.forEach(function (Bedrijven) {
       var zoekRegex = new RegExp(zoekWaarde, "gi");
-      if (Bedrijven.Naam.match(zoekRegex)) {
+      if (Bedrijven.properties.Naam.match(zoekRegex)) {
         filterArray.push(Bedrijven)
       }
     });
-    console.log(filterArray.length);
     if (filterArray.length == 0) {
       newBedrijven = [];
-      console.log('lengte is nu:' + newBedrijven.length);
     }
     else {
       newBedrijven = filterArray;
@@ -66,17 +63,23 @@ function zoek() {
 function genereerLijstMetBedrijven() {
   newBedrijven = Bedrijven;
   zoek();
-  //Filter
+  Filter();
   var htmlString = "";
   if (newBedrijven.length) {
     for (i = 0; i < newBedrijven.length; i++) {
-      htmlString += '<img src="' + newBedrijven[i].source + '">'
-      htmlString += '<p>' + newBedrijven[i].Naam + '</p>'
+      htmlString += '<img src="' + newBedrijven[i].properties.source + '">'
+      htmlString += '<p>' + newBedrijven[i].properties.Naam + '</p>'
       $("#content").html(htmlString);
-      console.log(newBedrijven[i].source);
     }
   }
   else {
     $('main#content').empty();
   }
 }
+
+function Filterwaardes() {
+  Filterwaarde = listFilterItemsID[i].textContent;
+  genereerLijstMetBedrijven();
+}
+
+function Filter() {}
