@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/profielLogIn.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
      
     <script src="/js/profielLogIn.js"></script>
@@ -23,25 +24,25 @@
     <input type="text" id="username" onclick="dropdownUsername()" onblur="clickOutUsername() "/>
     
     <p>Password</p>
-    <input type="text" id="password" onclick="dropdownPassword()" onblur="clickOutPassword() " />
+    <input type="password" id="password" onclick="dropdownPassword()" onblur="clickOutPassword() " />
     
 </div>
 
 <br>
 
 <div class="loginHolder">
-<input id="logIn" type="button" value="Log in" onclick="#" />
+<input id="logIn" type="button" value="Log in" onclick="send()" />
 </div>
 
 <br>
   
-<p id="registerHere">want to join? <a id="linkRegisterHere" href="#">Register here.</a> It's free!</p>   
+<p id="registerHere">Want to join? <a id="linkRegisterHere" href="#">Register here.</a> It's free!</p>   
  
  <div class="socialMediaIcons">
      <ul>
-         <li><a href="https://www.facebook.com"><img src="/img/Placeholder.jpg"/></a></li>
-         <li><a href="https://accounts.google.com/signin/v2/sl/pwd?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities&followup=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="/img/Placeholder.jpg"/></a></li>
-         <li><a href="https://twitter.com"><img src="/img/Placeholder.jpg"/></a></li>
+         <li><a href="https://www.facebook.com"><img src="/img/icon/fb-art.png"/></a></li>
+         <li><a href="https://accounts.google.com/signin/v2/sl/pwd?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities&followup=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="/img/icon/Google-plus-icon.png"/></a></li>
+         <li><a href="https://twitter.com"><img src="/img/icon/Twitter-icon.png"/></a></li>
      </ul>
      
  </div>
@@ -49,9 +50,10 @@
  
  <footer class="nav">
         <ul>
-            <li><a href="#"> <img src="/img/Placeholder.jpg" /></a></li>
-            <li><a href="#"><img src="/img/Placeholder.jpg" /></a></li>
-            <li><a href="#"><img src="/img/Placeholder.jpg" /></a></li>
+            <li><a href="#"> <img src="/img/icon/home.svg" /></a></li>
+            <li><a href="#"><img src="/img/icon/calendar.svg" /></a></li>
+            <li><a href="#"><img src="/img/icon/search.svg" /></a></li>
+            <li><a href="#"><img src="/img/icon/user.svg" /></a></li>
         </ul>
     </footer>
   
