@@ -9,24 +9,53 @@
     <script src="js/scriptHomepage.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <script src="../js/getDataForMap.js">
+    </script>
 </head>
-
-<body>
+< body>
     <div class="topofnav">
         <img src="/img/placeholder.jpg" class="jaqueslogo">
-        <h1>The start of our community</h1>
-        <nav>
-            <ul>
-                <li>Jobs</li>
-                <li>Events</li>
-                <li>Tools</li>
-            </ul>
-        </nav>
+        <h1> The start of our community
+                </h1>
+        <div class="doctorswithoutborders">
+            <button id="jobs"> Jobs
+            </button>
+            <button id="events"> Events
+            </button>
+            <button id="tools"> Tools
+            </button>
+        </div>
+    </div>
+    <div id="map">
     </div>
 
-    <iframe width="100%" height="500px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAuo-2TR193rIe5KOGgGZTXza8sE4o_GgQ
-    &q=Space+Needle,Seattle+WA">
-    </iframe>
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: new google.maps.LatLng(50.842209, 4.322831),
+                mapTypeId: 'terrain'
+            });
+            var script = document.createElement('script');
+            script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+        window.eqfeed_callback = function (results) {
+            for (var i = 0; i < results.features.length; i++) {
+                var coords = results.features[i].geometry.coordinates;
+                var latLng = new google.maps.LatLng(coords[1], coords[0]);
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map
+                });
+            }
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQuIByXHJ4l9R68WBcsLR8LHWAJqYZ24s&callback=initMap">
+    </script>
 
     <footer class="nav">
         <ul>
@@ -42,6 +71,6 @@
         </ul>
     </footer>
 
-</body>
+    </body>
 
 </html>

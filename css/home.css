@@ -5,23 +5,58 @@
     display: block;
     margin: 0 auto;
     margin-top: 10px;
+    margin-bottom: 15px
 }
 
 .topofnav h1 {
     text-align: center;
     margin-top: 10px;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 2em;
 }
 
 .topofnav {
     background-color: dodgerblue;
     padding-top: 10px;
+    padding-bottom: 15px
 }
 
 .topofnav nav ul li {
     margin-top: 10px;
     display: inline-block;
     color: white;
+}
+
+button {
+    width: 30%;
+    background-color: dodgerblue;
+    border-style: hidden;
+    color: white;
+    font-size: 1.2em;
+    font-family: "Open Sans", Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    border: 1px solid white;
+}
+
+button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+#jobs {
+    margin-left: 4%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#tools {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    background-color: aqua
 }
