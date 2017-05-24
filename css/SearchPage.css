@@ -63,3 +63,7 @@ span.before {
   transform-origin: left;
   transition: width 0.25s ease;
 }
+
+img.Search {
+  width: 40%;
+}
