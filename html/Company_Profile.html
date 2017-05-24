@@ -4,94 +4,137 @@
 <head>
   <link rel="stylesheet" href="../css/company_event.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/profielLogIn.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial- scale=1, minimum-scale=1">
   <title> Company Name Here | App Name Here</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> </head>
-<!--  dit is het icon font via google: ------>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
+  <!--  dit is het icon font via google: ------>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+
 <body>
   <header>
-    <!--    hier terug-knopje-->
-    <h2>Details</h2></header>
+    <!--    TO DO ----------------------     hier terug-knopje---------->
+    <h2>Details</h2>
+  </header>
   <main>
-    <div class="profielFoto">
-        <img id="foto" src="/img/Placeholder.jpg" />
-        <h1 id="naam">Anderlecht Brewery</h1>
+    <div class="profielFoto"> <img id="foto" src="/img/Placeholder.jpg" />
+      <h1 id="naam">Anderlecht Brewery</h1> </div>
+    <div class="row clearfix"> <a class="icon_link" href="#"><i class="material-icons">location_on</i></a>
+      <div class="info_company">
+        <p class="company_name_event">Anderlecht Brewery</p>
+        <p>Nijverheidskaai 01</p>
+        <p>3000 Brussel</p>
+        <p><a href="mailto:info@kittybons.com">contact</a></p>
+      </div>
+      <div class="connect_users">
+        <p> (#subs)</p> <a class="subscribe_button icon_link" href="#"><i class="material-icons">favorite</i></a> </div>
     </div>
-      <!--      dit is dat maps icoontje-->
-      <a class="location_link" href="#"><i class="material-icons">location_on</i></a>
-    <section class="company_info">
-      <p>Nijverheidskaai 01 </p>
-      <p>3000 Brussel</p>
-      <p><a href="mailto:info@kittybons.com">contact</a></p>
-    </section>
-    
-    <section class="connect_users"><p> (#subs)</p> <a class="subscribe_button" href="#"><i class="material-icons">favorite</i></a></section>
-    <!--    deze buttons worden accordeon-menu van het bedrijf, en panels zijn inhoud via w3schools-->
-    <button class="accordion">Events</button>
-    <div class="panel">
+    <!--    deze buttons worden accordeon-menu en panel = inhoud --------------->
+    <section class="content_accordion">
+      <button class="accordion">Events</button>
+      <div class="panel">
+<!--        Goed gestijld maar foute inhoud -------------->
+        <div class="example_item clearfix">
+          <div class="example_item_date"> <span class="example_item_title_on_image">xxx</span></div>
+          <div class="example_item_title">BottleMaster </div>
+          <div class="example_item_description">Help us bottle the first batch of AnderBier. You'll be responsible for coordinating and instructing the bottlers.</div>
+        </div>
+        <div class="example_item clearfix">
+          <div class="example_item_date"> <span class="example_item_title_on_image">xxx</span></div>
+          <div class="example_item_title">BottleMaster </div>
+          <div class="example_item_description">Help us bottle the first batch of AnderBier. You'll be responsible for coordinating and instructing the bottlers.</div>
+        </div>
+        
+        
+        
+<!--        fout gestijld ---------------------->
+        <div class="example_item clearfix">
+          <div class="example_item_date">25 may 2017 </div>
+          <div class="example_item_title">BierGarten Brussels</div>
+          <div class="example_item_description">A wonderful friday night at the gardens of Anderlecht. Beer and bratwurst, jawohl.</div>
+        </div>
+        <div class="example_item clearfix">
+          <div class="example_item_date">25 june 2017 </div>
+          <div class="example_item_title">BottleMania </div>
+          <div class="example_item_description">Help us bottle the first batch of AnderBier. An amazing afternoon with theatre for kids and beer and lemonade for the adults.</div>
+        </div>
+      </div>
+      <button class="accordion">Jobs</button>
+      <div class="panel">
+        <div class="example_item clearfix">
+          <div class="example_item_date"> <span class="example_item_title_on_image">xxx</span></div>
+          <div class="example_item_title">BottleMaster </div>
+          <div class="example_item_description">Help us bottle the first batch of AnderBier. You'll be responsible for coordinating and instructing the bottlers.</div>
+        </div>
+        <div class="example_item clearfix">
+          <div class="example_item_date"> xxx </div>
+          <div class="example_item_title">BeerTaster m/v/x </div>
+          <div class="example_item_description">A nose for the best flavors in town? Help us select the best recipes and earn your weight in beer.</div>
+        </div>
+      </div>
+      <button class="accordion">Products</button>
+      <div class="panel">
+        <!--        Goed gestijld maar foute inhoud -------------->
+        <div class="example_item clearfix">
+          <div class="example_item_date"> <span class="example_item_title_on_image">xxx</span></div>
+          <div class="example_item_title">BottleMaster </div>
+          <div class="example_item_description">Help us bottle the first batch of AnderBier. You'll be responsible for coordinating and instructing the bottlers.</div>
+        </div>
+        <div class="example_item clearfix">
+          <div class="example_item_date"> <span class="example_item_title_on_image">xxx</span></div>
+          <div class="example_item_title">BottleMaster </div>
+          <div class="example_item_description">Help us bottle the first batch of AnderBier. You'll be responsible for coordinating and instructing the bottlers.</div>
+        </div>
+        
+        
         <div class="example_item">
-        <div class="example_item_date">25 may 2017 </div>
-        <div class="example_item_title">BierGarten Brussels</div>
-        <div class="example_item_description">A wonderful friday night at the gardens of Anderlecht. Beer and bratwurst, jawohl.</div>
+          <div class="example_item_date"> xxx </div>
+          <div class="example_item_title">AnderBier </div>
+          <div class="example_item_description">Buy! buy! buy! our beer.</div>
+        </div>
       </div>
-      <div class="example_item">
-        <div class="example_item_date">25 june 2017 </div>
-        <div class="example_item_title">BottleMania </div>
-        <div class="example_item_description">Help us bottle the first batch of AnderBier. An amazing afternoon with theatre for kids and beer and lemonade for the adults.</div>
+      <button class="accordion">Reviews</button>
+      <div class="panel">
+        <!--        Goed gestijld maar foute inhoud -------------->
+        <div class="example_item clearfix">
+          <div class="example_item_date"> <span class="example_item_title_on_image">xxx</span></div>
+          <div class="example_item_title">BottleMaster </div>
+          <div class="example_item_description">Help us bottle the first batch of AnderBier. You'll be responsible for coordinating and instructing the bottlers.</div>
+        </div>
+        <div class="example_item clearfix">
+          <div class="example_item_date"> <span class="example_item_title_on_image">xxx</span></div>
+          <div class="example_item_title">BottleMaster </div>
+          <div class="example_item_description">Help us bottle the first batch of AnderBier. You'll be responsible for coordinating and instructing the bottlers.</div>
+        </div>
+        
+        
+        
+        <div class="example_item clearfix">
+          <div class="example_item_date">xxx </div>
+          <div class="example_item_title">Fantastic organisation! </div>
+          <div class="example_item_description">Really enjoyed our day at Anderlecht Brewers. The lady knew so much about beers, an expert in her field. </div>
+        </div>
       </div>
-    </div>
-    <button class="accordion">Jobs</button>
-    <div class="panel">
-      <div class="example_item clearfix">
-        <div class="example_item_date"> <span class="example_item_title_on_image">xxx</span></div>
-        <div class="example_item_title">BottleMaster </div>
-        <div class="example_item_description">Help us bottle the first batch of AnderBier. You'll be responsible for coordinating and instructing the bottlers.</div>
+      <button class="accordion"></button>
+      <div class="panel">
+        <p>inhoud van het vouw-menu</p>
       </div>
-      <div class="example_item clearfix">
-        <div class="example_item_date"> xxx </div>
-        <div class="example_item_title">BeerTaster m/v/x </div>
-        <div class="example_item_description">A nose for the best flavors in town? Help us select the best recipes and earn your weight in beer.</div>
+      <button class="accordion"></button>
+      <div class="panel">
+        <p>inhoud van het vouw-menu</p>
       </div>
-    </div>
-    <button class="accordion">Products</button>
-    <div class="panel">
-      <div class="example_item">
-        <div class="example_item_date"> xxx </div>
-        <div class="example_item_title">AnderBier </div>
-        <div class="example_item_description">Buy! buy! buy! our beer.</div>
-      </div>
-    </div>
-    <button class="accordion">Reviews</button>
-    <div class="panel">
-      <div class="example_item">
-        <div class="example_item_date">xxx </div>
-        <div class="example_item_title">Fantastic organisation! </div>
-        <div class="example_item_description">Really enjoyed our day at Anderlecht Brewers. The lady knew so much about beers, an expert in her field. </div>
-      </div>
-    </div>
-    <button class="accordion"></button>
-    <div class="panel">
-      <p>inhoud van het vouw-menu</p>
-    </div>
-    <button class="accordion"></button>
-    <div class="panel">
-      <p>inhoud van het vouw-menu</p>
-    </div>
+    </section>
   </main>
-  <footer class="nav">
-    <ul>
-      <li>
-        <a href="#"> <img src="/img/Placeholder.jpg" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="/img/Placeholder.jpg" /></a>
-      </li>
-      <li>
-        <a href="#"><img src="/img/Placeholder.jpg" /></a>
-      </li>
-    </ul>
-  </footer>
+ <footer class="nav">
+        <ul>
+            <li><a href="../html/index.html"> <img src="/img/icon/home.svg" /></a></li>
+            <li><a href="../html/kalender.html"><img src="/img/icon/calendar.svg" /></a></li>
+            <li><a href="../html/SearchPage.html"><img src="/img/icon/search.svg" /></a></li>
+            <li><a href="../html/profielLogIn.html"><img src="/img/icon/user.svg" /></a></li>
+        </ul>
+    </footer>
   <script src="../js/accordion_menu_company.js"></script>
 </body>

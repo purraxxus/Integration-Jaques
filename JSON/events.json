@@ -1,64 +1,44 @@
 {
- "events" : [
+ "evenementen" : [
  
         {
-            
+            "naam":"Jos",
             "title": "event 1",
             "url": "/img/Placeholder.jpg",
-            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs           Prijs1", 
-            "datum": 21/03/2017
+            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1"
             
         }, 
         {
-            
+            "naam":"Jef",
             "title": "event 2",
             "url": "/img/Placeholder.jpg",
-            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs           Prijs2", 
-            "datum": 22/03/2017
+            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs2" 
+            
         },
         {
-            
+            "naam":"Mark",
             "title": "event 3",
             "url": "/img/Placeholder.jpg",
-            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs           Prijs3", 
-            "datum": 23/03/2017
+            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs3" 
+            
         },
         {
-            
+            "naam":"Axel",
             "title": "event 4",
             "url": "/img/Placeholder.jpg",
-            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs           Prijs4", 
-            "datum": 24/03/2017
+            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs4"
+            
         },
         {
-            
+            "naam":"Jany",
             "title": "event 5",
             "url": "/img/Placeholder.jpg",
-            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs           Prijs5", 
-            "datum": 25/03/2017
+            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs5"
+            
         }
- 
- 
 ]
 
 }
 
 
 
-$.getJSON("JSON/Prijzen.json", function (json) //json bestand inladen
-              {
-        console.log(sessionStorage.getItem('id'));
-   
-        var details ="";
-        
-        $.each(json.prijzen, function () {
-             if(this.id == sessionStorage.getItem('id')){
-            details += '<div ><img id="foto" src= "'+this.url+'"> </div> <div class="uitleg"> <h2>'+this.title+'</h2> <p>'+this.details+'</p></div></div>'; // juiste div maken voor afbeelding
-             
-            
-           
-            $('.Detail_prijs').append(details);
-        }
-        });
-          
-    });

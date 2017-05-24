@@ -10,141 +10,108 @@ function initMap() {
 
         styles: [
             {
-                elementType: 'geometry',
-                stylers: [{
-                    color: '#242f3e'
-            }]
-        },
+                "featureType": "administrative",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#444444"
+            }
+        ]
+    },
             {
-                elementType: 'labels.text.stroke',
-                stylers: [{
-                    color: '#242f3e'
-            }]
-        },
+                "featureType": "landscape",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "color": "#f2f2f2"
+            }
+        ]
+    },
             {
-                elementType: 'labels.text.fill',
-                stylers: [{
-                    color: '#746855'
-            }]
-        },
+                "featureType": "poi",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+            }
+        ]
+    },
             {
-                featureType: 'administrative.locality',
-                elementType: 'labels.text.fill',
-                stylers: [{
-                    color: '#d59563'
-            }]
+                "featureType": "road",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "saturation": -100
             },
+                    {
+                        "lightness": 45
+            }
+        ]
+    },
             {
-                featureType: 'poi',
-                elementType: 'labels.text.fill',
-                stylers: [{
-                    color: '#d59563'
-            }]
+                "featureType": "road.highway",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+            }
+        ]
+    },
+            {
+                "featureType": "road.arterial",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+            }
+        ]
+    },
+            {
+                "featureType": "transit",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+            }
+        ]
+    },
+            {
+                "featureType": "water",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "color": "#46bcec"
             },
-            {
-                featureType: 'poi.park',
-                elementType: 'geometry',
-                stylers: [{
-                    color: '#263c3f'
-            }]
-            },
-            {
-                featureType: 'poi.park',
-                elementType: 'labels.text.fill',
-                stylers: [{
-                    color: '#6b9a76'
-            }]
-            },
-            {
-                featureType: 'road',
-                elementType: 'geometry',
-                stylers: [{
-                    color: '#38414e'
-            }]
-            },
-            {
-                featureType: 'road',
-                elementType: 'geometry.stroke',
-                stylers: [{
-                    color: '#212a37'
-            }]
-            },
-            {
-                featureType: 'road',
-                elementType: 'labels.text.fill',
-                stylers: [{
-                    color: '#9ca5b3'
-            }]
-            },
-            {
-                featureType: 'road.highway',
-                elementType: 'geometry',
-                stylers: [{
-                    color: '#746855'
-            }]
-            },
-            {
-                featureType: 'road.highway',
-                elementType: 'geometry.stroke',
-                stylers: [{
-                    color: '#1f2835'
-            }]
-            },
-            {
-                featureType: 'road.highway',
-                elementType: 'labels.text.fill',
-                stylers: [{
-                    color: '#f3d19c'
-            }]
-            },
-            {
-                featureType: 'transit',
-                elementType: 'geometry',
-                stylers: [{
-                    color: '#2f3948'
-            }]
-            },
-            {
-                featureType: 'transit.station',
-                elementType: 'labels.text.fill',
-                stylers: [{
-                    color: '#d59563'
-            }]
-            },
-            {
-                featureType: 'water',
-                elementType: 'geometry',
-                stylers: [{
-                    color: '#17263c'
-            }]
-            },
-            {
-                featureType: 'water',
-                elementType: 'labels.text.fill',
-                stylers: [{
-                    color: '#515c6d'
-            }]
-            },
-            {
-                featureType: 'water',
-                elementType: 'labels.text.stroke',
-                stylers: [{
-                    color: '#17263c'
-            }]
-        }
-    ]
+                    {
+                        "visibility": "on"
+            }
+        ]
+    }
+]
     });
+    
     $.ajax({
         url: '../JSON/Bedrijven.json',
         dataType: 'json',
         success: function (data) {
             for (var i = 0; i < data.features.length; i++) {
+                var type = data.features[i].properties.category;
                 var coords = data.features[i].geometry.coordinates;
+                var descr = data.features[i].properties.Beschrijving;
+                var name = data.features[i].properties.Naam;
+                var adres = data.features[i].properties.Adres;
                 var latLng = new google.maps.LatLng(coords[1], coords[0]);
+                var contentString = "<a href=../html/home.html style='text-decoration: none;><h1 style='font-weight: 900;'>" + name + "<h1><br>" + "<p>" + descr + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br></a>";
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
                 var marker = new google.maps.Marker({
                     position: latLng,
-                    //icon: iconBase + '',
-                    map: map
+                    title: name,
+                    map: map,
+                });
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
                 });
             }
         },
