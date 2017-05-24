@@ -3,18 +3,6 @@ body {
 
 }
 
-.container {
-  height: calc(100% - 60px);
-  max-width: 400px;
-  min-height: 700px;
-  margin: 30px auto 0;
-  box-shadow: 0px 0px 5px black;
-  box-sizing: border-box;
-  position: relative;
-}
-
-
-
 .prev {
   float: left;
   color: white;
@@ -93,6 +81,12 @@ span.month {
     padding-top: 12px;
     border-radius: 50px;
     
+}
+.week-container{
+      padding-top: 1px;
+      padding-bottom: 1px;
+      background-color: #42a3e6;
+
 }
 .week {
   color: white;
