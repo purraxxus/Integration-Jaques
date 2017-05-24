@@ -19,13 +19,29 @@
 .topofnav {
     background-color: dodgerblue;
     padding-top: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
+
 
 .topofnav nav ul li {
     margin-top: 10px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid 1px white;
     display: inline-block;
     color: white;
+}
+
+.nav_jobs {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.nav_tools{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 button {

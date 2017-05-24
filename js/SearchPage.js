@@ -44,7 +44,6 @@ function zoekWaardeVeranderen() {
 
 function zoek() {
   if (zoekWaarde != null) {
-    console.log(newBedrijven);
     var filterArray = [];
     newBedrijven.forEach(function (newBedrijven) {
       var zoekRegex = new RegExp(zoekWaarde, "gi");
@@ -63,8 +62,9 @@ function genereerLijstMetBedrijven() {
   var htmlString = "";
   if (newBedrijven.length) {
     for (i = 0; i < newBedrijven.length; i++) {
-      htmlString += '<img class="Search" src="' + newBedrijven[i].properties.source + '">'
-      htmlString += '<p class="Search">' + newBedrijven[i].properties.Naam + '</p>'
+      htmlString += '<div id="' + i + '" class="Company"><img class="Search" src="' + newBedrijven[i].properties.source + '">'
+      htmlString += '<h3 class="Search">' + newBedrijven[i].properties.Naam + '</h3></div>'
+      cssChanger(i);
       $("#content").html(htmlString);
     }
   }
@@ -101,6 +101,20 @@ function Filter() {
       }
     });
     newBedrijven = filterArray;
-    console.log(newBedrijven);
   }
+}
+
+function cssChanger(nr) {
+  if (nr % 2 != 0) {
+    var classDing = $(nr + ".Company");
+    classDing.id = "oneven";
+  }
+}
+
+function FilterFunctie() {
+  var searchBalk = $("#search");
+  var FilterKnop = $("header img")
+  console.log($(searchBalk));
+  searchBalk.css("width", "75%");
+  FilterKnop.css("height", "30px");
 }
