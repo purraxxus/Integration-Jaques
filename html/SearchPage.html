@@ -15,47 +15,53 @@
 
 <body>
   <section>
-    <input type="text" placeholder="Search"> </section>
+    <input type="text" onkeyup="zoekWaardeVeranderen()" placeholder="Search" id="search"> </section>
   <!--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-->
-  <h1>Interesting venues</h1>
-  <section class="Slider">
-    <div class="SliderImg">
-      <div class=" imgInsSlider"> <img src="../img/Placeholder.jpg ">
-        <h3>Anderlecht Brewery</h3> </div>
-      <div class="imgInsSlider "> <img src="../img/Placeholder.jpg ">
-        <h3>Barbershop Jef</h3> </div>
-      <div class="imgInsSlider "> <img src="../img/Placeholder.jpg ">
-        <h3>Naaiatelier</h3> </div>
-      <div class="imgInsSlider "> <img src="../img/Placeholder.jpg ">
-        <h3>Anderlecht Brewery</h3> </div>
-      <div class="imgInsSlider "> <img src="../img/Placeholder.jpg ">
-        <h3>Barbershop Jef</h3> </div>
-      <div class="imgInsSlider "> <img src="../img/Placeholder.jpg ">
-        <h3>Naaiatelier</h3> </div>
-    </div>
-  </section>
-  <!--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-->
-  <section>
-    <h1>Filters</h1>
-    <ul>
-      <li onclick="ToggleFilters(event)" id="notToggled"> <span class="before"></span>Food &amp; Drinks</li>
-      <li onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span>Beauty</li>
-      <li onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span>Social initiatives</li>
-      <li onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span> Clothing &amp; accessories</li>
-      <li onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span>DIY</li>
-      <li onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span>Hobbies</li>
-    </ul>
-  </section>
+  <main id="content">
+    <h1>Interesting venues</h1>
+    <section class="Slider">
+      <div class="SliderImg">
+        <div class=" imgInsSlider"> <img src="../img/Placeholder.jpg ">
+          <h3>Anderlecht Brewery</h3> </div>
+        <div class="imgInsSlider "> <img src="../img/Placeholder.jpg ">
+          <h3>Barbershop Jef</h3> </div>
+        <div class="imgInsSlider "> <img src="../img/Placeholder.jpg ">
+          <h3>Naaiatelier</h3> </div>
+        <div class="imgInsSlider "> <img src="../img/Placeholder.jpg ">
+          <h3>Anderlecht Brewery</h3> </div>
+        <div class="imgInsSlider "> <img src="../img/Placeholder.jpg ">
+          <h3>Barbershop Jef</h3> </div>
+        <div class="imgInsSlider "> <img src="../img/Placeholder.jpg ">
+          <h3>Naaiatelier</h3> </div>
+      </div>
+    </section>
+    <!--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-->
+    <section>
+      <h1>Filters</h1>
+      <ul>
+        <li class="notToggled" onclick="ToggleFilters(event)"> <span class="before"></span>Food &amp; Drinks</li>
+        <li class="notToggled" onclick="ToggleFilters(event)"><span class="before"></span>Beauty</li>
+        <li class="notToggled" onclick="ToggleFilters(event)"><span class="before"></span>Social initiatives</li>
+        <li class="notToggled" onclick="ToggleFilters(event)"><span class="before"></span> Clothing &amp; accessories</li>
+        <li class="notToggled" onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span>DIY</li>
+        <li class="notToggled" onclick="ToggleFilters(event)"><span class="before"></span>Hobbies</li>
+      </ul>
+      <button onclick="genereerLijstMetBedrijven()">Zoek</button>
+    </section>
+  </main>
   <footer class="nav">
     <ul>
       <li>
-        <a href="#"> <img src="../img/Placeholder.jpg" /></a>
+        <a href="../html/home.html"> <img src="/img/icon/home.svg" /></a>
       </li>
       <li>
-        <a href="#"><img src="../img/Placeholder.jpg" /></a>
+        <a href=""><img src="/img/icon/calendar.svg" /></a>
       </li>
       <li>
-        <a href="#"><img src="../img/Placeholder.jpg" /></a>
+        <a href="../html/SearchPage.html"><img src="/img/icon/search.svg" /></a>
+      </li>
+      <li>
+        <a href="../html/profielLogIn.html"><img src="/img/icon/user.svg" /></a>
       </li>
     </ul>
   </footer>

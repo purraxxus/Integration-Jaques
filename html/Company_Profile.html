@@ -5,21 +5,29 @@
   <link rel="stylesheet" href="../css/company_event.css">
   <link rel="stylesheet" href="../css/style.css">
   <meta charset="utf-8">
-  <!--  <meta name="viewport" content="width=device-width, initial- scale=1, minimum-scale=1">-->
+  <meta name="viewport" content="width=device-width, initial- scale=1, minimum-scale=1">
   <title> Company Name Here | App Name Here</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> </head>
-
+<!--  dit is het icon font via google: ------>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <body>
   <header>
     <!--    hier terug-knopje-->
     <h2>Details</h2></header>
   <main>
-    <h1 class="company_header">Anderlecht Brewery</h1>
+    <div class="profielFoto">
+        <img id="foto" src="/img/Placeholder.jpg" />
+        <h1 id="naam">Anderlecht Brewery</h1>
+    </div>
+      <!--      dit is dat maps icoontje-->
+      <a class="location_link" href="#"><i class="material-icons">location_on</i></a>
     <section class="company_info">
       <p>Nijverheidskaai 01 </p>
       <p>3000 Brussel</p>
       <p><a href="mailto:info@kittybons.com">contact</a></p>
     </section>
+    
+    <section class="connect_users"><p> (#subs)</p> <a class="subscribe_button" href="#"><i class="material-icons">favorite</i></a></section>
     <!--    deze buttons worden accordeon-menu van het bedrijf, en panels zijn inhoud via w3schools-->
     <button class="accordion">Events</button>
     <div class="panel">
@@ -36,12 +44,12 @@
     </div>
     <button class="accordion">Jobs</button>
     <div class="panel">
-      <div class="example_item">
-        <div class="example_item_date">xxx </div>
+      <div class="example_item clearfix">
+        <div class="example_item_date"> <span class="example_item_title_on_image">xxx</span></div>
         <div class="example_item_title">BottleMaster </div>
         <div class="example_item_description">Help us bottle the first batch of AnderBier. You'll be responsible for coordinating and instructing the bottlers.</div>
       </div>
-      <div class="example_item">
+      <div class="example_item clearfix">
         <div class="example_item_date"> xxx </div>
         <div class="example_item_title">BeerTaster m/v/x </div>
         <div class="example_item_description">A nose for the best flavors in town? Help us select the best recipes and earn your weight in beer.</div>

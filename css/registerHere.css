@@ -30,40 +30,6 @@ body{margin:0;
     width:100%;
 }
 
-.socialMediaIcons ul{
-     padding:0;
-    list-style: none;
-    text-align: center;
-    
-}
-
-.socialMediaIcons ul li{
-    margin:3%;
-    display: inline-block;
-    
-}
-
-.socialMediaIcons ul li img{
-    width:40px;
-    height: 40px;
-}
-
-
-#registerHere{
-    margin-top:5%;
-    text-align: center;
-}
-
-#registerHere a{
-    text-decoration: none;
-    color: dodgerblue;
-}
-
-#registerHere a:hover{
-    text-decoration: underline;
-    color: dodgerblue;
-}
-
 .loginHolder{
     text-align: center;
 }

@@ -4,18 +4,74 @@
 3. accordion menu
 */
 
+.clearfix:after {
+   content: " ";
+   display: block;
+   clear: both;
+   visibility: hidden;
+   line-height: 0;
+   height: 0;
+ }
+
 
 /* ------ 1. COMPANY PROFILE: ------------*/
 
+a {
+  text-decoration: none;
+}
 
-/*dit is de h1 met naam van het initiatief*/
 
-.company_header {}
+/*dit is de h1 met naam van het initiatief en foto --- NOG AANPASSEN!!! */
+
+#naam {
+  position: absolute;
+  width: 80;
+  padding-top: 60%;
+  top: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+
+/*dit is het icoontje wat terug naar de map/calendar leidt*/
+
+.location_link,
+.calendar_link {
+  text-decoration: none;
+  float: left;
+  display: inline;
+  width: 10%;
+  padding: 1.2em 0em;
+}
 
 
 /*dit is het blokje met adres en contact*/
 
-.company_info {}
+.company_info {
+  float: left;
+  display: block;
+  font-size: 0.8em;
+  line-height: 0.9;
+  /*  margin: 0em 0.8em;*/
+  width: 50%;
+}
+
+
+/*dit is de sectie met hartje en aantal subscribers*/
+
+
+/*LET OP met js nog rand van hartje invullen*/
+
+.connect_users {
+  line-height: 0.6;
+  display: inline-block;
+  /*  margin: 0em 2em;*/
+  /*  padding: 1.2em 0em;*/
+  width: 35%;
+  margin-right: 0;
+  text-align: center;
+}
 
 
 /*dit is de accordion titel voor de verschillende sub-onderwerpjes*/
@@ -30,10 +86,28 @@
 
 /*hartje*/
 
-.subscribe_button {}
+.subscribe_button {
+  color: bisque;
+  text-decoration: none;
+}
+
+.subscribe_button:hover {
+  color: red;
+}
 
 
-/*dit zijn de items (evenementen, jobs, producten) die in het accordion komen*/
+/*
+.subscribe_button:link {
+  color: red;
+}
+*/
+
+.subscribe_button:visited {
+  color: red;
+}
+
+
+/*dit zijn de ITEMS (evenementen, jobs, producten) die in het accordion komen*/
 
 .example_item {}
 
@@ -41,21 +115,32 @@
 /*met daarin: ---*/
 
 .example_item_date {
-  font-variant: small-caps;
-  padding: 3em 3em; 
-  display: inline-block;
+  display: block;
   background-size: cover;
+  width: 30%;
+  height: 4.5em;
+  float: left;
   background-image: url(../img/Placeholder.jpg);
-  
+}
+
+.example_item_title_on_image{
+  font-variant: small-caps;
+  padding-right: 8px;
+  padding-bottom: 0;
+  background-color: dodgerblue;
+  display: block;
 }
 
 .example_item_title {
   font-weight: bold;
-  padding: 35px;
   display: inline;
+  width: 60%;
 }
 
-.example_item_description {display: inline;}
+.example_item_description {
+  font-size: 0.7em;
+  width: 100%;
+}
 
 
 /* ------ 2. EVENT: ------------*/
@@ -68,30 +153,42 @@
 
 /*Ook hier een .company info en daar zit een aparte p in met de naam van het initiatief*/
 
-.company_name_event {}
+.company_name_event {
+  font-weight: bold;
+  line-height: 0.9;
+}
 
 
 /*de datum en tijd zitten in*/
 
-.event_date {}
+.event_date {
+  float: none;
+  clear: left;
+  line-height: 0.7;
+  padding: 1.2em 0em 0em;
+}
 
 
 /*beschrijvend tekstje over het event*/
 
-.event_description {}
-
-
-/*dit is een accordeonmenu met h3s zoals bij de company profile, samen stijlen?*/
-
-.event_accordeon {}
+.event_description {
+  font-size: 0.8em;
+  padding: 1.2em 0em;
+  clear: both;
+}
 
 
 /*---------------- 3. alles voor accordionmenu, via w3schools ----------*/
+
+.content_accordion {
+  margin-bottom: 10%;
+}
 
 
 /* Style the buttons that are used to open and close the accordion panel */
 
 button.accordion {
+  font: "Open Sans", sans-serif;
   background-color: white;
   color: #000;
   cursor: pointer;
@@ -101,6 +198,11 @@ button.accordion {
   border: none;
   outline: none;
   transition: 0.4s;
+}
+
+.accordion_arrow {
+  position: absolute;
+  right: 8px;
 }
 
 
@@ -121,4 +223,19 @@ div.panel {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+
+/*pijltjes*/
+
+button.accordion:after {
+    content: '\25BC';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 8px;
+}
+
+button.accordion.active:after {
+    content: "\25B2"; /* Unicode character for "minus" sign (-) */
 }

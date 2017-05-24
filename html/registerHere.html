@@ -6,11 +6,11 @@
     <title>Prijzen pagina</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/profielLogIn.css">
+    <link rel="stylesheet" href="/css/registerHere.css">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
      
-    <script src="/js/profielLogIn.js"></script>
+    <script src="/js/registerHere.js"></script>
 </head>
 
 <body>
@@ -26,30 +26,17 @@
     <p>Password</p>
     <input type="password" id="password" onclick="dropdownPassword()" onblur="clickOutPassword() " />
     
+    <p>Repeat Password</p>
+    <input type="password" id="repeatPassword" onclick="dropdownRepeatPassword()" onblur="clickOutresetPassword() " />
+    
 </div>
 
 <br>
 
 <div class="loginHolder">
-<input id="logIn" type="button" value="Log in" onclick="send()" />
+<input id="logIn" type="button" value="Register" onclick="register()" />
 </div>
 
-<div id="fouteLoginGegeven"></div>
-
-<br>
-  
-<p id="registerHere">Want to join? <a id="linkRegisterHere" href="/html/registerHere.html">Register here.</a> It's free!</p>   
- 
- <div class="socialMediaIcons">
-     <ul>
-         <li><a href="https://www.facebook.com"><img src="/img/icon/fb-art.png"/></a></li>
-         <li><a href="https://accounts.google.com/signin/v2/sl/pwd?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities&followup=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="/img/icon/Google-plus-icon.png"/></a></li>
-         <li><a href="https://twitter.com"><img src="/img/icon/Twitter-icon.png"/></a></li>
-     </ul>
-     
- </div>
-
- 
  <footer class="nav">
         <ul>
             <li><a href="#"> <img src="/img/icon/home.svg" /></a></li>

@@ -5,21 +5,26 @@
     display: block;
     margin: 0 auto;
     margin-top: 10px;
+    margin-bottom: 15px
 }
 
 .topofnav h1 {
     text-align: center;
     margin-top: 10px;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 2em;
 }
 
 .topofnav {
     background-color: dodgerblue;
     padding-top: 10px;
+<<<<<<< HEAD
     padding-bottom: 10px;
     text-align: center;
+=======
+    padding-bottom: 15px;
+>>>>>>> 81969d4be3b0ab26008d84d1d341201f73460c77
 }
 
 
@@ -34,6 +39,7 @@
     color: white;
 }
 
+<<<<<<< HEAD
 .nav_jobs{
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -46,3 +52,41 @@
 
 
 
+=======
+button {
+    width: 30%;
+    background-color: dodgerblue;
+    border-style: hidden;
+    color: white;
+    font-size: 1.2em;
+    font-family: "Open Sans", Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    border: 1px solid white;
+}
+
+button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+#jobs {
+    margin-left: 4%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#tools {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}
+
+body {
+    overflow-y: hidden;
+}
+>>>>>>> 81969d4be3b0ab26008d84d1d341201f73460c77
