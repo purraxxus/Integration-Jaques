@@ -107,14 +107,24 @@ function Filter() {
 function cssChanger(nr) {
   if (nr % 2 != 0) {
     var classDing = $(nr + ".Company");
-    classDing.id = "oneven";
+    $("#" + nr).css("background-color", "yellow");
   }
 }
 
 function FilterFunctie() {
   var searchBalk = $("#search");
   var FilterKnop = $("header img")
-  console.log($(searchBalk));
   searchBalk.css("width", "75%");
   FilterKnop.css("height", "30px");
+}
+
+function ToonFilterMenu() {
+  var FilterMenu = $("#filterMenu");
+  FilterMenu = FilterMenu[0];
+  if (FilterMenu.className == "ingeklapt") {
+    FilterMenu.className = "uitgeklapt"
+  }
+  else if (FilterMenu.className == "uitgeklapt") {
+    FilterMenu.className = "ingeklapt"
+  }
 }

@@ -15,8 +15,23 @@
 
 <body>
   <header>
-    <input type="text" onkeyup="zoekWaardeVeranderen()" onkeydown="FilterFunctie()" placeholder="Search" id="search"> <img src="../img/icon/equalizer2.svg"> </header>
+    <input type="text" onkeyup="zoekWaardeVeranderen()" onkeydown="FilterFunctie()" placeholder="Search" id="search"> <img src="../img/icon/equalizer2.svg" onclick="ToonFilterMenu()"> </header>
   <!--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-->
+  <side class="ingeklapt" id="filterMenu">
+    <div class="bgColor">
+      <ul>
+        <li class="notToggled" onclick="ToggleFilters(event) "> <span class="before"></span>Food &amp; Drinks</li>
+        <li class="notToggled" onclick="ToggleFilters(event)"><span class="before"></span>Beauty</li>
+        <li class="notToggled" onclick="ToggleFilters(event)"><span class="before"></span>Social initiatives</li>
+        <li class="notToggled" onclick="ToggleFilters(event)"><span class="before"></span> Clothing &amp; accessories</li>
+        <li class="notToggled" onclick="ToggleFilters(event)" id="notToggled"><span class="before"></span>DIY</li>
+        <li class="notToggled" onclick="ToggleFilters(event)"><span class="before"></span>Hobbies</li>
+        <li>
+          <button onclick="genereerLijstMetBedrijven()">Zoek</button>
+        </li>
+      </ul>
+    </div>
+  </side>
   <main id="content">
     <h1>Interesting venues</h1>
     <section class="Slider">

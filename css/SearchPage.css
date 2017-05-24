@@ -52,6 +52,33 @@ section ul {
   overflow: hidden;
 }
 
+side {
+  z-index: 1;
+  position: absolute;
+  display: none;
+  transform-origin: top;
+  transition: display 01s ease;
+  overflow: auto;
+  background-color: white;
+  right: 0;
+}
+
+side ul {
+  margin: 0;
+}
+
+side li {
+  position: relative;
+  padding: 1em 1em 1em 2em;
+  border: solid rgba(220, 220, 220, 1) 0.6px;
+}
+
+side li:first-child {
+  border-top: solid rgba(22O, 22O, 22O, 1) 0.2px;
+}
+
+side span.before {}
+
 span.before {
   position: absolute;
   width: 0%;
@@ -63,6 +90,20 @@ span.before {
   height: 45%;
   transform-origin: left;
   transition: width 0.25s ease;
+}
+
+side button {
+  width: 100%;
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 1.2em;
+  margin: 0;
+  left: 0;
+}
+
+side li:last-child {
+  padding: 0;
 }
 
 img.Search {
@@ -111,4 +152,16 @@ header {
   width: 100%;
   height: 10%;
   overflow: auto;
+}
+
+side.ingeklapt {
+  display: none;
+}
+
+side.uitgeklapt {
+  display: block;
+}
+
+main {
+  z-index: 0;
 }
