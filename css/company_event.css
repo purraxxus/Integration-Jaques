@@ -1,6 +1,6 @@
 /*
 1. company profile
-2. event 
+2. event page 
 3. accordion menu
 */
 
@@ -13,10 +13,10 @@
   height: 0;
 }
 
- .row {
-    clear: both;
-    margin-top: 25px;
-  }
+.row {
+  clear: both;
+  margin-top: 25px;
+}
 
 
 /* ------ 1. COMPANY PROFILE: ------------*/
@@ -25,7 +25,10 @@ a {
   text-decoration: none;
 }
 
-.row p {font-size: 0.8em; line-height: 0.5;}
+.row p {
+  font-size: 0.8em;
+  line-height: 0.5;
+}
 
 
 /*dit is de h1 met naam van het initiatief en foto --- NOG AANPASSEN!!! */
@@ -43,22 +46,22 @@ a {
 
 /*dit is het icoontje wat terug naar de map/calendar leidt*/
 
- .icon_link {
-    float: left;
-    width: 20%;
-    height: 3em;
-   padding: 1.5em 0;
-   text-align: center;
-  }
+.icon_link {
+  float: left;
+  width: 20%;
+  height: 3em;
+  padding: 1.5em 0;
+  text-align: center;
+}
 
 
 /*dit is het blokje tekst in het midden*/
 
- .info_company {
-    width: 60%;
-    float: left;
-    display: inline;
-  }
+.info_company {
+  width: 60%;
+  float: left;
+  display: inline;
+}
 
 
 /*dit is de sectie met hartje en aantal subscribers*/
@@ -66,25 +69,24 @@ a {
 
 /*LET OP--------------- met js nog hartje met rand????*/
 
-.connect_users, .attend_link {
-/*  line-height: 0.6;*/
+.connect_users,
+.attend_link {
+  /*  line-height: 0.6;*/
   display: inline-block;
   /*  margin: 0em 2em;*/
   /*  padding: 1.2em 0em;*/
-   width: 20%;
-    display: inline;
+  width: 20%;
+  display: inline;
   margin-right: 0;
   text-align: center;
   padding: 1.5em 0;
-  
 }
 
+.attend_link {
+  display: inline;
+  width: 20%;
+}
 
-
- .attend_link {
-    display: inline;
-    width: 20%;
-  }
 
 /*dit is de accordion titel voor de verschillende sub-onderwerpjes*/
 
@@ -171,7 +173,7 @@ a {
 
 .company_name_event {
   font-weight: bold;
-/*  line-height: 0.9;*/
+  /*  line-height: 0.9;*/
 }
 
 .attend {
@@ -185,13 +187,12 @@ a {
 .event_date {
   float: none;
   clear: left;
-/*  line-height: 0.7;*/
   padding: 1.2em 0em 0em;
 }
 
-.exact_date {float: left;}
-
-/*.last_date {float: left;}*/
+.exact_date {
+  float: left;
+}
 
 
 /*beschrijvend tekstje over het event*/
@@ -205,14 +206,19 @@ a {
 
 /*---------------- 3. alles voor accordionmenu, via w3schools ----------*/
 
+
+/*dit zorgt ervoor dat accordion niet onder menu valt*/
+
 .content_accordion {
   margin-bottom: 42px;
 }
 
 
-/* Style the buttons that are used to open and close the accordion panel */
+/* stijlen vd buttons */
 
-button{font-family: "Open Sans";}
+button {
+  font-family: "Open Sans";
+}
 
 button.accordion {
   font-family: "Open Sans", sans-serif;
@@ -234,7 +240,7 @@ button.accordion {
 }
 
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* kleur vd button -------- nog aanpassen */
 
 button.accordion.active,
 button.accordion:hover {
