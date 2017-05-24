@@ -19,12 +19,7 @@
 .topofnav {
     background-color: dodgerblue;
     padding-top: 10px;
-<<<<<<< HEAD
     padding-bottom: 10px;
-    text-align: center;
-=======
-    padding-bottom: 15px;
->>>>>>> 81969d4be3b0ab26008d84d1d341201f73460c77
 }
 
 
@@ -39,8 +34,7 @@
     color: white;
 }
 
-<<<<<<< HEAD
-.nav_jobs{
+.nav_jobs {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
@@ -50,9 +44,6 @@
     border-bottom-right-radius: 12px;
 }
 
-
-
-=======
 button {
     width: 30%;
     background-color: dodgerblue;
@@ -89,4 +80,3 @@ button:hover {
 body {
     overflow-y: hidden;
 }
->>>>>>> 81969d4be3b0ab26008d84d1d341201f73460c77
