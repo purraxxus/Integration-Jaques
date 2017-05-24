@@ -120,11 +120,5 @@ function FilterFunctie() {
 
 function ToonFilterMenu() {
   var FilterMenu = $("#filterMenu");
-  FilterMenu = FilterMenu[0];
-  if (FilterMenu.className == "ingeklapt") {
-    FilterMenu.className = "uitgeklapt"
-  }
-  else if (FilterMenu.className == "uitgeklapt") {
-    FilterMenu.className = "ingeklapt"
-  }
+  FilterMenu.slideToggle();
 }
