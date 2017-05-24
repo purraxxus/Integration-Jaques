@@ -1,8 +1,9 @@
 input {
   width: 90%;
-  margin: 3em 1em;
+  margin: 0em 1em;
   border: solid rgba(220, 220, 220, 1) 0.6px;
   padding: 0.5em;
+  float: left;
 }
 
 .imgInsSlider {
@@ -66,4 +67,48 @@ span.before {
 
 img.Search {
   width: 40%;
+  float: left;
+  margin: 0.5em 1em 0.5em 0;
+}
+
+h3.Search {
+  padding-left: 1em;
+  margin-top: 0.5em;
+}
+
+.Company {
+  overflow: auto;
+}
+
+#oneven {
+  background-color: lightgrey;
+}
+
+button {
+  width: 70%;
+  margin-left: 15%;
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+header {
+  height: auto;
+  padding: 4% 0% 4% 0%;
+  background-color: dodgerblue;
+  color: white;
+}
+
+header img {
+  height: 0;
+  color: white;
+  float: left;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  overflow: auto;
 }
