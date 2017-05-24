@@ -89,17 +89,19 @@ function initMap() {
     }
 ]
     });
+    
     $.ajax({
         url: '../JSON/Bedrijven.json',
         dataType: 'json',
         success: function (data) {
             for (var i = 0; i < data.features.length; i++) {
+                var type = data.features[i].properties.category;
                 var coords = data.features[i].geometry.coordinates;
                 var descr = data.features[i].properties.Beschrijving;
                 var name = data.features[i].properties.Naam;
                 var adres = data.features[i].properties.Adres;
                 var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                var contentString = "<h1 style='font-weight: 600;'>" + name + "<h1><br>" + "<p>" + descr + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br>";
+                var contentString = "<a href=../html/home.html style='text-decoration: none;><h1 style='font-weight: 900;'>" + name + "<h1><br>" + "<p>" + descr + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br></a>";
                 var infowindow = new google.maps.InfoWindow({
                     content: contentString
                 });
