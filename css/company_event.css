@@ -5,13 +5,18 @@
 */
 
 .clearfix:after {
-   content: " ";
-   display: block;
-   clear: both;
-   visibility: hidden;
-   line-height: 0;
-   height: 0;
- }
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+ .row {
+    clear: both;
+    margin-top: 25px;
+  }
 
 
 /* ------ 1. COMPANY PROFILE: ------------*/
@@ -19,6 +24,8 @@
 a {
   text-decoration: none;
 }
+
+.row p {font-size: 0.8em; line-height: 0.5;}
 
 
 /*dit is de h1 met naam van het initiatief en foto --- NOG AANPASSEN!!! */
@@ -36,43 +43,48 @@ a {
 
 /*dit is het icoontje wat terug naar de map/calendar leidt*/
 
-.location_link,
-.calendar_link {
-  text-decoration: none;
-  float: left;
-  display: inline;
-  width: 10%;
-  padding: 1.2em 0em;
-}
+ .icon_link {
+    float: left;
+    width: 20%;
+    height: 3em;
+   padding: 1.5em 0;
+   text-align: center;
+  }
 
 
-/*dit is het blokje met adres en contact*/
+/*dit is het blokje tekst in het midden*/
 
-.company_info {
-  float: left;
-  display: block;
-  font-size: 0.8em;
-  line-height: 0.9;
-  /*  margin: 0em 0.8em;*/
-  width: 50%;
-}
+ .info_company {
+    width: 60%;
+    float: left;
+    display: inline;
+  }
 
 
 /*dit is de sectie met hartje en aantal subscribers*/
 
 
-/*LET OP met js nog rand van hartje invullen*/
+/*LET OP--------------- met js nog hartje met rand????*/
 
-.connect_users {
-  line-height: 0.6;
+.connect_users, .attend_link {
+/*  line-height: 0.6;*/
   display: inline-block;
   /*  margin: 0em 2em;*/
   /*  padding: 1.2em 0em;*/
-  width: 35%;
+   width: 20%;
+    display: inline;
   margin-right: 0;
   text-align: center;
+  padding: 1.5em 0;
+  
 }
 
+
+
+ .attend_link {
+    display: inline;
+    width: 20%;
+  }
 
 /*dit is de accordion titel voor de verschillende sub-onderwerpjes*/
 
@@ -121,14 +133,18 @@ a {
   height: 4.5em;
   float: left;
   background-image: url(../img/Placeholder.jpg);
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-.example_item_title_on_image{
+.example_item_title_on_image {
   font-variant: small-caps;
   padding-right: 8px;
   padding-bottom: 0;
   background-color: dodgerblue;
   display: block;
+  position: relative;
+  bottom: 0;
 }
 
 .example_item_title {
@@ -155,7 +171,12 @@ a {
 
 .company_name_event {
   font-weight: bold;
-  line-height: 0.9;
+/*  line-height: 0.9;*/
+}
+
+.attend {
+  width: 30%;
+  display: inline-block;
 }
 
 
@@ -164,9 +185,13 @@ a {
 .event_date {
   float: none;
   clear: left;
-  line-height: 0.7;
+/*  line-height: 0.7;*/
   padding: 1.2em 0em 0em;
 }
+
+.exact_date {float: left;}
+
+/*.last_date {float: left;}*/
 
 
 /*beschrijvend tekstje over het event*/
@@ -181,14 +206,16 @@ a {
 /*---------------- 3. alles voor accordionmenu, via w3schools ----------*/
 
 .content_accordion {
-  margin-bottom: 10%;
+  margin-bottom: 42px;
 }
 
 
 /* Style the buttons that are used to open and close the accordion panel */
 
+button{font-family: "Open Sans";}
+
 button.accordion {
-  font: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: white;
   color: #000;
   cursor: pointer;
@@ -198,6 +225,7 @@ button.accordion {
   border: none;
   outline: none;
   transition: 0.4s;
+  font-weight: 300;
 }
 
 .accordion_arrow {
@@ -214,7 +242,7 @@ button.accordion:hover {
 }
 
 
-/* Style the accordion panel. Note: hidden by default */
+/* Style inhoud uitvouwmenu */
 
 div.panel {
   padding: 0 18px;
@@ -223,19 +251,21 @@ div.panel {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  font-size: 0.8em;
 }
 
 
 /*pijltjes*/
 
 button.accordion:after {
-    content: '\25BC';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 8px;
+  content: '\25BC';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 8px;
 }
 
 button.accordion.active:after {
-    content: "\25B2"; /* Unicode character for "minus" sign (-) */
+  content: "\25B2";
+  /* Unicode character for "minus" sign (-) */
 }
