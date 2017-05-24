@@ -140,11 +140,22 @@ function initMap() {
         success: function (data) {
             for (var i = 0; i < data.features.length; i++) {
                 var coords = data.features[i].geometry.coordinates;
+                var descr = data.features[i].properties.Beschrijving;
+                var name = data.features[i].properties.Naam;
+                var adres = data.features[i].properties.Adres;
                 var latLng = new google.maps.LatLng(coords[1], coords[0]);
+                var contentString = "<h1 style='font-weight: 600;'>" + name + "<h1><br>" + "<p>" + descr + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br>";
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
                 var marker = new google.maps.Marker({
                     position: latLng,
                     //icon: iconBase + '',
-                    map: map
+                    title: 'title',
+                    map: map,
+                });
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
                 });
             }
         },
