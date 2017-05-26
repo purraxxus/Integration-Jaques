@@ -13,6 +13,9 @@ h1 {
 h2 {
     font-family: "Open Sans", Verdana, Tahoma, sans-serif;
     font-weight: 300;
+  margin: 0;
+  padding: 0.5em 2em;
+  text-align: center;
 }
 
 .nav {
@@ -45,7 +48,7 @@ h2 {
 
 header {
     height: auto;
-    padding: 2% 0%;
+/*    padding: 2% 0%;*/
     background-color: dodgerblue;
     color: white;
 }
