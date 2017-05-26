@@ -21,6 +21,11 @@ body {
   color: white;
 }
  
+.event-img{
+  width: 20%;
+  height: auto;
+    
+}
 .color-layer {
   background-color: rgba(0, 0, 0, 0.8);
   height: 100%;

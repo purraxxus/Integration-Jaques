@@ -10,7 +10,7 @@ $(document).ready(function () {
                 var details = "";
 
                 details += '<div class="entry">';
-                details += ' <img src="#" alt="" class="profile" />';
+                details += ' <img src="' + this.url +'" alt="" class="event-img" />';
 
                 details += '  <div class="text">';
                 details += '    <span class="title">' + this.title + '<span class="' + this.naam + '">Tom</span></span>';
