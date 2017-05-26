@@ -9,22 +9,22 @@
   <title> Company Name Here | App Name Here</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <!--  dit is het icon font via google: ------>
-<<<<<<< HEAD
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> </head>
-=======
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-     <link rel="stylesheet" href="../css/profielLogIn.css">
-  </head>
-
->>>>>>> 82e76847b3bb82153b787e1eadaa1f01dfa4e6bc
+  <link rel="stylesheet" href="../css/profielLogIn.css">
+  <script>
+    function goBack() {
+      window.history.back()
+    }
+  </script>
+</head>
 
 <body>
   <header>
-    <!--    TO DO ----------------------     hier terug-knopje---------->
+    <input type="button" value="&nbsp; &lang; &nbsp;" onclick="goBack()">
     <h2>Details</h2> </header>
   <main>
-    <div class="profielFoto"> <img id="foto" src="/img/Placeholder.jpg" />
-      <h1 id="naam">Anderlecht Brewery</h1> </div>
+    <div class="profielFoto">
+      <h1 id="naam_company">Anderlecht Brewery</h1> </div>
     <div class="row clearfix"> <a class="icon_link" href="#"><i class="material-icons">location_on</i></a>
       <div class="info_company">
         <p class="company_name_event">Anderlecht Brewery</p>
@@ -39,7 +39,6 @@
     <section class="content_accordion">
       <button class="accordion">Events</button>
       <div class="panel">
-        
         <div class="example_item clearfix">
           <div class="example_item_date"> <span class="example_item_title_on_image">25 may 2017</span></div>
           <div class="example_item_title"> <a href="../html/Event_Detailpage.html"> BottleMania </a></div>

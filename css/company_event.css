@@ -18,7 +18,21 @@
   margin-top: 25px;
 }
 
-h1, h2 {text-align: center;}
+h1 {
+  text-align: center;
+}
+
+input[type=button] {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 6%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  float: left;
+}
 
 
 /* ------ 1. COMPANY PROFILE: ------------*/
@@ -35,14 +49,16 @@ a {
 
 /*dit is de h1 met naam van het initiatief en foto --- NOG AANPASSEN!!! */
 
-#naam {
-  position: absolute;
+#naam_company {
+  /*  position: absolute;*/
   width: 80;
-  padding-top: 60%;
+  padding-top: 40%;
   top: 0;
   margin: 0;
   color: white;
   text-align: center;
+  background-image: url(../img/Placeholder.jpg);
+  background-size: cover;
 }
 
 
@@ -51,8 +67,7 @@ a {
 .icon_link {
   float: left;
   width: 20%;
-  height: 3em;
-  padding: 1.5em 0;
+  padding: 1em 0;
   text-align: center;
 }
 
@@ -112,12 +127,6 @@ a {
 }
 
 
-/*
-.subscribe_button:link {
-  color: red;
-}
-*/
-
 .subscribe_button:visited {
   color: red;
 }
@@ -166,10 +175,6 @@ a {
 /* ------ 2. EVENT: ------------*/
 
 
-/*dit is de h1 met de naam van het evenement*/
-
-.event_header {}
-
 
 /*Ook hier een .company info en daar zit een aparte p in met de naam van het initiatief*/
 
@@ -201,7 +206,7 @@ a {
 
 .event_description {
   font-size: 0.8em;
-  padding: 1.2em 0em;
+  padding: 1.2em 0.8em;
   clear: both;
 }
 

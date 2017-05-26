@@ -11,14 +11,19 @@
   <!--  dit is het icon font via google: ------>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title> Event Name Here | App Name Here</title>
+  <script>
+    function goBack() {
+      window.history.back()
+    }
+  </script>
 </head>
 
 <body>
   <header>
-    <h2> <button onclick="goBack()" class="terug"> &nbsp; &lang; &nbsp;</button>Details</h2></header>
+    <input type="button" value="&nbsp; &lang; &nbsp;" onclick="goBack()"><h2>Details</h2></header>
   <main>
-    <div class="profielFoto"> <img id="foto" src="/img/Placeholder.jpg" />
-      <h1 id="naam">BottleMania @ Anderlecht Brewery</h1> </div>
+    <div class="profielFoto"> 
+      <h1 id="naam_company">BottleMania </h1> </div>
     <div class="row clearfix"> <a class="icon_link" href="../html/calendar.html"><i class="material-icons">event</i></a>
       <div class="info_company">
         <p class="company_name_event">25 juni 2017</p>
