@@ -7,6 +7,7 @@ var Bedrijven;
 var zoekWaarde;
 var Filterwaarde;
 var newBedrijven;
+var spanItem;
 $(function () {
   $.ajax({
     url: '../JSON/Bedrijven.json'
@@ -24,15 +25,23 @@ function onSuccess(data) {
 
 function ToggleFilters(e) {
   var listItems = e.target;
-  if (listItems.className == "notToggled") {
-    listItems.className = ("toggled");
-    var spanItem = $(".toggled span");
-    spanItem.width(110 + "%");
-  }
-  else if (listItems.className == "toggled") {
-    listItems.className = ("notToggled");
-    var spanItem = $(".notToggled span");
-    spanItem.width(0 + "%");
+  var listItemsText = $(listItems).text();
+  var andereListItems = $("#filterMenu li")
+  for (i = 0; i < andereListItems.length; i++) {
+    if (listItemsText == $(andereListItems[i]).text()) {
+      if (listItems.className == "notToggled") {
+        listItems.className = ("toggled");
+        andereListItems[i].className = ("toggled");
+        var spanItem = $(".toggled span");
+        spanItem.width(110 + "%");
+      }
+      else if (listItems.className == "toggled") {
+        listItems.className = ("notToggled");
+        andereListItems[i].className = ("notToggled");
+        var spanItem = $(".notToggled span");
+        spanItem.width(0 + "%");
+      }
+    }
   }
   Filterwaardes();
 }
@@ -59,6 +68,7 @@ function genereerLijstMetBedrijven() {
   newBedrijven = Bedrijven;
   Filter();
   zoek();
+  FilterFunctie();
   var htmlString = "";
   if (newBedrijven.length) {
     for (i = 0; i < newBedrijven.length; i++) {
