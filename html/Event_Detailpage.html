@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial- scale=1, minimum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="stylesheet" href="../css/company_event.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/profielLogIn.css">
@@ -13,6 +13,7 @@
   <title> Event Name Here | App Name Here</title>
   <script src="../js/jquery-3.2.1.js"></script>
   <script src="../js/buttons_subscribe.js"></script>
+  <script src="../js/event_detailpage.js"</script>
   <script>
     function goBack() {
       window.history.back()
@@ -27,17 +28,10 @@
     <div class="profielFoto"> 
       <h1 id="naam_company">BottleMania </h1> </div>
     <div class="row clearfix"> <a class="icon_link" href="../html/calendar.html"><i class="material-icons">event</i></a>
-      <div class="info_company">
-        <p class="company_name_event">25 juni 2017</p>
-        <p>13:00 tot 16:00</p>
-      </div> <span class="attend_link icon_link" href="#"><i class="material-icons" id="attend_label">label_outline</i><p>Join us?</p></span> </div>
+      <div id="data" class="info_company"></div> 
+      <span class="attend_link icon_link" href="#"><i class="material-icons" id="attend_label">label_outline</i><p>Join us?</p></span> </div>
     <div class="row clearfix"> <a class="icon_link" href="../html/Company_Profile.html"><i class="material-icons">location_on</i></a>
-      <div class="info_company">
-        <p class="company_name_event">Anderlecht Brewery</p>
-        <p>Nijverheidskaai 01</p>
-        <p>3000 Brussel</p>
-        <p><a href="mailto:info@kittybons.com">contact</a></p>
-      </div>
+      <div id="plaats" class="info_company"></div>
       <div class="connect_users">
         <span class="subscribe_button icon_link" href="#"><i class="material-icons" id="hartje">favorite_border</i></span><p class="number_subs">1</p></div>
     </div>
