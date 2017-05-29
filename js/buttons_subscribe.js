@@ -1,81 +1,43 @@
 $(document).ready(function () {
+  // dit is het hartje, eerste click is ELSE
+  //
   $('.connect_users').click(function () {
     var clicks = $(this).data('clicks');
-    if (clicks) {$(".number_subs").html(function (i, val) {
-      return +val - 1;
-    });
+    if (clicks) {
+      $(".number_subs").html(function (i, val) {
+        return +val - 1;
+      });
       $("i.hartje").css("color", "bisque").text("favorite_border");
-      
-      
-    } else {
+    }
+    else {
       $("i.hartje").css("color", "red").text("favorite").animate({
-        fontSize: '3em'
+        fontSize: '2em'
       }).animate({
         fontSize: '24px'
       });
       $(".number_subs").html(function (i, val) {
         return +val + 1;
       });
-      
-      
-      
     }
     $(this).data("clicks", !clicks);
   });
-$(".attend_link").click(function () {
-  $("i#attend_label").css("color", "green").text("label");
-  $(".attend_link p").text("You're in!");
+  // dit is het attend-labeltje, eerste click is ELSE
+  //
+  $(".attend_link").click(function () {
+    var clicks = $(this).data('clicks');
+    if (clicks) {
+      $("i#attend_label").css("color", "black").text("label_outline");
+      $(".attend_link p").delay("slow").text("Join us!");
+    }
+    else {
+      $("i#attend_label").animate({
+        opacity: '0.3'
+      }, "fast").css("color", "green").text("label").animate({
+        fontSize: '24px'
+        , opacity: '1'
+      });
+      $(".attend_link p").text("You're in!");
+    }
+    $(this).data("clicks", !clicks);
+  });
 });
-
-});
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-
-//if (my_click === false) {
-//  $(".hartje").click(function hartjeRoodMaken(event) {
-//    $("i.hartje").css("color", "red").text("favorite").animate({
-//      fontSize: '3em'
-//    }).animate({
-//      fontSize: '24px'
-//    });
-//    $(".number_subs").html(function (i, val) {
-//      return +val + 1;
-//    });
-//    //      $(".hartje").addClass("subscribed").removeClass("hartje");
-//    my_click = true;
-//    //      $(this).off(event);
-//    //      
-//  });
-//}
-//if (my_click === true) {
-//  $(".connect_users").click(function () {
-//    $(".number_subs").html(function (i, val) {
-//      return +val - 1;
-//    });
-//    my_click = false;
-//  });
-//}
-////    $(".subscribed").click(function hartjeGrijsMaken(event) {
-////      $("i.subscribed").css("color", "bisque").text("favorite_border");
-////      $(".number_subs").html(function (i, val) {
-////        return +val - 1;
-////      });
-////      $(this).addClass("hartje").removeClass("subscribed");
-////      //    $(this).off(event);
-////      my_click = false;
-////    });
-//// - en dit het labeltje voor atttend
-
