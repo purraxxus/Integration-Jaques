@@ -2,7 +2,7 @@ $(document).ready(function () {
     console.log("oke");
 
 
-    $.getJSON("../JSON/events.json", function (json) //json bestand inladen
+    $.getJSON("../JSON/events.json", function (json) //upload json file
         {
     
             console.log("test");
@@ -25,19 +25,22 @@ $(document).ready(function () {
 
            });
 
-// add 7 days to the calendar    
+// add 7 days to each day in the calendar    
 
   $(".next-day").click(function () {
-    $(".day span").html(function (i, val) {
-        return +val + 7;
+    $(".day span").html(function (i, a) {
+        return +a + 7;
+        
         
    });
+      
       });
     
-   
+
+
   $(".prev-day").click(function () {
-    $(".day span").html(function (i, val) {
-      return +val - 7
+    $(".day span").html(function (i, a) {
+      return +a - 7
       
     });
     });
