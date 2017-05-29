@@ -1,8 +1,8 @@
 {
- "evenementen" : [
- 
+    "evenementen": [
+
         {
-            "naam":"Bottlemania",
+            "naam": "Bottlemania",
             "naamEvent": "Anderlecht Brewery",
             "straatNummer": "Nijverheidskaai 01",
             "stad": "3000 Brussel",
@@ -10,41 +10,58 @@
             "uur": "13:00 tot 16:00",
             "url": "/img/Placeholder.jpg",
             "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1",
-            "jobs":[
+            "review":"dit is de review van het eerste evenement.",
+            "jobs": [
                 {
-                    "job1":"werk1",
-                    "job2":"werk2",
-                    "job3":"werk3",
-                    "job4":"werk4",
-                    "job5":"werk5"
-                    
-                }
+                    "welkeJob": "werk1",
+                    "beschrijving": "beschrijving2",
+                    "fuctie":"vast werk"
+                },
+                {
+                   "welkeJob": "werk2",
+                    "beschrijving": "beschrijving2",
+                    "fuctie":"jobstudent"
+                },
+                {
+                    "welkeJob": "werk3",
+                    "beschrijving": "beschrijving3",
+                    "fuctie":"bediende"
+                  }
+
             ]
-            
-        }, 
+
+        },
         {
-            "naam":"Evenement 2",
+            "naam": "Evenement 2",
             "naamEvent": "Anderlecht Brewery",
             "straatNummer": "Nijverheidskaai 02",
             "stad": "3000 Brussel",
-            "datum": "25 juni 2017",
+            "datum": "25 maart 2017",
             "uur": "13:00 tot 16:00",
             "url": "/img/Placeholder.jpg",
-            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1",
-            "jobs":[
+            "details": "details van evenement 2.",
+            "jobs": [
                 {
-                    "job1":"werk1",
-                    "job2":"werk2",
-                    "job3":"werk3",
-                    "job4":"werk4",
-                    "job5":"werk5"
-                    
-                }
+                    "welkeJob": "werk1",
+                    "beschrijving": "beschrijving2",
+                    "fuctie":"vast werk"
+                },
+                {
+                   "welkeJob": "werk2",
+                    "beschrijving": "beschrijving2",
+                    "fuctie":"jobstudent"
+                },
+                {
+                    "welkeJob": "werk3",
+                    "beschrijving": "beschrijving3",
+                    "fuctie":"bediende"
+                  }
+
             ]
-            
+
         },
         {
-           "naam":"Evenement 3",
+            "naam": "Evenement 3",
             "naamEvent": "Anderlecht Brewery",
             "straatNummer": "Nijverheidskaai 03",
             "stad": "3000 Brussel",
@@ -52,20 +69,28 @@
             "uur": "13:00 tot 16:00",
             "url": "/img/Placeholder.jpg",
             "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1",
-            "jobs":[
+            "jobs": [
                 {
-                    "job1":"werk1",
-                    "job2":"werk2",
-                    "job3":"werk3",
-                    "job4":"werk4",
-                    "job5":"werk5"
-                    
-                }
+                    "welkeJob": "werk1",
+                    "beschrijving": "beschrijving2",
+                    "fuctie":"vast werk"
+                },
+                {
+                   "welkeJob": "werk2",
+                    "beschrijving": "beschrijving2",
+                    "fuctie":"jobstudent"
+                },
+                {
+                    "welkeJob": "werk3",
+                    "beschrijving": "beschrijving3",
+                    "fuctie":"bediende"
+                  }
+
             ]
-            
+
         },
         {
-            "naam":"Evenement 4",
+            "naam": "Evenement 4",
             "naamEvent": "Anderlecht Brewery",
             "straatNummer": "Nijverheidskaai 04",
             "stad": "3000 Brussel",
@@ -73,20 +98,28 @@
             "uur": "13:00 tot 16:00",
             "url": "/img/Placeholder.jpg",
             "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1",
-            "jobs":[
+            "jobs": [
                 {
-                    "job1":"werk1",
-                    "job2":"werk2",
-                    "job3":"werk3",
-                    "job4":"werk4",
-                    "job5":"werk5"
-                    
-                }
+                    "welkeJob": "werk1",
+                    "beschrijving": "beschrijving2",
+                    "fuctie":"vast werk"
+                },
+                {
+                   "welkeJob": "werk2",
+                    "beschrijving": "beschrijving2",
+                    "fuctie":"jobstudent"
+                },
+                {
+                    "welkeJob": "werk3",
+                    "beschrijving": "beschrijving3",
+                    "fuctie":"bediende"
+                  }
+
             ]
-            
+
         },
         {
-            "naam":"Evenement 5",
+            "naam": "Evenement 5",
             "naamEvent": "Anderlecht Brewery",
             "straatNummer": "Nijverheidskaai 01",
             "stad": "3000 Brussel",
@@ -94,21 +127,26 @@
             "uur": "13:00 tot 16:00",
             "url": "/img/Placeholder.jpg",
             "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1",
-            "jobs":[
+            "jobs": [
                 {
-                    "job1":"werk1",
-                    "job2":"werk2",
-                    "job3":"werk3",
-                    "job4":"werk4",
-                    "job5":"werk5"
-                    
-                }
+                    "welkeJob": "werk1",
+                    "beschrijving": "beschrijving2",
+                    "fuctie":"vast werk"
+                },
+                {
+                   "welkeJob": "werk2",
+                    "beschrijving": "beschrijving2",
+                    "fuctie":"jobstudent"
+                },
+                {
+                    "welkeJob": "werk3",
+                    "beschrijving": "beschrijving3",
+                    "fuctie":"bediende"
+                  }
+
             ]
-            
+
         }
 ]
 
 }
-
-
-
