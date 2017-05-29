@@ -30,4 +30,4 @@ $(".attend_link").click(function () {
   $(".attend_link p").text("You're in!")
 });
 });
-// .html(function(i, val){ return +val+ 1});
+
