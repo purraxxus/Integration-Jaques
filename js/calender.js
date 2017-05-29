@@ -13,8 +13,8 @@ $(document).ready(function () {
                 details += ' <img src="' + this.url +'" alt="" class="event-img" />';
 
                 details += '  <div class="text">';
-                details += '    <span class="title">' + this.title + '<span class="' + this.naam + '">Tom</span></span>';
-                details += '    <span class="time">8 - 10am</span>';
+                details += '    <span class="title">' + this.naamEvent + '<span class="' + this.naam + '"></span></span>';
+                details += '    <span class="time">' + this.uur + '</span>';
                 details += '   </div>';
                 details += ' </div>';
 
@@ -23,8 +23,26 @@ $(document).ready(function () {
 
             });
 
-           
+           });
 
-        });
+// add 7 days to the calendar    
 
+  $(".next-day").click(function () {
+    $(".day span").html(function (i, val) {
+        return +val + 7;
+        
+   });
+      });
+    
+   
+  $(".prev-day").click(function () {
+    $(".day span").html(function (i, val) {
+      return +val - 7
+      
+    });
+    });
+
+    
+    
 });
+
