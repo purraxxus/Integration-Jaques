@@ -121,6 +121,7 @@ a {
   text-decoration: none;
 }
 
+/*
 .subscribe_button:hover {
   color: red;
 }
@@ -128,6 +129,7 @@ a {
 .subscribe_button:visited {
   color: red;
 }
+*/
 
 
 /*dit zijn de ITEMS (evenementen, jobs, producten) die in het accordion komen*/
