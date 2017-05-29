@@ -1,10 +1,14 @@
+//
+//
 //Dit is het hartje voor subscribers
+//
 $(document).ready(function () {
   $(".connect_users").click(function () {
     $("i#hartje").css("color", "red").text("favorite");
     $(".connect_users p").html(function (i, val) {
       return +val + 1
     });
+    $(".connect_users").toggleClass("subscribed")
     });
 
   
@@ -16,8 +20,6 @@ $(document).ready(function () {
     $(".attend_link p").text("You're in!")
   });
 });
-//$("p").click(function(){
-//    $("#number_subs").text(function(i, origText){
-//        return origText + "1" (index: " i + ")";
-//    });
-//});
+
+
+// .html(function(i, val){ return +val+ 1});
