@@ -107,7 +107,7 @@ side li:last-child {
 }
 
 img.Search {
-  width: 40%;
+  width: 55%;
   float: left;
   margin: 0.5em 1em 0.5em 0;
 }
@@ -164,4 +164,8 @@ side.uitgeklapt {
 
 main {
   z-index: 0;
+}
+
+.company p {
+  float: left;
 }

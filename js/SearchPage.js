@@ -50,8 +50,12 @@ function ToggleFilters(e) //verander filters en past aan bij filters tijdens sea
   var listItemsText = $(listItems).text();
   var andereListItems = $("#filterMenu li")
   for (i = 0; i < andereListItems.length; i++) {
+    //    console.log(listItems.className);
+    //    console.log("notToggled");
+    //    console.log(listItems.className = "notToggled")
     if (listItemsText == $(andereListItems[i]).text()) {
       if (listItems.className == "notToggled") {
+        console.log("hier gaat hem aldanniet in")
         listItems.className = ("toggled");
         andereListItems[i].className = ("toggled");
         var spanItem = $(".toggled span");
@@ -125,9 +129,10 @@ function genereerLijstMetBedrijven() // Pas filters en zoek toe en genereer lijs
   if (newBedrijven.length) {
     for (i = 0; i < newBedrijven.length; i++) {
       htmlString += '<div id="' + i + '" class="Company"><img class="Search" src="' + newBedrijven[i].properties.source + '">'
-      htmlString += '<h3 class="Search">' + newBedrijven[i].properties.Naam + '</h3></div>'
-        //cssChanger(i);
+      htmlString += '<h3 class="Search">' + newBedrijven[i].properties.Naam + '</h3>'
+      htmlString += '<p>' + newBedrijven[i].properties.Beschrijving + '</p></div>'
       $("#content").html(htmlString);
+      cssChanger(newBedrijven.length);
     }
   }
   else {
@@ -144,13 +149,14 @@ function genereerLijstMetInteressante() {
     htmlString += '<h3>' + Bedrijven[randomCompany].properties.Naam + '</h3> </div>'
   }
   htmlString += '</div>'
-  console.log(htmlString);
   $(".Slider").html(htmlString);
 }
-/*function cssChanger(nr) 
-{
-if (nr % 2 != 0) {
-  var classDing = $(nr + ".Company");
-  $("#" + nr).css("background-color", "yellow");
+
+function cssChanger(lengte) {
+  for (nr = 0; nr < lengte; nr++) {
+    if (nr % 2 != 0) {
+      var classDing = $('div#' + nr + ".Company");
+      $(classDing).css("background-color", "lightgrey");
+    }
+  }
 }
-}*/
