@@ -21,6 +21,7 @@ $(function () {
 
 function onSuccess(data) {
   Bedrijven = data.features;
+  genereerLijstMetInteressante();
 }
 //-_-_-_--_-_-_--_-_-_--_-_-_--_-_-_ZOEK--_-_-_--_-_-_--_-_-_--_-_-_--_-ZOEK-_--_-_-_--_-_-_--_-_-_--_-_-_--_-_-_--_-_-_--_ZOEK_-_--_-_-_--_-_-_--_-_-_--_-_-_ZOEK_-_-_--_-_-_--_-_-_--_-_-_--_-_-_--_-_-_-
 function zoekWaardeVeranderen() //Verander de zoekwaarde bij het typen
@@ -125,13 +126,26 @@ function genereerLijstMetBedrijven() // Pas filters en zoek toe en genereer lijs
     for (i = 0; i < newBedrijven.length; i++) {
       htmlString += '<div id="' + i + '" class="Company"><img class="Search" src="' + newBedrijven[i].properties.source + '">'
       htmlString += '<h3 class="Search">' + newBedrijven[i].properties.Naam + '</h3></div>'
-      cssChanger(i);
+        //cssChanger(i);
       $("#content").html(htmlString);
     }
   }
   else {
     $('main#content').empty();
   }
+}
+
+function genereerLijstMetInteressante() {
+  var htmlString = "";
+  htmlString += '<div class="SliderImg">';
+  for (i = 0; i < 6; i++) {
+    var randomCompany = Math.floor(Math.random() * Bedrijven.length);
+    htmlString += '<div class=" imgInsSlider"> <img src="' + Bedrijven[randomCompany].properties.source + '">';
+    htmlString += '<h3>' + Bedrijven[randomCompany].properties.Naam + '</h3> </div>'
+  }
+  htmlString += '</div>'
+  console.log(htmlString);
+  $(".Slider").html(htmlString);
 }
 /*function cssChanger(nr) 
 {
