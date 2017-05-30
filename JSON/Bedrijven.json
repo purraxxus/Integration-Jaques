@@ -5,7 +5,7 @@
       , "properties": {
         "Naam": "Anderlechts Brewery"
         , "Category": "foodDrinks"
-        , "source": "../img/Placeholder.jpg"
+        , "source": "../img/Anderlecht Brewery.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -19,7 +19,7 @@
       , "properties": {
         "Naam": "Brewery Kiekens"
         , "Category": "foodDrinks"
-        , "source": "../img/Placeholder.jpg"
+        , "source": "../img/Brewery Kiekens.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -32,7 +32,7 @@
       , "properties": {
         "Naam": "Flowers Jos"
         , "Category": "Hobbies"
-        , "source": "../img/Placeholder.jpg"
+        , "source": "../img/Flowers Jos.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -45,7 +45,7 @@
       , "properties": {
         "Naam": "Azerty Hardware store"
         , "Category": "DIY"
-        , "source": "../img/Placeholder.jpg"
+        , "source": "../img/Hardware AZERTY.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -58,7 +58,7 @@
       , "properties": {
         "Naam": "Bakery Vermeulen"
         , "Category": "foodDrinks"
-        , "source": "../img/Placeholder.jpg"
+        , "source": "../img/Bakery.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -71,7 +71,7 @@
       , "properties": {
         "Naam": "Butcher Karel"
         , "Category": "foodDrinks"
-        , "source": "../img/Placeholder.jpg"
+        , "source": "../img/Butcher.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -97,7 +97,7 @@
       , "properties": {
         "Naam": "Barbershop Jef"
         , "Category": "Beauty"
-        , "source": "../img/Placeholder.jpg"
+        , "source": "../img/Barbershop.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -110,7 +110,7 @@
       , "properties": {
         "Naam": "Foncé Sportswear"
         , "Category": "Hobbies"
-        , "source": "../img/Placeholder.jpg"
+        , "source": "../img/Sport.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -122,8 +122,8 @@
       "type": "feature"
       , "properties": {
         "Naam": "Bycicles Jacques"
-        , "Category": "foodDrinks"
-        , "source": "../img/Placeholder.jpg"
+        , "Category": "Hobbies"
+        , "source": "../img/Bycicle.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -136,7 +136,7 @@
       , "properties": {
         "Naam": "I fix IT"
         , "Category": "Hobbies"
-        , "source": "../img/Placeholder.jpg"
+        , "source": "../img/I fix IT copy.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -149,7 +149,7 @@
       , "properties": {
         "Naam": "SharingPoint Anderlecht"
         , "Category": "socialInitiatives"
-        , "source": "../img/Placeholder.jpg"
+        , "source": "../img/Sharing.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
