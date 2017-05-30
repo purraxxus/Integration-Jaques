@@ -1,17 +1,14 @@
 var map;
-var counterLeft = 0;
+var counterLeft = 1;
 var counterMiddle = 0;
 var counterRight = 0;
 var markersArray = [];
 
-function clearOverlays() {
-  for (var i = 0; i < markersArray.length; i++ ) {
-    markersArray[i].setMap(null);
-  }
-  markersArray.length = 0;
-}
-
 $(document).ready(function () {
+    loadMap(map, 'Jobs');
+    $('#filterbutton').toggleClass('nav_jobs');
+    $('#filterbutton').toggleClass('toggledLeft');
+
     $('#filterbutton').click(function (e) {
         counterLeft += 1;
         console.log(counterLeft);
@@ -31,14 +28,12 @@ $(document).ready(function () {
         $(this).toggleClass('nav_events');
         $(this).toggleClass('toggledMiddle');
         if (counterMiddle % 2 == 1) {
-
             var txt = $(e.target).text();
             loadMap(map, txt);
         } else {
             clearOverlays();
             console.log('delete markers');
         }
-
     });
     $('#filterbutton3').click(function (e) {
         counterRight += 1;
@@ -52,10 +47,12 @@ $(document).ready(function () {
             clearOverlays();
             console.log('delete markers');
         }
-
     });
 });
 
+function clicked() {
+
+}
 
 function loadMap(map, txtinput) {
     if (txtinput == "Startups") {
@@ -259,5 +256,12 @@ function addMarker(location) {
         position: location,
         map: map
     });
-    
+
+}
+
+function clearOverlays() {
+    for (var i = 0; i < markersArray.length; i++) {
+        markersArray[i].setMap(null);
+    }
+    markersArray.length = 0;
 }
