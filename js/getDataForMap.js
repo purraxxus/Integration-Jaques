@@ -141,7 +141,7 @@ function loadMap(map, txtinput) {
                     var time = data.evenementen[i].uur;
                     var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                    var contentString = '<a href="Event_Detailpage.html" style="text-decoration: none; font-size: 10pt; color= #000000"><h1>'+job+'</h1><br><p>'+jobbeschrijving+'</p><br><p>'+adres+'</p><br><p>'+time+'</p><br><p>'+jobfunctie+'</p></a>';
+                    var contentString = '<a href="Event_Detailpage.html" style="text-decoration: none; font-size: 10pt; color= #000000"><h1>'+job+'</h1><br><p>'+jobbeschrijving+'</p><br><p>'+adres+'</p><br><p>'+time+'</p></a>';
                     var infowindow = new google.maps.InfoWindow();
                     var marker = new google.maps.Marker({
                         position: latLng,
