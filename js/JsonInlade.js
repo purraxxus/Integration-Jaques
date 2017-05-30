@@ -28,7 +28,7 @@ function onSuccessBedrijf(data) {;
 
 function onSuccessEvents(data) {
   responseObjectEvents = data.evenementen;
-  console.log(responseObjectEvents);
+  vulHTMLEvent();
 }
 
 function vulHTMLBedrijf() {
@@ -46,9 +46,23 @@ function vulHTMLBedrijf() {
 
 function vulHTMLEvent() {
   var EventsHTML = "";
-  EventsHTML += '<div class="example_item clearfix"><div class="example_item_date"> <span class="example_item_title_on_image">'
-  EventsHTML += +responseObjectEvents[nr].datum + '</span></div>';
-  EventsHTML += '<div class="example_item_title"><a href="html/Event_Detailpage.html">'
+  var randomLength = Math.floor(Math.random() * 5) + 1;
+  console.log(randomLength);
+  for (i = 0; i < randomLength; i++) {
+    var nr = Math.floor(Math.random() * responseObjectEvents.length);
+    console.log(responseObjectEvents[nr].jobs);
+    EventsHTML += '<div class="example_item clearfix"><div class="example_item_date"> <span class="example_item_title_on_image">'
+    EventsHTML += +responseObjectEvents[nr].datum + '</span></div>';
+    EventsHTML += '<div class="example_item_title"><a href="html/Event_Detailpage.html">' + responseObjectEvents[nr].naam + '</a></div> <div class = "example_item_description" >' + responseObjectEvents[nr].details + '</div>'
+    EventsHTML += '</div>'
+    var jobsHTML = "";
+    jobsHTML += '<div class="example_item clearfix"><div class="example_item_date"> <span class="example_item_title_on_image">'
+    jobsHTML += +responseObjectEvents[nr].datum + '</span></div>';
+    jobsHTML += '<div class="example_item_title"><a href="html/Event_Detailpage.html">' + responseObjectEvents[nr].naam + '</a></div> <div class = "example_item_description" >' + responseObjectEvents[nr].details + '</div>'
+    jobsHTML += '</div>'
+  }
+  $("#containerEvents").html(EventsHTML);
+  $("#containerJobs").html(jobsHTML);
 }
 
 function JsonBinnenHalen(responseObject) {
