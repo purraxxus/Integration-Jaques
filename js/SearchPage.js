@@ -126,9 +126,9 @@ function genereerLijstMetBedrijven() // Pas filters en zoek toe en genereer lijs
   if (newBedrijven.length) {
     for (i = 0; i < newBedrijven.length; i++) {
       htmlString += '<div id="' + i + '" class="Company"> <div class="left">';
-      htmlString += '<img class="Search" src="' + newBedrijven[i].properties.source + '">';
+      htmlString += '<img class="Search" src="../img/' + newBedrijven[i].properties.source + '">';
       htmlString += '<h3 id="' + newBedrijven[i].properties.Category + '" class="Search">' + newBedrijven[i].properties.Naam + '</h3> </div>'
-      htmlString += '<p>' + newBedrijven[i].properties.Beschrijving + '</p><button id="' + newBedrijven[i].properties.Naam + '" class="More">></button></div>'
+      htmlString += '<p>' + newBedrijven[i].properties.Beschrijving + '</p><button onclick="bewaarBedrijf(event)" id="' + newBedrijven[i].properties.Naam + '" class="More">></button></div>'
       $("#content").html(htmlString);
       cssChanger(newBedrijven.length);
       $("p").text(LimitWordsInPTag(i, 120));
@@ -144,7 +144,7 @@ function genereerLijstMetInteressante() {
   htmlString += '<div class="SliderImg" >';
   for (i = 0; i < 6; i++) {
     var randomCompany = Math.floor(Math.random() * Bedrijven.length);
-    htmlString += '<div class=" imgInsSlider" id="' + Bedrijven[randomCompany].properties.Category + '"> <img src="' + Bedrijven[randomCompany].properties.source + '">';
+    htmlString += '<div class=" imgInsSlider" id="' + Bedrijven[randomCompany].properties.Category + '"> <img src="../img/' + Bedrijven[randomCompany].properties.source + '">';
     htmlString += '<h3>' + Bedrijven[randomCompany].properties.Naam + '</h3> </div>'
   }
   htmlString += '</div>'
@@ -172,6 +172,7 @@ function LimitWordsInPTag(i, maxLength) // Limiteer de lengte van de tekstjes ov
 
 function bewaarBedrijf(e) {
   if (window.localStorage) { //boek: javascript & jquery p423
-    localStorage.setItem('imageIndex', e.target.id);
+    localStorage.setItem('bedrijfsNaam', e.target.id);
+    window.location = "Company_Profile.html";
   }
 }

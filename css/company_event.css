@@ -5,86 +5,81 @@
 */
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .clearfix:after {
-    content: " ";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .row {
-    clear: both;
-    margin-top: 25px;
-}
-
-h1 {
-    text-align: center;
+  clear: both;
+  margin-top: 25px;
 }
 
 input[type=button] {
-    background-color: #2980b9;
-    border: none;
-    color: white;
-    padding: 0.4em 0;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5em;
-    float: left;
+  background-color: #2980b9;
+  border: none;
+  color: white;
+  padding: 0.4em 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  float: left;
 }
 
 header h2 {
-    margin: 0;
+  margin: 0;
 }
 
 
 /* ------ 1. COMPANY PROFILE: ------------*/
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .row p {
-    font-size: 0.8em;
-    line-height: 0.5;
+  font-size: 0.8em;
+  line-height: 0.5;
 }
 
 
 /*dit is de h1 met naam van het initiatief en foto --- NOG AANPASSEN!!! */
 
 #naam_company {
-    /*  position: absolute;*/
-    width: 80;
-    padding-top: 40%;
-    top: 0;
-    margin: 0;
-    color: white;
-    text-align: center;
-    background-image: url(../img/Placeholder.jpg);
-    background-size: cover;
+  /*  position: absolute;*/
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  margin: 0;
+  color: white;
+  background-repeat: no-repeat;
+  padding: 0.5em;
 }
 
 
 /*dit is het icoontje wat terug naar de map/calendar leidt*/
 
 .icon_link {
-    float: left;
-    width: 20%;
-    padding: 1em 0;
-    text-align: center;
+  float: left;
+  width: 20%;
+  padding: 1em 0;
+  text-align: center;
 }
 
 
 /*dit is het blokje tekst in het midden*/
 
 .info_company {
-    width: 60%;
-    float: left;
-    display: inline;
+  width: 60%;
+  float: left;
+  display: inline;
 }
 
 
@@ -95,17 +90,17 @@ a {
 
 .connect_users,
 .attend_link {
-    display: inline-block;
-    width: 20%;
-    display: inline;
-    margin-right: 0;
-    text-align: center;
-    padding: 0 0 1em 0;
+  display: inline-block;
+  width: 20%;
+  display: inline;
+  margin-right: 0;
+  text-align: center;
+  padding: 0 0 1em 0;
 }
 
 .attend_link {
-    display: inline;
-    width: 20%;
+  display: inline;
+  width: 20%;
 }
 
 
@@ -122,8 +117,8 @@ a {
 /*hartje*/
 
 .subscribe_button {
-    color: bisque;
-    text-decoration: none;
+  color: bisque;
+  text-decoration: none;
 }
 
 
@@ -146,35 +141,35 @@ a {
 /*met daarin: ---*/
 
 .example_item_date {
-    display: block;
-    background-size: cover;
-    width: 30%;
-    height: 4.5em;
-    float: left;
-    background-image: url(../img/Placeholder.jpg);
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
+  display: block;
+  background-size: cover;
+  width: 30%;
+  height: 4.5em;
+  float: left;
+  background-image: url(../img/Placeholder.jpg);
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .example_item_title_on_image {
-    font-variant: small-caps;
-    padding-right: 8px;
-    padding-bottom: 0;
-    background-color: dodgerblue;
-    display: block;
-    position: relative;
-    bottom: 0;
+  font-variant: small-caps;
+  padding-right: 8px;
+  padding-bottom: 0;
+  background-color: dodgerblue;
+  display: block;
+  position: relative;
+  bottom: 0;
 }
 
 .example_item_title {
-    font-weight: bold;
-    display: inline;
-    width: 60%;
+  font-weight: bold;
+  display: inline;
+  width: 60%;
 }
 
 .example_item_description {
-    font-size: 0.7em;
-    width: 100%;
+  font-size: 0.7em;
+  width: 100%;
 }
 
 
@@ -184,35 +179,35 @@ a {
 /*Ook hier een .company info en daar zit een aparte p in met de naam van het initiatief*/
 
 .company_name_event {
-    font-weight: bold;
-    /*  line-height: 0.9;*/
+  font-weight: bold;
+  /*  line-height: 0.9;*/
 }
 
 .attend {
-    width: 30%;
-    display: inline-block;
+  width: 30%;
+  display: inline-block;
 }
 
 
 /*de datum en tijd zitten in*/
 
 .event_date {
-    float: none;
-    clear: left;
-    padding: 1.2em 0em 0em;
+  float: none;
+  clear: left;
+  padding: 1.2em 0em 0em;
 }
 
 .exact_date {
-    float: left;
+  float: left;
 }
 
 
 /*beschrijvend tekstje over het event*/
 
 .event_description {
-    font-size: 0.8em;
-    padding: 1.2em 0.8em;
-    clear: both;
+  font-size: 0.8em;
+  padding: 1.2em 0.8em;
+  clear: both;
 }
 
 
@@ -222,35 +217,35 @@ a {
 /*dit zorgt ervoor dat accordion niet onder menu valt*/
 
 .content_accordion {
-    margin-bottom: 42px;
+  margin-bottom: 42px;
 }
 
 
 /* stijlen vd buttons */
 
 button {
-    font-family: "Open Sans";
+  font-family: "Open Sans";
 }
 
 button.accordion {
-    font-family: "Open Sans", sans-serif;
-    background-color: white;
-    color: #000;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    border-top: 1px solid;
-    border-width: 80%;
-    outline: none;
-    transition: 0.4s;
-    font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-top: 1px solid;
+  border-width: 80%;
+  outline: none;
+  transition: 0.4s;
+  font-weight: 300;
 }
 
 .accordion_arrow {
-    position: absolute;
-    right: 8px;
+  position: absolute;
+  right: 8px;
 }
 
 
@@ -260,22 +255,27 @@ button.accordion {
 /* Style inhoud uitvouwmenu */
 
 div.panel {
-    padding: 0 18px;
-    background-color: white;
-    /*  display: none;*/
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    font-size: 0.8em;
+  padding: 0 18px;
+  background-color: white;
+  /*  display: none;*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 0.8em;
 }
 
 
 /*pijltjes*/
 
 button.accordion:after {
-    content: '\25BC';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 8px;
+  content: '\25BC';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 8px;
+}
+
+.profielFoto {
+  height: 200px;
+  position: relative;
 }
