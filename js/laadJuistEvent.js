@@ -19,6 +19,7 @@ $.getJSON("JSON/events.json", function (json) //json bestand inladen
 
             var titelEvent = "";
 
+                 titelEvent += '<img src="'+welkEvent[i].url+'"/>'
             titelEvent += '<h1 id="naam_company">' + welkEvent[i].naam + ' </h1>'
 
 
@@ -123,6 +124,13 @@ $.getJSON("JSON/events.json", function (json) //json bestand inladen
             reviewEvent += '<p>' + welkEvent[i].review + '</p>'
 
             $('#review').append(reviewEvent);
+
+            
+            var description = "";
+
+            description += '<p>' + welkEvent[i].details + '</p>'
+
+            $('.event_description').append(description);
 
 
 
