@@ -22,7 +22,6 @@
     padding-bottom: 10px;
 }
 
-
 .topofnav nav ul li {
     margin-top: 10px;
     padding-right: 35px;
@@ -37,6 +36,11 @@
 .nav_jobs {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 12px
 }
 
 .nav_tools{
@@ -80,3 +84,39 @@ button:hover {
 body {
     overflow-y: hidden;
 }
+
+.toggledLeft {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: white;
+    color: dodgerblue;
+}
+.toggledMiddle {
+    background-color: white;
+    color: dodgerblue;
+}
+.toggledRight {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    color: dodgerblue;
+}
+#filterbutton {
+    width: 10%;
+    text-align: center;
+    margin: 0;
+    padding: 2px 7px 20x 7px;
+}
+#filterbutton2 {
+    width: 10%;
+    text-align: center;
+    margin: 0;
+    padding: 2px 7px 20x 7px;
+}
+#filterbutton3 {
+    width: 10%;
+    text-align: center;
+    margin: 0;
+    padding: 2px 7px 20x 7px;
+}
+

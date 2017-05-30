@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <script src="../js/getDataForMap.js">
+    </script>
+</head>
+
+<body>
+    <div class="topofnav">
+        <img src="img/placeholder.jpg" class="jaqueslogo">
+        <h1>The start of our community</h1>
+        <nav>
+            <ul>
+                <li id="filterbutton" class="nav_jobs">Jobs</li>
+                <li id="filterbutton2" class="nav_events">Events</li>
+                <li id="filterbutton3" class="nav_tools">Startups</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="map">
+    </div>
+
+    <footer class="nav">
+        <ul>
+            <li>
+                <a href="#"> <img src="/img/icon/home.svg" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="/img/icon/calendar.svg" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="/img/icon/search.svg" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="/img/icon/user.svg" /></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQuIByXHJ4l9R68WBcsLR8LHWAJqYZ24s&callback=initMap">
+    </script>
+
+</body>
+
+</html>

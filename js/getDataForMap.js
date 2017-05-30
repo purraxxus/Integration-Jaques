@@ -1,5 +1,128 @@
-var map;
-var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+$(document).ready(function () {
+    $('#filterbutton').click(function (e) {
+        $(this).toggleClass('nav_jobs');
+        $(this).toggleClass('toggledLeft');
+        var txt = $(e.target).text();
+        console.log(txt);
+        loadMap(txt);
+    });
+    $('#filterbutton2').click(function (e) {
+        $(this).toggleClass('nav_events');
+        $(this).toggleClass('toggledMiddle');
+        var txt = $(e.target).text();
+        console.log(txt);
+        loadMap(txt);
+    });
+    $('#filterbutton3').click(function (e) {
+        $(this).toggleClass('nav_tools');
+        $(this).toggleClass('toggledRight');
+        var txt = $(e.target).text();
+        console.log(txt);
+        loadMap(txt);
+    });
+});
+
+
+function loadMap(txtinput) {
+    if (txtinput == "Startups") {
+        var map;
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        $.ajax({
+            url: '../JSON/Bedrijven.json',
+            dataType: 'json',
+            success: function (data) {
+                for (var i = 0; i < data.features.length; i++) {
+                    var type = data.features[i].properties.category;
+                    var coords = data.features[i].geometry.coordinates;
+                    var descr = data.features[i].properties.Beschrijving;
+                    var name = data.features[i].properties.Naam;
+                    var adres = data.features[i].properties.Adres;
+                    var latLng = new google.maps.LatLng(coords[1], coords[0]);
+
+                    var contentString = "<a href=../html/index.html style='text-decoration: none; color: black><h1 style='font-weight: 900;'>" + name + "<h1><br>" + "<p>" + descr + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br></a>";
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+                    var marker = new google.maps.Marker({
+                        position: latLng,
+                        title: name,
+                        map: map,
+                    });
+                    marker.addListener('click', function () {
+                        infowindow.open(map, marker);
+                    });
+                }
+            },
+            error: function (err) {
+                console.error('Fout: ', err);
+            }
+        });
+    } else if (txtinput == "Events") {
+        var map;
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        $.ajax({
+            url: '../JSON/Events.json',
+            dataType: 'json',
+            success: function (data) {
+                for (var i = 0; i < data.features.length; i++) {
+                    var naam = data.evenementen[i].naamEvent;
+                    var coords = data.features[i].geometry.coordinates;
+                    var descr = data.evenementen[i].details;
+                    var time = data.evenementen[i].uur;
+                    var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
+                    var latLng = new google.maps.LatLng(coords[1], coords[0]);
+                    var contentString = "<a href=../html/index.html style='text-decoration: none; color: black><h1 style='font-weight: 900;'>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br></a>";
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+                    var marker = new google.maps.Marker({
+                        position: latLng,
+                        title: name,
+                        map: map,
+                    });
+                    marker.addListener('click', function () {
+                        infowindow.open(map, marker);
+                    });
+                }
+            },
+            error: function (err) {
+                console.error('Fout: ', err);
+            }
+        });
+    } else if (txtinput == "Jobs") {
+        var map;
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        $.ajax({
+            url: '../JSON/Events.json',
+            dataType: 'json',
+            success: function (data) {
+                for (var i = 0; i < data.features.length; i++) {
+                    var naam = data.evenementen[i].naamEvent;
+                    var coords = data.features[i].geometry.coordinates;
+                    var descr = data.evenementen[i].details;
+                    var time = data.evenementen[i].uur;
+                    var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
+                    var latLng = new google.maps.LatLng(coords[1], coords[0]);
+                    var contentString = "<a href=../html/index.html style='text-decoration: none; color: black><h1 style='font-weight: 900;'>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br></a>";
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+                    var marker = new google.maps.Marker({
+                        position: latLng,
+                        title: name,
+                        map: map,
+                    });
+                    marker.addListener('click', function () {
+                        infowindow.open(map, marker);
+                    });
+                }
+            },
+            error: function (err) {
+                console.error('Fout: ', err);
+            }
+        });
+    }
+}
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -88,35 +211,5 @@ function initMap() {
         ]
     }
 ]
-    });
-    
-    $.ajax({
-        url: '../JSON/Bedrijven.json',
-        dataType: 'json',
-        success: function (data) {
-            for (var i = 0; i < data.features.length; i++) {
-                var type = data.features[i].properties.category;
-                var coords = data.features[i].geometry.coordinates;
-                var descr = data.features[i].properties.Beschrijving;
-                var name = data.features[i].properties.Naam;
-                var adres = data.features[i].properties.Adres;
-                var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                var contentString = "<a href=../html/home.html style='text-decoration: none;><h1 style='font-weight: 900;'>" + name + "<h1><br>" + "<p>" + descr + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br></a>";
-                var infowindow = new google.maps.InfoWindow({
-                    content: contentString
-                });
-                var marker = new google.maps.Marker({
-                    position: latLng,
-                    title: name,
-                    map: map,
-                });
-                marker.addListener('click', function () {
-                    infowindow.open(map, marker);
-                });
-            }
-        },
-        error: function (err) {
-            console.error('Fout: ', err);
-        }
     });
 }
