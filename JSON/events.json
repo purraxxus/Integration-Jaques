@@ -1,165 +1,165 @@
 {
-  "evenementen": [
+    "evenementen": [
 
-    {
-      "naam": "E-Hack-B"
-      , "naamEvent": "E-Hack-B"
-      , "straatNummer": "Nijverheidskaai 170"
-      , "stad": "1070 Anderlecht"
-      , "datum": "25 juni 2017"
-      , "uur": "13:00 tot 16:00"
-      , "url": "/img/Placeholder.jpg"
-      , "details": "We starten EhackB dit jaar met enkele externe en interne sprekers die een belangrijke bijdrage leveren aan het drieluik hack, create en game. Er is geen voorkennis vereist om de keynotes bij te wonen."
-      , "jobs": [
         {
-          "welkeJob": "Web Developer"
-          , "beschrijving": "E-HAck-B is op zoek naar een ervaren Web developer voor het creeeren van hun interactieve website."
-          , "fuctie": "vast werk"
+            "naam": "E-Hack-B",
+            "naamEvent": "E-Hack-B",
+            "straatNummer": "Nijverheidskaai 170",
+            "stad": "1070 Anderlecht",
+            "datum": "25 juni 2017",
+            "uur": "13:00 tot 16:00",
+            "url": "../img/Placeholder.jpg",
+            "details": "We starten EhackB dit jaar met enkele externe en interne sprekers die een belangrijke bijdrage leveren aan het drieluik hack, create en game. Er is geen voorkennis vereist om de keynotes bij te wonen.",
+            "jobs": [
+                {
+                    "welkeJob": "Web Developer",
+                    "beschrijving": "E-HAck-B is op zoek naar een ervaren Web developer voor het creeeren van hun interactieve website.",
+                    "fuctie": "vast werk"
                 }
         , {
-          "welkeJob": "Organisator"
-          , "beschrijving": "Heb je zin om je schouders eronder te zetten? Ben jij een goede planner met een neus voor IT en games? Wordt organisator van de nieuwe editie van E-Hack-B"
-          , "fuctie": "jobstudent"
+                    "welkeJob": "Organisator",
+                    "beschrijving": "Heb je zin om je schouders eronder te zetten? Ben jij een goede planner met een neus voor IT en games? Wordt organisator van de nieuwe editie van E-Hack-B",
+                    "fuctie": "jobstudent"
                 }
         , {
-          "welkeJob": "Programmeur"
-          , "beschrijving": "Gezocht: Programmeur met ervaring. Voor technologie festival in de Erasmus Hogeschool in Brussel."
-          , "fuctie": "bediende"
+                    "welkeJob": "Programmeur",
+                    "beschrijving": "Gezocht: Programmeur met ervaring. Voor technologie festival in de Erasmus Hogeschool in Brussel.",
+                    "fuctie": "bediende"
                   }
 
-            ]
-      , "geometry": {
-        "type": "Point"
-        , "coordinates": [4.332971, 50.839674, 0]
-      }
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.332971, 50.839674, 0]
+            }
         }
     , {
-      "naam": "BottleMania"
-      , "naamEvent": "Anderlecht Brewery"
-      , "straatNummer": "Nijverheidskaai 02"
-      , "stad": "3000 Brussel"
-      , "datum": "25 maart 2017"
-      , "uur": "13:00 tot 16:00"
-      , "url": "/img/Placeholder.jpg"
-      , "details": "De leukste dag van het jaar, bij de Anderlechtse brouwers. Met animatie voor de kinderen en natuurlijk bier en goede muziek voor jou! Help ons met het bottelen van 500 liter AnderBier."
-      , "jobs": [
-        {
-          "welkeJob": "Bottelcoordinator"
-          , "beschrijving": "Jij stuurt de vrijwilligers aan en zorgt dat het juiste bier in de juiste flesjes stroomt."
-          , "fuctie": "tijdelijk"
+            "naam": "BottleMania",
+            "naamEvent": "Anderlecht Brewery",
+            "straatNummer": "Nijverheidskaai 02",
+            "stad": "3000 Brussel",
+            "datum": "25 maart 2017",
+            "uur": "13:00 tot 16:00",
+            "url": "../img/Placeholder.jpg",
+            "details": "De leukste dag van het jaar, bij de Anderlechtse brouwers. Met animatie voor de kinderen en natuurlijk bier en goede muziek voor jou! Help ons met het bottelen van 500 liter AnderBier.",
+            "jobs": [
+                {
+                    "welkeJob": "Bottelcoordinator",
+                    "beschrijving": "Jij stuurt de vrijwilligers aan en zorgt dat het juiste bier in de juiste flesjes stroomt.",
+                    "fuctie": "tijdelijk"
                 }
         , {
-          "welkeJob": "Acrobaat"
-          , "beschrijving": "Ben jij een slangenmens of goochelaar? Kom de kindjes vermaken op onze bottelmiddag."
-          , "fuctie": "optreden"
+                    "welkeJob": "Acrobaat",
+                    "beschrijving": "Ben jij een slangenmens of goochelaar? Kom de kindjes vermaken op onze bottelmiddag.",
+                    "fuctie": "optreden"
                 }
         , {
-          "welkeJob": "Ontwerper"
-          , "beschrijving": "We zijn op zoek naar een ontwerper voor de nieuwe etiketten. Verdien je gewicht in bier!"
-          , "fuctie": "freelancer"
+                    "welkeJob": "Ontwerper",
+                    "beschrijving": "We zijn op zoek naar een ontwerper voor de nieuwe etiketten. Verdien je gewicht in bier!",
+                    "fuctie": "freelancer"
                   }
 
-            ]
-      , "geometry": {
-        "type": "Point"
-        , "coordinates": [4.320446, 50.839536, 0]
-      }
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.320446, 50.839536, 0]
+            }
         }
     , {
-      "naam": "Super Schoenen Sales"
-      , "naamEvent": "Schoenwinkel Mohammed"
-      , "straatNummer": "Onderwijsstraat 33"
-      , "stad": "3000 Brussel"
-      , "datum": "01 juli 2017"
-      , "uur": "11:00 tot 18:00"
-      , "url": "/img/Placeholder.jpg"
-      , "details": "Eindelijk die mooie schoenen aan een goede prijs. Het magazijn van Mo moet leeg. Twee voor de prijs van 1!"
-      , "jobs": [
-        {
-          "welkeJob": "verkoopster"
-          , "beschrijving": "Een vriendelijke dame voor in onze schoenenwinkel gezocht."
-          , "fuctie": "vast werk"
+            "naam": "Super Schoenen Sales",
+            "naamEvent": "Schoenwinkel Mohammed",
+            "straatNummer": "Onderwijsstraat 33",
+            "stad": "3000 Brussel",
+            "datum": "01 juli 2017",
+            "uur": "11:00 tot 18:00",
+            "url": "../img/Placeholder.jpg",
+            "details": "Eindelijk die mooie schoenen aan een goede prijs. Het magazijn van Mo moet leeg. Twee voor de prijs van 1!",
+            "jobs": [
+                {
+                    "welkeJob": "verkoopster",
+                    "beschrijving": "Een vriendelijke dame voor in onze schoenenwinkel gezocht.",
+                    "fuctie": "vast werk"
                 }
         , {
-          "welkeJob": "Zomerjob"
-          , "beschrijving": "Wil je ervaring opdoen in de beste schoenenwinkel van Anderlecht?"
-          , "fuctie": "jobstudent"
+                    "welkeJob": "Zomerjob",
+                    "beschrijving": "Wil je ervaring opdoen in de beste schoenenwinkel van Anderlecht?",
+                    "fuctie": "jobstudent"
                 }
         , {
-          "welkeJob": "Modellen"
-          , "beschrijving": "Voor de nieuwe collectie zoeken wij nog enkele modellen uit de buurt. Alle soorten en maten welkom, een mooie foto en eeuwige roem."
-          , "fuctie": "tijdelijk"
+                    "welkeJob": "Modellen",
+                    "beschrijving": "Voor de nieuwe collectie zoeken wij nog enkele modellen uit de buurt. Alle soorten en maten welkom, een mooie foto en eeuwige roem.",
+                    "fuctie": "tijdelijk"
                   }
 
-            ]
-      , "geometry": {
-        "type": "Point"
-        , "coordinates": [4.321585, 50.845925, 0]
-      }
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.321585, 50.845925, 0]
+            }
         }
     , {
-      "naam": "Bakkerij Jansens"
-      , "naamEvent": "Brood en pudding-proeverij"
-      , "straatNummer": "Nijverheidskaai 04"
-      , "stad": "3000 Brussel"
-      , "datum": "31 juni 2017"
-      , "uur": "15:00 tot 16:00"
-      , "url": "/img/Placeholder.jpg"
-      , "details": "Proef onze nieuwe broodjes en pudding! Uw mening wordt genoteerd en gebruikt in de verbetering van onze recepten."
-      , "jobs": [
-        {
-          "welkeJob": "Proever"
-          , "beschrijving": "Kom langs om onze pudding te proeven."
-          , "fuctie": "vrijwillig"
+            "naam": "Bakkerij Jansens",
+            "naamEvent": "Brood en pudding-proeverij",
+            "straatNummer": "Nijverheidskaai 04",
+            "stad": "3000 Brussel",
+            "datum": "31 juni 2017",
+            "uur": "15:00 tot 16:00",
+            "url": "../img/Placeholder.jpg",
+            "details": "Proef onze nieuwe broodjes en pudding! Uw mening wordt genoteerd en gebruikt in de verbetering van onze recepten.",
+            "jobs": [
+                {
+                    "welkeJob": "Proever",
+                    "beschrijving": "Kom langs om onze pudding te proeven.",
+                    "fuctie": "vrijwillig"
                 }
         , {
-          "welkeJob": "Chef"
-          , "beschrijving": "Help ons bij het bereiden van de pudding."
-          , "fuctie": "jobstudent"
+                    "welkeJob": "Chef",
+                    "beschrijving": "Help ons bij het bereiden van de pudding.",
+                    "fuctie": "jobstudent"
                 }
         , {
-          "welkeJob": "Chauffeur"
-          , "beschrijving": "Breng onze pudding rond in de buurt."
-          , "fuctie": "bediende"
+                    "welkeJob": "Chauffeur",
+                    "beschrijving": "Breng onze pudding rond in de buurt.",
+                    "fuctie": "bediende"
                   }
 
-            ]
-      , "geometry": {
-        "type": "Point"
-        , "coordinates": [4.329611, 50.835518, 0]
-      }
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.329611, 50.835518, 0]
+            }
         }
     , {
-      "naam": "Knip-knip Marathon"
-      , "naamEvent": "Knip-Knip Eco Kapper"
-      , "straatNummer": "Nijverheidskaai 10"
-      , "stad": "3000 Brussel"
-      , "datum": "4 juli 2017"
-      , "uur": "09:00 tot 16:00"
-      , "url": "/img/Placeholder.jpg"
-      , "details": "Kom langs voor een nieuwe coupe. Knip-knip gaat voor het knip-record."
-      , "jobs": [
-        {
-          "welkeJob": "Kapper"
-          , "beschrijving": "Kapper met ervaring gezocht. Voor het knippen van zowel mannen als vrouwen."
-          , "fuctie": "vast werk"
+            "naam": "Knip-knip Marathon",
+            "naamEvent": "Knip-Knip Eco Kapper",
+            "straatNummer": "Nijverheidskaai 10",
+            "stad": "3000 Brussel",
+            "datum": "4 juli 2017",
+            "uur": "09:00 tot 16:00",
+            "url": "../img/Placeholder.jpg",
+            "details": "Kom langs voor een nieuwe coupe. Knip-knip gaat voor het knip-record.",
+            "jobs": [
+                {
+                    "welkeJob": "Kapper",
+                    "beschrijving": "Kapper met ervaring gezocht. Voor het knippen van zowel mannen als vrouwen.",
+                    "fuctie": "vast werk"
                 }
         , {
-          "welkeJob": "Stylist m/v/x"
-          , "beschrijving": "Kunt u ons helpen bij het inrichten van onze zaak?"
-          , "fuctie": "jobstudent"
+                    "welkeJob": "Stylist m/v/x",
+                    "beschrijving": "Kunt u ons helpen bij het inrichten van onze zaak?",
+                    "fuctie": "jobstudent"
                 }
         , {
-          "welkeJob": "Zanger/Zangeres"
-          , "beschrijving": "We zoeken een muzikale act voor tijdens de Knip-knip Marathon."
-          , "fuctie": "tijdelijk"
+                    "welkeJob": "Zanger/Zangeres",
+                    "beschrijving": "We zoeken een muzikale act voor tijdens de Knip-knip Marathon.",
+                    "fuctie": "tijdelijk"
                   }
 
-            ]
-      , "geometry": {
-        "type": "Point"
-        , "coordinates": [4.336488, 50.849491, 0]
-      }
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.336488, 50.849491, 0]
+            }
         }
 ]
 }

@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
 
-    $.getJSON("../JSON/events.json", function (json) //json bestand inladen
+    $.getJSON("JSON/events.json", function (json) //json bestand inladen
         {
 
 
