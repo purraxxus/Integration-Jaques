@@ -1,171 +1,165 @@
 {
-    "evenementen": [
+  "evenementen": [
 
+    {
+      "naam": "E-Hack-B"
+      , "naamEvent": "E-Hack-B"
+      , "straatNummer": "Nijverheidskaai 170"
+      , "stad": "1070 Anderlecht"
+      , "datum": "25 juni 2017"
+      , "uur": "13:00 tot 16:00"
+      , "url": "/img/Placeholder.jpg"
+      , "details": "We starten EhackB dit jaar met enkele externe en interne sprekers die een belangrijke bijdrage leveren aan het drieluik hack, create en game. Er is geen voorkennis vereist om de keynotes bij te wonen."
+      , "jobs": [
         {
-            "naam": "E-Hack-B",
-            "naamEvent": "E-Hack-B",
-            "straatNummer": "Nijverheidskaai 170",
-            "stad": "1070 Anderlecht",
-            "datum": "25 juni 2017",
-            "uur": "13:00 tot 16:00",
-            "url": "/img/Placeholder.jpg",
-            "details": "We starten EhackB dit jaar met enkele externe en interne sprekers die een belangrijke bijdrage leveren aan het drieluik hack, create en game. Er is geen voorkennis vereist om de keynotes bij te wonen.",
-            "jobs": [
-                {
-                    "welkeJob": "werk1",
-                    "beschrijving": "beschrijving2",
-                    "fuctie": "vast werk"
-                },
-                {
-                    "welkeJob": "werk2",
-                    "beschrijving": "beschrijving2",
-                    "fuctie": "jobstudent"
-                },
-                {
-                    "welkeJob": "werk3",
-                    "beschrijving": "beschrijving3",
-                    "fuctie": "bediende"
+          "welkeJob": "Web Developer"
+          , "beschrijving": "E-HAck-B is op zoek naar een ervaren Web developer voor het creeeren van hun interactieve website "
+          , "fuctie": "vast werk"
+                }
+        , {
+          "welkeJob": "werk2"
+          , "beschrijving": "beschrijving2"
+          , "fuctie": "jobstudent"
+                }
+        , {
+          "welkeJob": "werk3"
+          , "beschrijving": "beschrijving3"
+          , "fuctie": "bediende"
                   }
 
-            ],
-            "geometry": {
-                "type": "Point",
-                "coordinates": [4.332971, 50.839674, 0]
-            }
-
-        },
+            ]
+      , "geometry": {
+        "type": "Point"
+        , "coordinates": [4.332971, 50.839674, 0]
+      }
+        }
+    , {
+      "naam": "Evenement 2"
+      , "naamEvent": "Anderlecht Brewery"
+      , "straatNummer": "Nijverheidskaai 02"
+      , "stad": "3000 Brussel"
+      , "datum": "25 maart 2017"
+      , "uur": "13:00 tot 16:00"
+      , "url": "/img/Placeholder.jpg"
+      , "details": "details 2."
+      , "jobs": [
         {
-            "naam": "Evenement 2",
-            "naamEvent": "Anderlecht Brewery",
-            "straatNummer": "Nijverheidskaai 02",
-            "stad": "3000 Brussel",
-            "datum": "25 maart 2017",
-            "uur": "13:00 tot 16:00",
-            "url": "/img/Placeholder.jpg",
-            "details": "details 2.",
-            "jobs": [
-                {
-                    "welkeJob": "werk1",
-                    "beschrijving": "beschrijving2",
-                    "fuctie": "vast werk"
-                },
-                {
-                    "welkeJob": "werk2",
-                    "beschrijving": "beschrijving2",
-                    "fuctie": "jobstudent"
-                },
-                {
-                    "welkeJob": "werk3",
-                    "beschrijving": "beschrijving3",
-                    "fuctie": "bediende"
+          "welkeJob": "werk1"
+          , "beschrijving": "beschrijving2"
+          , "fuctie": "vast werk"
+                }
+        , {
+          "welkeJob": "werk2"
+          , "beschrijving": "beschrijving2"
+          , "fuctie": "jobstudent"
+                }
+        , {
+          "welkeJob": "werk3"
+          , "beschrijving": "beschrijving3"
+          , "fuctie": "bediende"
                   }
 
-            ],
-            "geometry": {
-                "type": "Point",
-                "coordinates": [4.320446, 50.839536, 0]
-            }
-
-        },
+            ]
+      , "geometry": {
+        "type": "Point"
+        , "coordinates": [4.320446, 50.839536, 0]
+      }
+        }
+    , {
+      "naam": "Evenement 3"
+      , "naamEvent": "Anderlecht Brewery"
+      , "straatNummer": "Nijverheidskaai 03"
+      , "stad": "3000 Brussel"
+      , "datum": "25 juni 2017"
+      , "uur": "13:00 tot 16:00"
+      , "url": "/img/Placeholder.jpg"
+      , "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1"
+      , "jobs": [
         {
-            "naam": "Evenement 3",
-            "naamEvent": "Anderlecht Brewery",
-            "straatNummer": "Nijverheidskaai 03",
-            "stad": "3000 Brussel",
-            "datum": "25 juni 2017",
-            "uur": "13:00 tot 16:00",
-            "url": "/img/Placeholder.jpg",
-            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1",
-            "jobs": [
-                {
-                    "welkeJob": "werk1",
-                    "beschrijving": "beschrijving2",
-                    "fuctie": "vast werk"
-                },
-                {
-                    "welkeJob": "werk2",
-                    "beschrijving": "beschrijving2",
-                    "fuctie": "jobstudent"
-                },
-                {
-                    "welkeJob": "werk3",
-                    "beschrijving": "beschrijving3",
-                    "fuctie": "bediende"
+          "welkeJob": "werk1"
+          , "beschrijving": "beschrijving2"
+          , "fuctie": "vast werk"
+                }
+        , {
+          "welkeJob": "werk2"
+          , "beschrijving": "beschrijving2"
+          , "fuctie": "jobstudent"
+                }
+        , {
+          "welkeJob": "werk3"
+          , "beschrijving": "beschrijving3"
+          , "fuctie": "bediende"
                   }
 
-            ],
-            "geometry": {
-                "type": "Point",
-                "coordinates": [4.321585, 50.845925, 0]
-            }
-
-        },
+            ]
+      , "geometry": {
+        "type": "Point"
+        , "coordinates": [4.321585, 50.845925, 0]
+      }
+        }
+    , {
+      "naam": "Evenement 4"
+      , "naamEvent": "Anderlecht Brewery"
+      , "straatNummer": "Nijverheidskaai 04"
+      , "stad": "3000 Brussel"
+      , "datum": "25 juni 2017"
+      , "uur": "13:00 tot 16:00"
+      , "url": "/img/Placeholder.jpg"
+      , "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1"
+      , "jobs": [
         {
-            "naam": "Evenement 4",
-            "naamEvent": "Anderlecht Brewery",
-            "straatNummer": "Nijverheidskaai 04",
-            "stad": "3000 Brussel",
-            "datum": "25 juni 2017",
-            "uur": "13:00 tot 16:00",
-            "url": "/img/Placeholder.jpg",
-            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1",
-            "jobs": [
-                {
-                    "welkeJob": "werk1",
-                    "beschrijving": "beschrijving2",
-                    "fuctie": "vast werk"
-                },
-                {
-                    "welkeJob": "werk2",
-                    "beschrijving": "beschrijving2",
-                    "fuctie": "jobstudent"
-                },
-                {
-                    "welkeJob": "werk3",
-                    "beschrijving": "beschrijving3",
-                    "fuctie": "bediende"
+          "welkeJob": "werk1"
+          , "beschrijving": "beschrijving2"
+          , "fuctie": "vast werk"
+                }
+        , {
+          "welkeJob": "werk2"
+          , "beschrijving": "beschrijving2"
+          , "fuctie": "jobstudent"
+                }
+        , {
+          "welkeJob": "werk3"
+          , "beschrijving": "beschrijving3"
+          , "fuctie": "bediende"
                   }
 
-            ],
-            "geometry": {
-                "type": "Point",
-                "coordinates": [4.329611, 50.835518, 0]
-            }
-
-        },
+            ]
+      , "geometry": {
+        "type": "Point"
+        , "coordinates": [4.329611, 50.835518, 0]
+      }
+        }
+    , {
+      "naam": "Evenement 5"
+      , "naamEvent": "Anderlecht Brewery"
+      , "straatNummer": "Nijverheidskaai 01"
+      , "stad": "3000 Brussel"
+      , "datum": "25 juni 2017"
+      , "uur": "13:00 tot 16:00"
+      , "url": "/img/Placeholder.jpg"
+      , "details": "laatste"
+      , "jobs": [
         {
-            "naam": "Evenement 5",
-            "naamEvent": "Anderlecht Brewery",
-            "straatNummer": "Nijverheidskaai 01",
-            "stad": "3000 Brussel",
-            "datum": "25 juni 2017",
-            "uur": "13:00 tot 16:00",
-            "url": "/img/Placeholder.jpg",
-            "details": "laatste",
-            "jobs": [
-                {
-                    "welkeJob": "werk1",
-                    "beschrijving": "beschrijving2",
-                    "fuctie": "vast werk"
-                },
-                {
-                    "welkeJob": "werk2",
-                    "beschrijving": "beschrijving2",
-                    "fuctie": "jobstudent"
-                },
-                {
-                    "welkeJob": "werk3",
-                    "beschrijving": "beschrijving3",
-                    "fuctie": "bediende"
+          "welkeJob": "werk1"
+          , "beschrijving": "beschrijving2"
+          , "fuctie": "vast werk"
+                }
+        , {
+          "welkeJob": "werk2"
+          , "beschrijving": "beschrijving2"
+          , "fuctie": "jobstudent"
+                }
+        , {
+          "welkeJob": "werk3"
+          , "beschrijving": "beschrijving3"
+          , "fuctie": "bediende"
                   }
 
-            ],
-            "geometry": {
-                "type": "Point",
-                "coordinates": [4.336488, 50.849491, 0]
-            }
-
+            ]
+      , "geometry": {
+        "type": "Point"
+        , "coordinates": [4.336488, 50.849491, 0]
+      }
         }
 ]
-
 }
