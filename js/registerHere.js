@@ -1,4 +1,4 @@
-var niks="sdlf";
+var niks = "sdlf";
 
 function dropdownUsername() {
 
@@ -50,22 +50,22 @@ function register() {
     var user = document.getElementById("username").value;
 
     var pass = document.getElementById("password").value;
-    
+
     var repeatPass = document.getElementById("repeatPassword").value;
 
-    if (user !== "" && pass == repeatPass && pass.match(/^(?=.*\d).{8,}$/)){
+    if (user !== "" && pass == repeatPass && pass.match(/^(?=.*\d).{8,}$/)) {
         sessionStorage.setItem("naam", user);
         sessionStorage.setItem("passwoord", pass);
-        window.location.assign("/html/profielLogIn.html")
+        window.location.assign("profielLogIn.html")
         console.log(sessionStorage);
-        
-        }else{
-            console.log('error,passwoord moet mininum 8 tekens lang zijn en moet 1 cijfer bevatten');
-        }
-    
-    
-    
-    
+
+    } else {
+        console.log('error,passwoord moet mininum 8 tekens lang zijn en moet 1 cijfer bevatten');
+    }
+
+
+
+
     console.log(user);
     console.log(pass);
     console.log(repeatPass);
