@@ -144,7 +144,7 @@ function genereerLijstMetInteressante() {
   htmlString += '<div class="SliderImg" >';
   for (i = 0; i < 6; i++) {
     var randomCompany = Math.floor(Math.random() * Bedrijven.length);
-    htmlString += '<div class=" imgInsSlider" id="' + Bedrijven[randomCompany].properties.Category + '"> <img src="../img/' + Bedrijven[randomCompany].properties.source + '">';
+    htmlString += '<div class=" imgInsSlider" id="' + Bedrijven[randomCompany].properties.Category + '"> <img  onclick="bewaarBedrijf(event)" id="' + Bedrijven[randomCompany].properties.Naam + '" src="../img/' + Bedrijven[randomCompany].properties.source + '">';
     htmlString += '<h3>' + Bedrijven[randomCompany].properties.Naam + '</h3> </div>'
   }
   htmlString += '</div>'

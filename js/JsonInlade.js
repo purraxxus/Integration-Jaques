@@ -22,7 +22,7 @@ $(function () {
 function onSuccessBedrijf(data) {;
   responseObject = data.features;
   BedrijfNaam = localStorage.getItem('bedrijfsNaam');
-  JsonBinnenHalen(responseObject)
+  JsonBinnenHalen(responseObject);
   vulHTMLBedrijf(responseObject);
 };
 
@@ -52,12 +52,11 @@ function vulHTMLEvent() {
     var nr = Math.floor(Math.random() * responseObjectEvents.length);
     var nr2 = Math.floor(Math.random() * responseObjectEvents[i].jobs.length);
     console.log(responseObjectEvents[nr].jobs);
-    EventsHTML += '<div class="example_item clearfix"><div class="example_item_date"> <span class="example_item_title_on_image">'
-    EventsHTML += +responseObjectEvents[nr].datum + '</span></div>';
+    EventsHTML += '<div class="example_item clearfix"><div class="example_item_date" id="' + responseObject[NrBedrijf].properties.Category + '"> <span  class="example_item_title_on_image">' + responseObjectEvents[nr].datum + '</span></div>';
     EventsHTML += '<div class="example_item_title"><a href="html/Event_Detailpage.html">' + responseObjectEvents[nr].naam + '</a></div> <div class = "example_item_description" >' + responseObjectEvents[nr].details + '</div>'
     EventsHTML += '</div>'
     var jobsHTML = "";
-    jobsHTML += '<div class="example_item clearfix"><div class="example_item_date"> <span class="example_item_title_on_image">' + responseObjectEvents[nr].jobs[nr2].fuctie + '</span></div>';
+    jobsHTML += '<div class="example_item clearfix"><div class="example_item_date" id="' + responseObject[NrBedrijf].properties.Category + '"> <span  class="example_item_title_on_image">' + responseObjectEvents[nr].jobs[nr2].fuctie + '</span></div>';
     jobsHTML += '<div class="example_item_title"><a href="html/Event_Detailpage.html">' + responseObjectEvents[nr].jobs[nr2].welkeJob + '</a></div> <div class = "example_item_description" >' + responseObjectEvents[nr].jobs[nr2].beschrijving + '</div>'
     jobsHTML += '</div>'
   }

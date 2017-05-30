@@ -1,0 +1,45 @@
+.example_item_date {
+  height: 50px;
+  background-image: none;
+}
+
+.example_item_title_on_image {
+  background: none;
+  width: 84px;
+}
+
+h1#foodDrinks,
+#foodDrinks.example_item_date {
+  background-color: #1abc9c;
+  opacity: 0.8;
+}
+
+h1#Beauty,
+div#Beauty.example_item_date {
+  background-color: #955ba4;
+  opacity: 0.8;
+}
+
+h1#socialInitiatives,
+div#socialInitiatives.example_item_date {
+  background-color: #e57e26;
+  opacity: 0.8;
+}
+
+h1#clothingAccessories,
+div#clothingAccessories.example_item_date {
+  background-color: #eec31a;
+  opacity: 0.8;
+}
+
+h1#DIY,
+div#DIY.example_item_date {
+  background-color: #e64e3c;
+  opacity: 0.8;
+}
+
+h1#Hobbies,
+div#Hobbies.example_item_date {
+  background-color: #fae79f;
+  opacity: 0.8;
+}
