@@ -1,6 +1,5 @@
 .jaqueslogo {
     background-color: #2980b9;
-    width: 200px;
     height: 100px;
     display: block;
     margin: 0 auto;
@@ -39,7 +38,8 @@
 
 nav {
     text-align: center;
-    padding-bottom: 12px
+    padding-bottom: 12px;
+    padding-top: 12px;
 }
 
 .nav_tools{
