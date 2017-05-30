@@ -23,8 +23,8 @@
 
 .topofnav nav ul li {
     margin-top: 10px;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     border: solid 1px white;
@@ -46,6 +46,7 @@ nav {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     color: white;
+    text-align: center;
 }
 
 .nav_events {
@@ -53,11 +54,8 @@ nav {
 }
 
 button {
-    width: 30%;
     background-color: #2980b9;
-    border-style: hidden;
     color: white;
-    font-size: 1.2em;
     font-family: "Open Sans", Verdana, Tahoma, sans-serif;
     font-weight: 300;
     border: 1px solid white;
@@ -106,22 +104,19 @@ body {
     color: #2980b9;
 }
 #filterbutton {
-    width: 10%;
+    width: 20%;
     text-align: center;
     margin: 0;
-    padding: 2px 7px 20x 7px;
 }
 #filterbutton2 {
-    width: 10%;
+    width: 20%;
     text-align: center;
     margin: 0;
-    padding: 2px 7px 20x 7px;
 }
 #filterbutton3 {
-    width: 15%;
+    width: 20%;
     text-align: center;
     margin: 0;
-    padding: 2px 7px 20x 7px;
 }
 nav{
     font-size:1em
