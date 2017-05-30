@@ -64,7 +64,7 @@ function loadMap(map, txtinput) {
                     var name = data.features[i].properties.Naam;
                     var adres = data.features[i].properties.Adres;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                    var contentString = '<a href="Event_Detailpage.html" style="text-decoration: none; font-size: 10pt; color= #000000"><h1>'+name+'</h1><br><p>'+descr+'</p><br><p>'+adres+'</p></a>';
+                    var contentString = '<a href="Company_Profile.html" style="text-decoration: none; font-size: 10pt; color= #000000"><h1>'+name+'</h1><br><p>'+descr+'</p><br><p>'+adres+'</p></a>';
                     var infowindow = new google.maps.InfoWindow();
                     var marker = new google.maps.Marker({
                         position: latLng,
