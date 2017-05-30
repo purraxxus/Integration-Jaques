@@ -75,3 +75,8 @@ p.number_subs {
   right: 50px;
   position: absolute;
 }
+
+.PinLocation {
+  width: 35px;
+  height: 35px;
+}
