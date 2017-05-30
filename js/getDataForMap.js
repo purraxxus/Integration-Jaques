@@ -28,7 +28,7 @@ function loadMap(txtinput) {
         var map;
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         $.ajax({
-            url: '../JSON/Bedrijven.json',
+            url: '/JSON/Bedrijven.json',
             dataType: 'json',
             success: function (data) {
                 for (var i = 0; i < data.features.length; i++) {
@@ -61,12 +61,12 @@ function loadMap(txtinput) {
         var map;
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         $.ajax({
-            url: '../JSON/Events.json',
+            url: '/JSON/Events.json',
             dataType: 'json',
             success: function (data) {
                 for (var i = 0; i < data.features.length; i++) {
+                     var coords = data.features[i].geometry.coordinates;
                     var naam = data.evenementen[i].naamEvent;
-                    var coords = data.features[i].geometry.coordinates;
                     var descr = data.evenementen[i].details;
                     var time = data.evenementen[i].uur;
                     var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
@@ -93,12 +93,13 @@ function loadMap(txtinput) {
         var map;
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         $.ajax({
-            url: '../JSON/Events.json',
+            url: '/JSON/Events.json',
             dataType: 'json',
             success: function (data) {
                 for (var i = 0; i < data.features.length; i++) {
+                     var coords = data.features[i].geometry.coordinates;
                     var naam = data.evenementen[i].naamEvent;
-                    var coords = data.features[i].geometry.coordinates;
+                    var job = data.evenementen[i].jobs.welkeJob;
                     var descr = data.evenementen[i].details;
                     var time = data.evenementen[i].uur;
                     var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
