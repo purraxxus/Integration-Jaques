@@ -13,13 +13,16 @@ body{margin:0;
     width:100%;
 }
 
-#naam{position: absolute;
-    width:100%;
-    padding-top:60%;
+#naam{
+    position: absolute;
+    width: 600px;
+    padding-top: 200px;
     top:0;
     margin:0;
     color:white;
     text-align: center;
+    left: 50%;
+    margin-left: -320px;
 }
 
 
