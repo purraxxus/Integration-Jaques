@@ -2,50 +2,55 @@ var map;
 var counterLeft = 0;
 var counterMiddle = 0;
 var counterRight = 0;
+var markersArray = [];
+
+function clearOverlays() {
+  for (var i = 0; i < markersArray.length; i++ ) {
+    markersArray[i].setMap(null);
+  }
+  markersArray.length = 0;
+}
 
 $(document).ready(function () {
     $('#filterbutton').click(function (e) {
         counterLeft += 1;
         console.log(counterLeft);
+        $(this).toggleClass('nav_jobs');
+        $(this).toggleClass('toggledLeft');
         if (counterLeft % 2 == 1) {
-            $(this).toggleClass('nav_jobs');
-            $(this).toggleClass('toggledLeft');
-            $("filterbutton2").addClass('nav_events')
-            $("filterbutton2").removeClass('toggledMiddle');
-            $("filterbutton3").addClass('nav_tools')
-            $("filterbutton3").removeClass('toggledRight');
             var txt = $(e.target).text();
-            console.log(txt);
             loadMap(map, txt);
         } else {
-            
+            clearOverlays();
+            console.log('delete markers');
         }
     });
     $('#filterbutton2').click(function (e) {
         counterMiddle += 1;
         console.log(counterMiddle);
+        $(this).toggleClass('nav_events');
+        $(this).toggleClass('toggledMiddle');
         if (counterMiddle % 2 == 1) {
-            $(this).toggleClass('nav_events');
-            $(this).toggleClass('toggledMiddle');
+
             var txt = $(e.target).text();
-            console.log(txt);
             loadMap(map, txt);
         } else {
-
+            clearOverlays();
+            console.log('delete markers');
         }
 
     });
     $('#filterbutton3').click(function (e) {
         counterRight += 1;
         console.log(counterRight);
+        $(this).toggleClass('nav_tools');
+        $(this).toggleClass('toggledRight');
         if (counterRight % 2 == 1) {
-            $(this).toggleClass('nav_tools');
-            $(this).toggleClass('toggledRight');
             var txt = $(e.target).text();
-            console.log(txt);
             loadMap(map, txt);
         } else {
-
+            clearOverlays();
+            console.log('delete markers');
         }
 
     });
@@ -77,6 +82,7 @@ function loadMap(map, txtinput) {
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
                     });
+                    markersArray.push(marker);
                     marker.addListener('click', function () {
                         infowindow.open(map, marker);
                     });
@@ -110,6 +116,7 @@ function loadMap(map, txtinput) {
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
                     });
+                    markersArray.push(marker);
                     marker.addListener('click', function () {
                         infowindow.open(map, marker);
                     });
@@ -125,7 +132,6 @@ function loadMap(map, txtinput) {
             url: 'JSON/events.json',
             dataType: 'json',
             success: function (data) {
-                console.log(data);
                 for (var i = 0; i < data.evenementen.length; i++) {
                     var coords = data.evenementen[i].geometry.coordinates;
                     var naam = data.evenementen[i].naamEvent;
@@ -139,14 +145,13 @@ function loadMap(map, txtinput) {
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
                     });
-
-                    console.log(map);
                     var marker = new google.maps.Marker({
                         position: latLng,
                         title: name,
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
                     });
+                    markersArray.push(marker);
                     marker.addListener('click', function () {
                         infowindow.open(map, marker);
                     });
@@ -254,28 +259,5 @@ function addMarker(location) {
         position: location,
         map: map
     });
-    markers.push(marker);
-}
-
-// Sets the map on all markers in the array.
-function setMapOnAll(map) {
-    for (var i = 0; i < markers.length; i++) {
-        markers[i].setMap(map);
-    }
-}
-
-// Removes the markers from the map, but keeps them in the array.
-function clearMarkers() {
-    setMapOnAll(null);
-}
-
-// Shows any markers currently in the array.
-function showMarkers() {
-    setMapOnAll(map);
-}
-
-// Deletes all markers in the array by removing references to them.
-function deleteMarkers() {
-    clearMarkers();
-    markers = [];
+    
 }
