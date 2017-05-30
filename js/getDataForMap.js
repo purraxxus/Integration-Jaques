@@ -69,7 +69,7 @@ function loadMap(map, txtinput) {
                     var adres = data.features[i].properties.Adres;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
 
-                    var contentString = "<a href=../html/index.html style='text-decoration: none; color: black><h1 style='font-weight: 900;'>" + name + "<h1><br>" + "<p>" + descr + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br></a>";
+                    var contentString = "<a style='text-decoration: none'; color: black  href=''><h1>" + name + "<h1><br>" + "<p>" + descr + "<p><br>" + "<p>" + adres + "<p><br></a>";
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
                     });
@@ -78,10 +78,12 @@ function loadMap(map, txtinput) {
                         title: name,
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
+                        description: contentString
                     });
                     markersArray.push(marker);
-                    marker.addListener('click', function () {
-                        infowindow.open(map, marker);
+                    google.maps.event.addListener(marker, 'click', function(){
+                        infowindow.setContent(this.description);
+                        infowindow.open(map, this);
                     });
                 }
             },
@@ -103,7 +105,7 @@ function loadMap(map, txtinput) {
                     var time = data.evenementen[i].uur;
                     var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                    var contentString = "<a href=../html/index.html style='text-decoration: none; color: black><h1 style='font-weight: 900;'>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br></a>";
+                    var contentString = "<a style='text-decoration: none; color: black' href=''><h1>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p>" + adres + "<p><br></a>";
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
                     });
@@ -112,10 +114,12 @@ function loadMap(map, txtinput) {
                         title: name,
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        description: contentString
                     });
                     markersArray.push(marker);
-                    marker.addListener('click', function () {
-                        infowindow.open(map, marker);
+                    google.maps.event.addListener(marker, 'click', function(){
+                        infowindow.setContent(this.description);
+                        infowindow.open(map, this);
                     });
                 }
             },
@@ -129,6 +133,7 @@ function loadMap(map, txtinput) {
             url: 'JSON/events.json',
             dataType: 'json',
             success: function (data) {
+                
                 for (var i = 0; i < data.evenementen.length; i++) {
                     var coords = data.evenementen[i].geometry.coordinates;
                     var naam = data.evenementen[i].naamEvent;
@@ -138,21 +143,24 @@ function loadMap(map, txtinput) {
                     var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
 
-                    var contentString = "<a href=../html/index.html style='text-decoration: none; color: black><h1 style='font-weight: 900;'>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br></a>";
-                    var infowindow = new google.maps.InfoWindow({
-                        content: contentString
-                    });
+                    var contentString = "<a style='text-decoration: none; color: black' href=''><h1>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p>" + adres + "<p><br></a>";
+                    var infowindow = new google.maps.InfoWindow();
                     var marker = new google.maps.Marker({
                         position: latLng,
                         title: name,
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+                        description: contentString
                     });
                     markersArray.push(marker);
-                    marker.addListener('click', function () {
-                        infowindow.open(map, marker);
+                    google.maps.event.addListener(marker, 'click', function(){
+                        infowindow.setContent(this.description);
+                        infowindow.open(map, this);
                     });
                 }
+
+                
+
             },
             error: function (err) {
                 console.error('Fout: ', err);

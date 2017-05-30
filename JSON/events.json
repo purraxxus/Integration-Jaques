@@ -9,7 +9,7 @@
             "datum": "25 juni 2017",
             "uur": "13:00 tot 16:00",
             "url": "/img/Placeholder.jpg",
-            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1",
+            "details": "details 1",
             "review": "dit is de review van het eerste evenement.",
             "jobs": [
                 {
@@ -43,7 +43,7 @@
             "datum": "25 maart 2017",
             "uur": "13:00 tot 16:00",
             "url": "/img/Placeholder.jpg",
-            "details": "details van evenement 2.",
+            "details": "details 2.",
             "jobs": [
                 {
                     "welkeJob": "werk1",
@@ -142,7 +142,7 @@
             "datum": "25 juni 2017",
             "uur": "13:00 tot 16:00",
             "url": "/img/Placeholder.jpg",
-            "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1",
+            "details": "laatste",
             "jobs": [
                 {
                     "welkeJob": "werk1",
