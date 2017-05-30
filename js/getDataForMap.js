@@ -50,10 +50,6 @@ $(document).ready(function () {
     });
 });
 
-function clicked() {
-
-}
-
 function loadMap(map, txtinput) {
     if (txtinput == "Startups") {
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
@@ -78,7 +74,8 @@ function loadMap(map, txtinput) {
                         title: name,
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
-                        description: contentString
+                        description: contentString,
+                        bedrijf: data.features[i].properties.Naam,
                     });
                     markersArray.push(marker);
                     google.maps.event.addListener(marker, 'click', function(){
@@ -123,7 +120,7 @@ function loadMap(map, txtinput) {
                     google.maps.event.addListener(marker, 'click', function(){
                         infowindow.setContent(this.description);
                         infowindow.open(map, this);
-                        window.localStorage.setItem('bedrijfsNaam',this.bedrijf);
+                        window.localStorage.setItem('eventNaam',this.bedrijf);
                         console.log(this.bedrijf);
                     });
                 }
@@ -162,7 +159,7 @@ function loadMap(map, txtinput) {
                     google.maps.event.addListener(marker, 'click', function(){
                         infowindow.setContent(this.description);
                         infowindow.open(map, this);
-                        window.localStorage.setItem('bedrijfsNaam',this.bedrijf);
+                        window.localStorage.setItem('eventNaam',this.bedrijf);
                         console.log(this.bedrijf);
                     });
                 }
