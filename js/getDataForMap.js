@@ -83,7 +83,9 @@ function loadMap(map, txtinput) {
                         infowindow.open(map, this);
                         window.localStorage.setItem('bedrijfsNaam',this.bedrijf);
                         console.log(this.bedrijf);
-                        window.location('Event_Detailpage.html');
+                    });
+                    google.maps.event.addListener(infowindow, 'click', function(){
+                        window.location=('Event_Detailpage.html');
                     });
                 }
             },
@@ -123,7 +125,9 @@ function loadMap(map, txtinput) {
                         infowindow.open(map, this);
                         window.localStorage.setItem('eventNaam',this.bedrijf);
                         console.log(this.bedrijf);
-                        window.location('Event_Detailpage.html');
+                    });
+                    google.maps.event.addListener(infowindow, 'click', function(){
+                        window.location=('Event_Detailpage.html');
                     });
                 }
             },
@@ -163,7 +167,9 @@ function loadMap(map, txtinput) {
                         infowindow.open(map, this);
                         window.localStorage.setItem('eventNaam',this.bedrijf);
                         console.log(this.bedrijf);
-                        window.location('Event_Detailpage.html')
+                    });
+                    google.maps.event.addListener(infowindow, 'click', function(){
+                        window.location=('Event_Detailpage.html');
                     });
                 }
 
