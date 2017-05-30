@@ -84,6 +84,8 @@ function loadMap(map, txtinput) {
                     google.maps.event.addListener(marker, 'click', function(){
                         infowindow.setContent(this.description);
                         infowindow.open(map, this);
+                        window.localStorage.setItem('bedrijfsNaam',this.bedrijf);
+                        console.log(this.bedrijf);
                     });
                 }
             },
@@ -114,12 +116,15 @@ function loadMap(map, txtinput) {
                         title: name,
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-                        description: contentString
+                        description: contentString,
+                        bedrijf: data.evenementen[i].naamEvent,
                     });
                     markersArray.push(marker);
                     google.maps.event.addListener(marker, 'click', function(){
                         infowindow.setContent(this.description);
                         infowindow.open(map, this);
+                        window.localStorage.setItem('bedrijfsNaam',this.bedrijf);
+                        console.log(this.bedrijf);
                     });
                 }
             },
@@ -150,12 +155,15 @@ function loadMap(map, txtinput) {
                         title: name,
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
-                        description: contentString
+                        description: contentString,
+                        bedrijf: data.evenementen[i].naamEvent,
                     });
                     markersArray.push(marker);
                     google.maps.event.addListener(marker, 'click', function(){
                         infowindow.setContent(this.description);
                         infowindow.open(map, this);
+                        window.localStorage.setItem('bedrijfsNaam',this.bedrijf);
+                        console.log(this.bedrijf);
                     });
                 }
 
