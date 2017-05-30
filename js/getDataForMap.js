@@ -69,7 +69,7 @@ function loadMap(map, txtinput) {
                     var adres = data.features[i].properties.Adres;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
 
-                    var contentString = "<a style='text-decoration: none'; color: black  href=''><h1>" + name + "<h1><br>" + "<p>" + descr + "<p><br>" + "<p>" + adres + "<p><br></a>";
+                    var contentString = "<a style='text-decoration: none'; color: black  href='Company_Profile.html'><h1>" + name + "<h1><br>" + "<p>" + descr + "<p><br>" + "<p>" + adres + "<p><br></a>";
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
                     });
@@ -105,7 +105,7 @@ function loadMap(map, txtinput) {
                     var time = data.evenementen[i].uur;
                     var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                    var contentString = "<a style='text-decoration: none; color: black' href=''><h1>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p>" + adres + "<p><br></a>";
+                    var contentString = "<a style='text-decoration: none; color: black' href='Company_Profile.html'><h1>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p>" + adres + "<p><br></a>";
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
                     });
@@ -143,7 +143,7 @@ function loadMap(map, txtinput) {
                     var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
 
-                    var contentString = "<a style='text-decoration: none; color: black' href=''><h1>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p>" + adres + "<p><br></a>";
+                    var contentString = "<a style='text-decoration: none; color: black' href='Company_Profile.html'><h1>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p>" + adres + "<p><br></a>";
                     var infowindow = new google.maps.InfoWindow();
                     var marker = new google.maps.Marker({
                         position: latLng,
