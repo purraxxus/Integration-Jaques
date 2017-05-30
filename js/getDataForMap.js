@@ -64,7 +64,7 @@ function loadMap(map, txtinput) {
                     var name = data.features[i].properties.Naam;
                     var adres = data.features[i].properties.Adres;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                    var contentString = '<a href="Company_Profile.html" style="text-decoration: none; font-size: 10pt; color= #000000"><h1>'+name+'</h1><br><p>'+descr+'</p><br><p>'+adres+'</p></a>';
+                    var contentString = '<a href="Company_Profile.html" style="text-decoration: none; font-size: 10pt; color= #000000"><h1 style="text-decoration: none; color= #000000";>'+name+'</h1><br><p style="text-decoration: none; color= #000000";>'+descr+'</p><br><p style="text-decoration: none; color= #000000";>'+adres+'</p></a>';
                     var infowindow = new google.maps.InfoWindow();
                     var marker = new google.maps.Marker({
                         position: latLng,
@@ -101,7 +101,7 @@ function loadMap(map, txtinput) {
                     var time = data.evenementen[i].uur;
                     var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                    var contentString = '<a href="Event_Detailpage.html" style="text-decoration: none; font-size: 10pt; color= #000000"><h1>'+naam+'</h1><br><p>'+descr+'</p><br><p>'+adres+'</p><br><p>'+time+'</p></a>';
+                    var contentString = '<a href="Event_Detailpage.html" style="text-decoration: none; font-size: 10pt; color= #000000"><h1 style="text-decoration: none; color= #000000";>'+naam+'</h1><br><p style="text-decoration: none; color= #000000";>'+descr+'</p><br><p style="text-decoration: none; color= #000000";>'+adres+'</p><br><p style="text-decoration: none; color= #000000";>'+time+'</p></a>';
                     var infowindow = new google.maps.InfoWindow();
                     var marker = new google.maps.Marker({
                         position: latLng,
@@ -141,7 +141,7 @@ function loadMap(map, txtinput) {
                     var time = data.evenementen[i].uur;
                     var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                    var contentString = '<a href="Event_Detailpage.html" style="text-decoration: none; font-size: 10pt; color= #000000"><h1>'+job+'</h1><br><p>'+jobbeschrijving+'</p><br><p>'+adres+'</p><br><p>'+time+'</p></a>';
+                    var contentString = '<a href="Event_Detailpage.html" style="text-decoration: none; font-size: 10pt; color= #000000"><h1 style="text-decoration: none; color= #000000";>'+job+'</h1><br><p style="text-decoration: none; color= #000000";>'+jobbeschrijving+'</p><br><p style="text-decoration: none; color= #000000";>'+adres+'</p><br><p style="text-decoration: none; color= #000000";>'+time+'</p></a>';
                     var infowindow = new google.maps.InfoWindow();
                     var marker = new google.maps.Marker({
                         position: latLng,
