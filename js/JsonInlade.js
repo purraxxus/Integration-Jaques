@@ -4,30 +4,51 @@ $(function () {
   $.ajax({
     url: 'JSON/Bedrijven.json'
     , dataType: 'json'
-    , success: onSuccess
+    , success: onSuccessBedrijf
+    , error: function (err) {
+      console.error('Fout: ', err);
+    }
+  });
+  $.ajax({
+    url: 'JSON/events.json'
+    , dataType: 'json'
+    , success: onSuccessEvents
     , error: function (err) {
       console.error('Fout: ', err);
     }
   });
 });
 
-function onSuccess(data) {
+function onSuccessBedrijf(data) {;
   responseObject = data.features;
   BedrijfNaam = localStorage.getItem('bedrijfsNaam');
   JsonBinnenHalen(responseObject)
-  vulHTML(responseObject);
+  vulHTMLBedrijf(responseObject);
 };
 
-function vulHTML() {
+function onSuccessEvents(data) {
+  responseObjectEvents = data.evenementen;
+  console.log(responseObjectEvents);
+}
+
+function vulHTMLBedrijf() {
   var HeaderHTML = "";
   var url = "../img/" + responseObject[NrBedrijf].properties.source;
-  console.log(url);
   HeaderHTML += '<div class= "profielFoto" style=" background-image: url(' + url + ');" > '
   HeaderHTML += '<h1 id = "' + responseObject[NrBedrijf].properties.Category + '" > ' + responseObject[NrBedrijf].properties.Naam + ' </h1> </div > ';
-  HeaderHTML += '<div class="row clearfix"> <a class="icon_link" href="#"><i class="material-icons">location_on</i></a>'
-  HeaderHTML += '<div class="info_company"> <p>' + responseObject[NrBedrijf].properties.Adres + '</p><p><a href="mailto:info@kittybons.com">contact</a></p> </div>'
-  $(".containerHeader").html(HeaderHTML);
-  console.log(HeaderHTML);
+  HeaderHTML += '<div class="row clearfix">'
+  HeaderHTML += '<div class="info_company"><img class="PinLocation" src="/img/icon/lol.png"> <p>' + responseObject[NrBedrijf].properties.Adres + '</p><p><a href="mailto:info@kittybons.com">contact</a></p> </div>'
+  var InfoHTML = "";
+  InfoHTML += '<p>' + responseObject[NrBedrijf].properties.Beschrijving + '</p>'
+  $("#containerHeader").html(HeaderHTML);
+  $("#containerInfo").html(InfoHTML);
+}
+
+function vulHTMLEvent() {
+  var EventsHTML = "";
+  EventsHTML += '<div class="example_item clearfix"><div class="example_item_date"> <span class="example_item_title_on_image">'
+  EventsHTML += +responseObjectEvents[nr].datum + '</span></div>';
+  EventsHTML += '<div class="example_item_title"><a href="html/Event_Detailpage.html">'
 }
 
 function JsonBinnenHalen(responseObject) {

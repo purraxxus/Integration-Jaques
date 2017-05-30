@@ -25,38 +25,18 @@
     <input type="button" value="&nbsp; &lang;" onclick="goBack()">
     <h2>Details</h2> </header>
   <main>
-    <div class="containerHeader">
-      <!--
-    <div class="profielFoto">
-      <h1 id="naam_company">Anderlecht Brewery</h1> </div>
-    <div class="row clearfix"> <a class="icon_link" href="#"><i class="material-icons">location_on</i></a>
-      <div class="info_company">
-        <p>Nijverheidskaai 01</p>
-        <p>3000 Brussel</p>
-        <p><a href="mailto:info@kittybons.com">contact</a></p>
-      </div>
---></div>
+    <div id="containerHeader"> </div>
     <div class="connect_users"> <span class="subscribe_button icon_link" href="#"><i class="material-icons hartje" >favorite_border</i></span>
       <p class="number_subs">1</p>
     </div>
     </div>
     <!--    deze buttons worden accordeon-menu en panel = inhoud --------------->
     <section class="content_accordion">
-      <button class="accordion">Info</button>
-      <div class="panel">
-        <div class="example_item clearfix">
-          <div class="example_item_date"> <span class="example_item_title_on_image">25 may 2017</span></div>
-          <div class="example_item_title"> <a href="html/Event_Detailpage.html"> BottleMania </a></div>
-          <div class="example_item_description">Help us bottle the first batch of AnderBier. You'll be responsible for coordinating and instructing the bottlers.</div>
-        </div>
-        <div class="example_item clearfix">
-          <div class="example_item_date"> <span class="example_item_title_on_image">24 june 2017</span></div>
-          <div class="example_item_title">Brussels Biergarten </div>
-          <div class="example_item_description">A wonderful friday night at the gardens of Anderlecht. Beer and bratwurst, jawohl.</div>
-        </div>
-      </div>
+      <button id="Info" class="accordion">Info</button>
+      <div id="containerInfo" class="panel"> </div>
       <button class="accordion">Events</button>
-      <div class="panel">
+      <div id="containerEvents" class="panel">
+        <!--
         <div class="example_item clearfix">
           <div class="example_item_date"> <span class="example_item_title_on_image">25 may 2017</span></div>
           <div class="example_item_title"> <a href="html/Event_Detailpage.html"> BottleMania </a></div>
@@ -67,7 +47,7 @@
           <div class="example_item_title">Brussels Biergarten </div>
           <div class="example_item_description">A wonderful friday night at the gardens of Anderlecht. Beer and bratwurst, jawohl.</div>
         </div>
-      </div>
+--></div>
       <button class="accordion">Jobs</button>
       <div class="panel">
         <div class="example_item clearfix">

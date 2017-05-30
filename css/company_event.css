@@ -46,7 +46,8 @@ a {
 
 .row p {
   font-size: 0.8em;
-  line-height: 0.5;
+  line-height: 1;
+  margin: 0;
 }
 
 
@@ -225,6 +226,7 @@ a {
 
 button {
   font-family: "Open Sans";
+  font-size: 1.1em;
 }
 
 button.accordion {
@@ -309,4 +311,9 @@ button.accordion:after {
 #Hobbies {
   background-color: #fae79f;
   opacity: 0.8;
+}
+
+.PinLocation {
+  width: 20px;
+  float: left;
 }
