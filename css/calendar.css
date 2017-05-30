@@ -153,12 +153,13 @@ a:hover {
     color: white;
     width: 90%;
     margin-bottom: 2px;
+    padding-left: 50px;
 }
 
 li.day-name {
     display: inline-block;
     text-align: center;
-    width: 11.5%;
+    width: 10.5%;
     height: 0;
     padding: 0 0 8%
 }
@@ -166,7 +167,7 @@ li.day-name {
 li.day {
     display: inline-block;
     text-align: center;
-    width: 11.5%;
+    width: 10.5%;
     height: 0;
     padding: 0 0 8%;
 }
