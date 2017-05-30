@@ -221,7 +221,7 @@ p {
 
 .buttons {
   text-align: center;
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .More {
@@ -235,4 +235,8 @@ p {
 .Company {
   padding-bottom: 10px;
   position: relative;
+}
+
+.Company:last-child {
+  margin-bottom: 30px;
 }

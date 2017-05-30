@@ -125,13 +125,13 @@ function genereerLijstMetBedrijven() // Pas filters en zoek toe en genereer lijs
   var htmlString = "";
   if (newBedrijven.length) {
     for (i = 0; i < newBedrijven.length; i++) {
+      console.log(newBedrijven[i].properties.Beschrijving);
       htmlString += '<div id="' + i + '" class="Company"> <div class="left">';
       htmlString += '<img class="Search" src="../img/' + newBedrijven[i].properties.source + '"/>';
       htmlString += '<h3 id="' + newBedrijven[i].properties.Category + '" class="Search">' + newBedrijven[i].properties.Naam + '</h3> </div>'
       htmlString += '<p>' + newBedrijven[i].properties.Beschrijving + '</p><button onclick="bewaarBedrijf(event)" id="' + newBedrijven[i].properties.Naam + '" class="More">></button></div>'
       $("#content").html(htmlString);
-      cssChanger(newBedrijven.length);
-      $("p").text(LimitWordsInPTag(i, 120));
+      cssChanger(newBedrijven.length);;
     }
   }
   else {
