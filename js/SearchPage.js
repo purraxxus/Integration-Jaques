@@ -142,6 +142,7 @@ function genereerLijstMetBedrijven() // Pas filters en zoek toe en genereer lijs
     FilterFunctie();
     var htmlString = "";
     if (newBedrijven.length) {
+<<<<<<< HEAD
       for (i = 0; i < newBedrijven.length; i++) {
         htmlString += '<div id="' + i + '" class="Company"> <div class="left">';
         htmlString += '<img class="Search" alt=" src="../img/' + Bedrijven[i].properties.source + '"/>';
@@ -154,6 +155,19 @@ function genereerLijstMetBedrijven() // Pas filters en zoek toe en genereer lijs
     }
     else {
       $('main#content').empty();
+=======
+        for (i = 0; i < newBedrijven.length; i++) {
+            htmlString += '<div id="' + i + '" class="Company"> <div class="left">';
+            htmlString += '<img class="Search" src="../img/' + newBedrijven[i].properties.source + '"/>';
+            htmlString += '<h3 id="' + newBedrijven[i].properties.Category + '" class="Search">' + newBedrijven[i].properties.Naam + '</h3> </div>'
+            htmlString += '<p>' + newBedrijven[i].properties.Beschrijving + '</p><button onclick="bewaarBedrijf(event)" id="' + newBedrijven[i].properties.Naam + '" class="More"></button></div>'
+            $("#content").html(htmlString);
+            cssChanger(newBedrijven.length);
+            $("p").text(LimitWordsInPTag(i, 120));
+        }
+    } else {
+        $('main#content').empty();
+>>>>>>> origin/master
     }
   }
 }
