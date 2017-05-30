@@ -15,7 +15,6 @@ input {
 }
 
 .SliderImg h3 {
-  background-color: rgba(97, 88, 186, 1);
   width: 215px;
   top: -10;
 }
@@ -165,26 +164,32 @@ main {
   float: left;
 }
 
-#foodDrinks span.before {
+#foodDrinks span.before,
+div#foodDrinks {
   background-color: #1abc9c;
 }
 
-#Beauty span.before {
+#Beauty span.before,
+div#Beauty {
   background-color: #955ba4;
 }
 
-#socialInitiatives span.before {
+#socialInitiatives span.before,
+div#socialInitiatives {
   background-color: #e57e26;
 }
 
-#clothingAccessories span.before {
+#clothingAccessories span.before,
+div#clothingAccessories {
   background-color: #eec31a;
 }
 
-#DIY span.before {
+#DIY span.before,
+div#DIY {
   background-color: #e64e3c;
 }
 
-#Hobbies span.before {
+#Hobbies span.before,
+div#Hobbies {
   background-color: #fae79f;
 }
