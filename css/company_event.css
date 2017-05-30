@@ -123,7 +123,7 @@ a {
 /*hartje*/
 
 .subscribe_button {
-  color: bisque;
+  color: #2980b9;
   text-decoration: none;
 }
 
@@ -313,14 +313,13 @@ button.accordion:after {
 }
 
 .example_item clearfix {
-<<<<<<< Updated upstream
-    margin-bottom: 3%;
+  margin-bottom: 3%;
 }
 
 #geenMarginHier {
-    margin-top: 0;
+  margin-top: 0;
 }
-=======
-  margin-bottom: 3%;
+
+margin-bottom: 3%;
+
 }
->>>>>>> Stashed changes

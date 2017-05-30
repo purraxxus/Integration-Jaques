@@ -43,3 +43,35 @@ div#Hobbies.example_item_date {
   background-color: #fae79f;
   opacity: 0.8;
 }
+
+a {
+  color: black;
+}
+
+.row p {
+  margin: 0;
+}
+
+.row {
+  clear: both;
+  width: 55%;
+  margin: 0;
+  margin: 10px;
+  float: left;
+}
+
+.info_company {
+  width: 100%;
+}
+
+p.number_subs {
+  margin: 10px;
+}
+
+.icon_link {
+  padding: 0;
+  margin: 10px;
+  width: 10px;
+  right: 50px;
+  position: absolute;
+}
