@@ -52,7 +52,7 @@ a {
 
 /*dit is de h1 met naam van het initiatief en foto --- NOG AANPASSEN!!! */
 
-#naam_company {
+.profielFoto h1 {
   /*  position: absolute;*/
   width: 100%;
   bottom: 0;
@@ -278,4 +278,35 @@ button.accordion:after {
 .profielFoto {
   height: 200px;
   position: relative;
+  background-size: cover;
+}
+
+#foodDrinks {
+  background-color: #1abc9c;
+  opacity: 0.8;
+}
+
+#Beauty {
+  background-color: #955ba4;
+  opacity: 0.8;
+}
+
+#socialInitiatives {
+  background-color: #e57e26;
+  opacity: 0.8;
+}
+
+#clothingAccessories {
+  background-color: #eec31a;
+  opacity: 0.8;
+}
+
+#DIY {
+  background-color: #e64e3c;
+  opacity: 0.8;
+}
+
+#Hobbies {
+  background-color: #fae79f;
+  opacity: 0.8;
 }

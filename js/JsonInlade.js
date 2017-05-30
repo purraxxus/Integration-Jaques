@@ -20,10 +20,10 @@ function onSuccess(data) {
 
 function vulHTML() {
   var HeaderHTML = "";
-  var url = "/img/" + responseObject[NrBedrijf].properties.source;
+  var url = "../img/" + responseObject[NrBedrijf].properties.source;
   console.log(url);
   HeaderHTML += '<div class= "profielFoto" style=" background-image: url(' + url + ');" > '
-  HeaderHTML += '<h1 id = "naam_company" > ' + responseObject[NrBedrijf].properties.Naam + ' </h1> </div > ';
+  HeaderHTML += '<h1 id = "' + responseObject[NrBedrijf].properties.Category + '" > ' + responseObject[NrBedrijf].properties.Naam + ' </h1> </div > ';
   HeaderHTML += '<div class="row clearfix"> <a class="icon_link" href="#"><i class="material-icons">location_on</i></a>'
   HeaderHTML += '<div class="info_company"> <p>' + responseObject[NrBedrijf].properties.Adres + '</p><p><a href="mailto:info@kittybons.com">contact</a></p> </div>'
   $(".containerHeader").html(HeaderHTML);

@@ -5,7 +5,7 @@
       , "properties": {
         "Naam": "Anderlechts Brewery"
         , "Category": "foodDrinks"
-        , "source": "Anderlecht Brewery.jpg"
+        , "source": "Anderlecht_Brewery.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -19,7 +19,7 @@
       , "properties": {
         "Naam": "Brewery Kiekens"
         , "Category": "foodDrinks"
-        , "source": "Brewery Kiekens.jpg"
+        , "source": "Brewery_Kiekens.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -32,7 +32,7 @@
       , "properties": {
         "Naam": "Flowers Jos"
         , "Category": "Hobbies"
-        , "source": "Flowers Jos.jpg"
+        , "source": "Flowers_Jos.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -45,7 +45,7 @@
       , "properties": {
         "Naam": "Azerty Hardware store"
         , "Category": "DIY"
-        , "source": "Hardware AZERTY.jpg"
+        , "source": "Hardware_AZERTY.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
@@ -149,7 +149,7 @@
       , "properties": {
         "Naam": "I fix IT"
         , "Category": "Hobbies"
-        , "source": "I fix IT copy.jpg"
+        , "source": "I_fix_IT_copy.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
       }
