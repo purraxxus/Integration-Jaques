@@ -28,10 +28,11 @@
                     "fuctie": "bediende"
                   }
 
-            ], "geometry": {
-        "type": "Point"
-        , "coordinates": [4.422760, 50.841815, 0]
-      }
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.422760, 50.841815, 0]
+            }
 
         },
         {
@@ -60,10 +61,11 @@
                     "fuctie": "bediende"
                   }
 
-            ], "geometry": {
-        "type": "Point"
-        , "coordinates": [4.320446, 50.839536, 0]
-      }
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.320446, 50.839536, 0]
+            }
 
         },
         {
@@ -92,10 +94,11 @@
                     "fuctie": "bediende"
                   }
 
-            ], "geometry": {
-        "type": "Point"
-        , "coordinates": [4.321585, 50.845925, 0]
-      }
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.321585, 50.845925, 0]
+            }
 
         },
         {
@@ -124,10 +127,11 @@
                     "fuctie": "bediende"
                   }
 
-            ], "geometry": {
-        "type": "Point"
-        , "coordinates": [4.329611, 50.835518, 0]
-      }
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.329611, 50.835518, 0]
+            }
 
         },
         {
@@ -156,10 +160,11 @@
                     "fuctie": "bediende"
                   }
 
-            ], "geometry": {
-        "type": "Point"
-        , "coordinates": [4.336488, 50.849491, 0]
-      }
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.336488, 50.849491, 0]
+            }
 
         }
 ]
