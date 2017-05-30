@@ -1,31 +1,32 @@
+var map;
+
 $(document).ready(function () {
     $('#filterbutton').click(function (e) {
         $(this).toggleClass('nav_jobs');
         $(this).toggleClass('toggledLeft');
         var txt = $(e.target).text();
         console.log(txt);
-        loadMap(txt);
+        loadMap(map, txt);
     });
     $('#filterbutton2').click(function (e) {
         $(this).toggleClass('nav_events');
         $(this).toggleClass('toggledMiddle');
         var txt = $(e.target).text();
         console.log(txt);
-        loadMap(txt);
+        loadMap(map, txt);
     });
     $('#filterbutton3').click(function (e) {
         $(this).toggleClass('nav_tools');
         $(this).toggleClass('toggledRight');
         var txt = $(e.target).text();
         console.log(txt);
-        loadMap(txt);
+        loadMap(map, txt);
     });
 });
 
 
-function loadMap(txtinput) {
+function loadMap(map, txtinput) {
     if (txtinput == "Startups") {
-        var map;
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         $.ajax({
             url: 'JSON/Bedrijven.json',
@@ -61,11 +62,11 @@ function loadMap(txtinput) {
         var map;
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         $.ajax({
-            url: 'JSON/Events.json',
+            url: 'JSON/events.json',
             dataType: 'json',
             success: function (data) {
-                for (var i = 0; i < data.features.length; i++) {
-                     var coords = data.features[i].geometry.coordinates;
+                for (var i = 0; i < data.evenementen.length; i++) {
+                    var coords = data.evenementen[i].geometry.coordinates;
                     var naam = data.evenementen[i].naamEvent;
                     var descr = data.evenementen[i].details;
                     var time = data.evenementen[i].uur;
@@ -90,24 +91,27 @@ function loadMap(txtinput) {
             }
         });
     } else if (txtinput == "Jobs") {
-        var map;
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         $.ajax({
-            url: 'JSON/Events.json',
+            url: 'JSON/events.json',
             dataType: 'json',
             success: function (data) {
-                for (var i = 0; i < data.features.length; i++) {
-                     var coords = data.features[i].geometry.coordinates;
+                console.log(data);
+                for (var i = 0; i < data.evenementen.length; i++) {
+                    var coords = data.evenementen[i].geometry.coordinates;
                     var naam = data.evenementen[i].naamEvent;
                     var job = data.evenementen[i].jobs.welkeJob;
                     var descr = data.evenementen[i].details;
                     var time = data.evenementen[i].uur;
                     var adres = data.evenementen[i].straatNummer + " " + data.evenementen[i].stad;
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
+
                     var contentString = "<a href=../html/index.html style='text-decoration: none; color: black><h1 style='font-weight: 900;'>" + naam + "<h1><br>" + "<p>" + descr + "<p style='color: lightgrey;><br>" + time + "<p><br>" + "<p style='color: lightgrey;'>" + adres + "<p><br></a>";
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
                     });
+
+                    console.log(map);
                     var marker = new google.maps.Marker({
                         position: latLng,
                         title: name,
@@ -213,4 +217,35 @@ function initMap() {
     }
 ]
     });
+}
+
+function addMarker(location) {
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
+    markers.push(marker);
+}
+
+// Sets the map on all markers in the array.
+function setMapOnAll(map) {
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+    }
+}
+
+// Removes the markers from the map, but keeps them in the array.
+function clearMarkers() {
+    setMapOnAll(null);
+}
+
+// Shows any markers currently in the array.
+function showMarkers() {
+    setMapOnAll(map);
+}
+
+// Deletes all markers in the array by removing references to them.
+function deleteMarkers() {
+    clearMarkers();
+    markers = [];
 }
