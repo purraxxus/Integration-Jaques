@@ -7,10 +7,10 @@ $(document).ready(function () {
       $(".number_subs").html(function (i, val) {
         return +val - 1;
       });
-      $("i.hartje").css("color", "bisque").text("favorite_border");
+      $("i.hartje").css("color", "#2980b9").text("favorite_border");
     }
     else {
-      $("i.hartje").css("color", "red").text("favorite").animate({
+      $("i.hartje").css("color", "#2980b9").text("favorite").animate({
         fontSize: '2em'
       }).animate({
         fontSize: '24px'
