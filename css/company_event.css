@@ -4,6 +4,12 @@
 3. accordion menu
 */
 
+p {
+    font-family: "Open Sans", Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
 body {
     margin: 0;
 }
@@ -263,7 +269,9 @@ div.panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-size: 0.8em;
+    font-family: "Open Sans", Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
 }
 
 
