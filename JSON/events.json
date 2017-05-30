@@ -2,14 +2,14 @@
     "evenementen": [
 
         {
-            "naam": "Evenement 1",
-            "naamEvent": "Anderlecht Brewery",
-            "straatNummer": "Nijverheidskaai 01",
-            "stad": "3000 Brussel",
+            "naam": "E-Hack-B",
+            "naamEvent": "E-Hack-B",
+            "straatNummer": "Nijverheidskaai 170",
+            "stad": "1070 Anderlecht",
             "datum": "25 juni 2017",
             "uur": "13:00 tot 16:00",
             "url": "/img/Placeholder.jpg",
-            "details": "details 1",
+            "details": "We starten EhackB dit jaar met enkele externe en interne sprekers die een belangrijke bijdrage leveren aan het drieluik hack, create en game. Er is geen voorkennis vereist om de keynotes bij te wonen. Na de keynotes openen we al onze corners en starten de workshops.",
             "review": "dit is de review van het eerste evenement.",
             "jobs": [
                 {
@@ -31,7 +31,7 @@
             ],
             "geometry": {
                 "type": "Point",
-                "coordinates": [4.422760, 50.841815, 0]
+                "coordinates": [4.332971, 50.839674, 0]
             }
 
         },

@@ -3,38 +3,38 @@
   , "features": [{
       "type": "feature"
       , "properties": {
-        "Naam": "Anderlechts Brewery"
-        , "Category": "foodDrinks"
+        "Naam": "ErasmusHogeschool Brussel, Campus Kaai"
+        , "Category": "Hobbies"
         , "source": "Anderlecht_Brewery.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Industielaan 170, 1070 Anderlecht"
+        , "Beschrijving": "The Erasmushogeschool Brussel (English name: Erasmus University College Brussels) is an institute of higher education based in Brussels, Belgium."
       }
       , "geometry": {
         "type": "Point"
-        , "coordinates": [4.422760, 50.841815, 0]
+        , "coordinates": [4.322360, 50.841679, 0]
       }
     }
     , {
       "type": "feature"
       , "properties": {
-        "Naam": "Brewery Kiekens"
+        "Naam": "Brasserie La Paix"
         , "Category": "foodDrinks"
         , "source": "Brewery_Kiekens.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Rue Ropsy Chaudron 49, 1070 Anderlecht"
+        , "Beschrijving": "Roomy fine-dining brasserie, open since 1892, serving Belgian cuisine & steaks by chef David Martin."
       }
       , "geometry": {
         "type": "Point"
-        , "coordinates": [4.320446, 50.839536, 0]
+        , "coordinates": [4.328358, 50.843766, 0]
       }
     }, {
       "type": "feature"
       , "properties": {
-        "Naam": "Flowers Jos"
+        "Naam": "Bloemenhal"
         , "Category": "Hobbies"
         , "source": "Flowers_Jos.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Rue Birmingham 221, 1070 Anderlecht"
+        , "Beschrijving": "Bloemenhal, dé bloemenwinkel voor mooie, dagverse bloemen en planten aan voordelige prijs. Bloemen fleuren in een oogwenk uw hele huis op. Ze zijn ideaal als bedanking, cadeau of om uzelf te verwennen. Houdt u van kleurrijke tulpen, romantische rozen of elegante orchideeën? Voor die en veel meer kan u terecht bij de bloemenwinkels van Bloemenhal."
       }
       , "geometry": {
         "type": "Point"
@@ -46,8 +46,8 @@
         "Naam": "Azerty Hardware store"
         , "Category": "DIY"
         , "source": "Hardware_AZERTY.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Rue Wayez 25, 1070 Anderlecht"
+        , "Beschrijving": "Wij helpen u persoonlijk bij het vinden van de juiste computers, componenten, servers, gaming- en netwerkartikelen, laptops en overige ICT-producten!"
       }
       , "geometry": {
         "type": "Point"
@@ -56,11 +56,11 @@
     }, {
       "type": "feature"
       , "properties": {
-        "Naam": "Bakery Vermeulen"
+        "Naam": "Bakery Carl"
         , "Category": "foodDrinks"
         , "source": "Bakery.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Goedestraat 25, 1070 Anderlecht"
+        , "Beschrijving": "Van koud naar warm. In 1993 zag Bakkerij Carl het daglicht – als een koude bakkerij. Voor dag en dauw haalde Carl zijn producten bij een bakker in de buurt."
       }
       , "geometry": {
         "type": "Point"
@@ -72,8 +72,8 @@
         "Naam": "Butcher Karel"
         , "Category": "foodDrinks"
         , "source": "Butcher.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Rue Eloy 29, 1070 Anderlecht"
+        , "Beschrijving": "Vermijd files of wachtrijen. Bestel online je vers vlees, charcuterie of kant-en-klare gerechten. Geleverd op kantoor of af te halen in onze winkel (tot 19 uur)."
       }
       , "geometry": {
         "type": "Point"
@@ -85,8 +85,8 @@
         "Naam": "Heylens Clothing"
         , "Category": "clothingAccessories"
         , "source": "Clothes.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus"
+        , "Adres": "Goedestraat 25, 1070 Anderlecht"
+        , "Beschrijving": "Wat is Heylens? Toffe kleren, trendy merken.Voor dames en heren. Straffe prijzen en dito acties. Gratis leveringThuis, op kantoor, of in de winkel."
       }
       , "geometry": {
         "type": "Point"
@@ -95,11 +95,11 @@
     }, {
       "type": "feature"
       , "properties": {
-        "Naam": "Photobooth Dirk"
+        "Naam": "Photobooth Ingrid en Rik"
         , "Category": "Hobbies"
         , "source": "Placeholder.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus"
+        , "Adres": "Fotografenstraat 420, 1070 Anderlecht"
+        , "Beschrijving": "Fotozaak voor kwaliteitsvolle fotografie. Terwijl Ingrid zich toelegt op haar stijlvolle studiofotografie, legde Rik zich toe op de digitale beeldbewerking."
       }
       , "geometry": {
         "type": "Point"
@@ -111,8 +111,8 @@
         "Naam": "Barbershop Jef"
         , "Category": "Beauty"
         , "source": "Barbershop.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Goedestraat 25, 1070 Anderlecht"
+        , "Beschrijving": "We zijn kappers, laat dat duidelijk zijn. Dat zit in ons DNA. Maar een kappersbezoek kan zoveel meer betekenen."
       }
       , "geometry": {
         "type": "Point"
@@ -124,8 +124,8 @@
         "Naam": "Foncé Sportswear"
         , "Category": "Hobbies"
         , "source": "Sport.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Goedestraat 28, 1070 Anderlecht"
+        , "Beschrijving": "Bij Sportwinkel Sportcity in Merksplas kunnen alle sporters terecht voor een ruim assortiment aan sportkledij en materiaal."
       }
       , "geometry": {
         "type": "Point"
@@ -137,8 +137,8 @@
         "Naam": "Bycicles Jacques"
         , "Category": "Hobbies"
         , "source": "Bycicle.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Fietswinkelstraat 69, 1070 Anderlecht"
+        , "Beschrijving": "Zoekt u een fiets? Bij Dewa Sport bent u aan het juiste adres. Wij bieden in elk gamma en binnen elk budget de gepaste fiets aan."
       }
       , "geometry": {
         "type": "Point"
@@ -150,8 +150,8 @@
         "Naam": "I fix IT"
         , "Category": "Hobbies"
         , "source": "I_fix_IT_copy.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Gaasbeekstraat 1, 1070 Anderlecht"
+        , "Beschrijving": "You bought it, you should own it. Period. You should have the right to use it, modify it, and repair it wherever, whenever, and however you want."
       }
       , "geometry": {
         "type": "Point"
@@ -163,8 +163,8 @@
         "Naam": "SharingPoint Anderlecht"
         , "Category": "socialInitiatives"
         , "source": "Sharing.jpg"
-        , "Adres": "Goedestraat 25,1070 Anderlecht"
-        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
+        , "Adres": "Vollezelstraat 97, 1070 Anderlecht"
+        , "Beschrijving": "Deel, organiseer en ontdek met ons plaatselijk SharingPoint."
       }
       , "geometry": {
         "type": "Point"
