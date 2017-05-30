@@ -82,8 +82,21 @@
     }, {
       "type": "feature"
       , "properties": {
-        "Naam": "Heylens Jewelery"
+        "Naam": "Heylens Clothing"
         , "Category": "clothingAccessories"
+        , "source": "../img/Clothes.jpg"
+        , "Adres": "Goedestraat 25,1070 Anderlecht"
+        , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus"
+      }
+      , "geometry": {
+        "type": "Point"
+        , "coordinates": [4.300268, 50.848831, 0]
+      }
+    }, {
+      "type": "feature"
+      , "properties": {
+        "Naam": "Photobooth Dirk"
+        , "Category": "Hobbies"
         , "source": "../img/Placeholder.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus"
