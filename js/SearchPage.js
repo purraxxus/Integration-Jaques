@@ -125,12 +125,13 @@ function genereerLijstMetBedrijven() // Pas filters en zoek toe en genereer lijs
   var htmlString = "";
   if (newBedrijven.length) {
     for (i = 0; i < newBedrijven.length; i++) {
-      htmlString += '<div id="' + i + '" class="Company"><img class="Search" src="' + newBedrijven[i].properties.source + '">'
-      htmlString += '<h3 class="Search">' + newBedrijven[i].properties.Naam + '</h3>'
-      htmlString += '<p>' + newBedrijven[i].properties.Beschrijving + '</p></div>'
+      htmlString += '<div id="' + i + '" class="Company"> <div class="left">';
+      htmlString += '<img class="Search" src="' + newBedrijven[i].properties.source + '">';
+      htmlString += '<h3 id="' + newBedrijven[i].properties.Category + '" class="Search">' + newBedrijven[i].properties.Naam + '</h3> </div>'
+      htmlString += '<p>' + newBedrijven[i].properties.Beschrijving + '</p><button class="More">></button></div>'
       $("#content").html(htmlString);
       cssChanger(newBedrijven.length);
-      $("p").text(LimitWordsInPTag(i, 90));
+      $("p").text(LimitWordsInPTag(i, 120));
     }
   }
   else {
@@ -154,7 +155,7 @@ function cssChanger(lengte) {
   for (nr = 0; nr < lengte; nr++) {
     if (nr % 2 != 0) {
       var classDing = $('div#' + nr + ".Company");
-      $(classDing).css("background-color", "lightgrey");
+      $(classDing).css("background-color", "rgba(245,245,245,1)");
     }
   }
 }

@@ -103,14 +103,18 @@ side li:last-child {
 }
 
 img.Search {
-  width: 55%;
+  width: 100%;
+  height: 150px;
   float: left;
-  margin: 0.5em 1em 0.5em 0;
+  margin: 0em;
 }
 
 h3.Search {
-  padding-left: 1em;
-  margin-top: 0.5em;
+  margin: 0;
+  padding: 0.5em 2.5%;
+  width: 95%;
+  position: absolute;
+  bottom: 0;
 }
 
 .Company {
@@ -122,12 +126,12 @@ h3.Search {
 }
 
 button {
-  width: 43%;
+  width: 85%;
   background-color: #2980b9;
   border: none;
   color: white;
   padding: 1.5em 0em;
-  margin: 2em 30% 5em;
+  margin-bottom: 40px;
 }
 
 header {
@@ -160,36 +164,74 @@ main {
   z-index: 0;
 }
 
-.company p {
-  float: left;
-}
-
 #foodDrinks span.before,
-div#foodDrinks {
+div#foodDrinks,
+h3#foodDrinks.Search {
   background-color: #1abc9c;
+  opacity: 0.8;
 }
 
 #Beauty span.before,
-div#Beauty {
+div#Beauty,
+h3#Beauty.Search {
   background-color: #955ba4;
+  opacity: 0.8;
 }
 
 #socialInitiatives span.before,
-div#socialInitiatives {
+div#socialInitiatives,
+h3#socialInitiatives.Search {
   background-color: #e57e26;
+  opacity: 0.8;
 }
 
 #clothingAccessories span.before,
-div#clothingAccessories {
+div#clothingAccessories,
+h3#clothingAccessories.Search {
   background-color: #eec31a;
+  opacity: 0.8;
 }
 
 #DIY span.before,
-div#DIY {
+div#DIY,
+h3#DIY.Search {
   background-color: #e64e3c;
+  opacity: 0.8;
 }
 
 #Hobbies span.before,
-div#Hobbies {
+div#Hobbies,
+h3#Hobbies.Search {
   background-color: #fae79f;
+  opacity: 0.8;
+}
+
+div.left {
+  width: 55%;
+  float: left;
+  height: 150px;
+  position: relative;
+}
+
+p {
+  max-width: 40%;
+  float: left;
+  margin: 15px 0px 0px 10px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.More {
+  width: 30px;
+  right: 0;
+  bottom: 10px;
+  margin: 0;
+  position: absolute
+}
+
+.Company {
+  padding-bottom: 10px;
+  position: relative;
 }
