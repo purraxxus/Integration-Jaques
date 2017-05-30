@@ -345,3 +345,7 @@ button.accordion:after {
 .example_item clearfix {
     margin-bottom: 3%;
 }
+
+#geenMarginHier {
+    margin-top: 0;
+}
