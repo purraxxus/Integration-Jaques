@@ -71,3 +71,10 @@ function register() {
     console.log(repeatPass);
 }
 // pass.match("/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$)/")
+
+
+
+
+function goBack() {
+    window.history.back()
+}

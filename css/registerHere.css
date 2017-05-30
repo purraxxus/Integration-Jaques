@@ -1,51 +1,62 @@
-body{margin:0;
+body {
+    margin: 0;
 }
 
-.hoofddingLogin{
-    color:white;
-    text-align: center;
-    
-}
-
-.loginGegevens{
-    margin-top:5%;
+.hoofddingLogin {
+    color: white;
     text-align: center;
 }
 
-.loginGegevens p{
-    margin-top:5%;
+.loginGegevens {
+    margin-top: 5%;
+    text-align: center;
 }
 
-.loginGegevens input{
-    width:80%;
+.loginGegevens p {
+    margin-top: 5%;
+}
+
+.loginGegevens input {
+    width: 80%;
     border-top: none;
-    border-left:none;
-    border-right:none;
+    border-left: none;
+    border-right: none;
     border-bottom-color: black;
     border-bottom-width: thin;
-    height:5px;
+    height: 5px;
 }
 
-#foto{
-    width:100%;
+#foto {
+    width: 100%;
 }
 
-.loginHolder{
+.loginHolder {
     text-align: center;
 }
 
-#logIn{
-    padding-left:5%;
-    padding-right:5%;
-    border:1px;
+#logIn {
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px;
     border-color: black;
-    background-color:dodgerblue;
-    color:white;
-
+    background-color: dodgerblue;
+    color: white;
 }
 
-#fouteLoginGegeven{
-    color:red;
+#fouteLoginGegeven {
+    color: red;
     font-size: 60%;
     text-align: center;
+}
+
+#terugKnop[type=button] {
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 0.2em 0;
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.5em;
+    float: left;
 }
