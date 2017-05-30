@@ -17,7 +17,7 @@
 }
 
 .topofnav {
-    background-color: dodgerblue;
+    background-color: #2980b9;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -55,7 +55,7 @@ nav {
 
 button {
     width: 30%;
-    background-color: dodgerblue;
+    background-color: #2980b9;
     border-style: hidden;
     color: white;
     font-size: 1.2em;
@@ -94,17 +94,17 @@ body {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     background-color: white;
-    color: dodgerblue;
+    color: #2980b9;
 }
 .toggledMiddle {
     background-color: white;
-    color: dodgerblue;
+    color: #2980b9;
 }
 .toggledRight {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: white;
-    color: dodgerblue;
+    color: #2980b9;
 }
 #filterbutton {
     width: 10%;
