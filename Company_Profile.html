@@ -2,77 +2,79 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="css/company_event.css">
-  <link rel="stylesheet" href="css/style.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title> Company Name Here | App Name Here</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <!--  dit is het icon font via google: ------>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="css/profielLogIn.css">
-  <link rel="stylesheet" href="css/detailBedrijf.css">
-  <script>
-    function goBack() {
-      window.history.back()
-    }
-  </script>
-  <script src="js/jquery-3.2.1.js"></script>
-  <script src="js/buttons_subscribe.js"></script>
+    <link rel="stylesheet" href="css/company_event.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title> Company Name Here | App Name Here</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!--  dit is het icon font via google: ------>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/profielLogIn.css">
+    <link rel="stylesheet" href="css/detailBedrijf.css">
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+
+    </script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/buttons_subscribe.js"></script>
 </head>
 
 <body>
-  <header>
-    <input type="button" value="&nbsp; &lang;" onclick="goBack()">
-    <h2>Details</h2> </header>
-  <main>
-    <div id="containerHeader"> </div>
-    <div class="connect_users"> <span class="subscribe_button icon_link" href="#"><i class="material-icons hartje" >favorite_border</i></span>
-      <p class="number_subs">1</p>
-    </div>
-    </div>
-    <!--    deze buttons worden accordeon-menu en panel = inhoud --------------->
-    <section class="content_accordion">
-      <button id="Info" class="accordion">Info</button>
-      <div id="containerInfo" class="panel"> </div>
-      <button class="accordion">Events</button>
-      <div id="containerEvents" class="panel"> </div>
-      <button class="accordion">Jobs</button>
-      <div id="containerJobs" class="panel"> --></div>
-      <button class="accordion">Products</button>
-      <div class="panel"> This company doesn't have any products at their disposal for the moment, please contact or visit them for more information </div>
-      <button class="accordion">Reviews</button>
-      <div class="panel">
-        <!--        Goed gestijld maar foute inhoud -------------->
-        <div class="example_item clearfix">
-          <div class="example_item_date"> <span class="example_item_title_on_image">*****</span></div>
-          <div class="example_item_title">Fantastic organisation! </div>
-          <div class="example_item_description">Really enjoyed our day at Anderlecht Brewers. The lady knew so much about beers, an expert in her field. </div>
+    <header>
+        <input type="button" value="&nbsp; &lang;" onclick="goBack()">
+        <h2>Details</h2>
+    </header>
+    <main>
+        <div id="containerHeader"> </div>
+        <div class="connect_users"> <span class="subscribe_button icon_link" href="#"><i class="material-icons hartje" >favorite_border</i></span>
+            <p class="number_subs">1</p>
         </div>
-        <div class="example_item clearfix">
-          <div class="example_item_date"> <span class="example_item_title_on_image">***</span></div>
-          <div class="example_item_title"> Nice beers, but...</div>
-          <div class="example_item_description">Liked the beers, but the furniture was old. These folks need a proper location.</div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer class="nav">
-    <ul>
-      <li>
-        <a href="index.html"> <img src="img/icon/home.svg" /></a>
-      </li>
-      <li>
-        <a href="calendar.html"><img src="img/icon/calendar.svg" /></a>
-      </li>
-      <li>
-        <a href="SearchPage.html"><img src="img/icon/search.svg" /></a>
-      </li>
-      <li>
-        <a href="profielLogIn.html"><img src="img/icon/user.svg" /></a>
-      </li>
-    </ul>
-  </footer>
-  <script src="js/JsonInlade.js"></script>
-  <script src="js/accordion_menu_company.js"></script>
+        <!--    deze buttons worden accordeon-menu en panel = inhoud --------------->
+        <section class="content_accordion">
+            <button id="Info" class="accordion">Info</button>
+            <div id="containerInfo" class="panel"> </div>
+            <button class="accordion">Events</button>
+            <div id="containerEvents" class="panel"> </div>
+            <button class="accordion">Jobs</button>
+            <div id="containerJobs" class="panel"> --></div>
+            <button class="accordion">Products</button>
+            <div class="panel"> This company doesn't have any products at their disposal for the moment, please contact or visit them for more information </div>
+            <button class="accordion">Reviews</button>
+            <div class="panel">
+                <!--        Goed gestijld maar foute inhoud -------------->
+                <div class="example_item clearfix">
+                    <div class="example_item_date"> <span class="example_item_title_on_image">*****</span></div>
+                    <div class="example_item_title">Fantastic organisation! </div>
+                    <div class="example_item_description">Really enjoyed our day at Anderlecht Brewers. The lady knew so much about beers, an expert in her field. </div>
+                </div>
+                <div class="example_item clearfix">
+                    <div class="example_item_date"> <span class="example_item_title_on_image">***</span></div>
+                    <div class="example_item_title"> Nice beers, but...</div>
+                    <div class="example_item_description">Liked the beers, but the furniture was old. These folks need a proper location.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="nav">
+        <ul>
+            <li>
+                <a href="index.html"> <img src="img/icon/home.svg" /></a>
+            </li>
+            <li>
+                <a href="calendar.html"><img src="img/icon/calendar.svg" /></a>
+            </li>
+            <li>
+                <a href="SearchPage.html"><img src="img/icon/searchSelected.svg" /></a>
+            </li>
+            <li>
+                <a href="profielLogIn.html"><img src="img/icon/user.svg" /></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/JsonInlade.js"></script>
+    <script src="js/accordion_menu_company.js"></script>
 </body>
