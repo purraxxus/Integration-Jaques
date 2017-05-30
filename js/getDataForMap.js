@@ -114,7 +114,7 @@ function loadMap(map, txtinput) {
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
                         description: contentString,
-                        bedrijf: data.evenementen[i].naamEvent,
+                        bedrijf: data.evenementen[i].naam,
                     });
                     markersArray.push(marker);
                     google.maps.event.addListener(marker, 'click', function(){
@@ -153,7 +153,7 @@ function loadMap(map, txtinput) {
                         map: map,
                         icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
                         description: contentString,
-                        bedrijf: data.evenementen[i].naamEvent,
+                        bedrijf: data.evenementen[i].naam,
                     });
                     markersArray.push(marker);
                     google.maps.event.addListener(marker, 'click', function(){
