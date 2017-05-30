@@ -1,26 +1,53 @@
 var map;
+var counterLeft = 0;
+var counterMiddle = 0;
+var counterRight = 0;
 
 $(document).ready(function () {
     $('#filterbutton').click(function (e) {
-        $(this).toggleClass('nav_jobs');
-        $(this).toggleClass('toggledLeft');
-        var txt = $(e.target).text();
-        console.log(txt);
-        loadMap(map, txt);
+        counterLeft += 1;
+        console.log(counterLeft);
+        if (counterLeft % 2 == 1) {
+            $(this).toggleClass('nav_jobs');
+            $(this).toggleClass('toggledLeft');
+            $("filterbutton2").addClass('nav_events')
+            $("filterbutton2").removeClass('toggledMiddle');
+            $("filterbutton3").addClass('nav_tools')
+            $("filterbutton3").removeClass('toggledRight');
+            var txt = $(e.target).text();
+            console.log(txt);
+            loadMap(map, txt);
+        } else {
+            
+        }
     });
     $('#filterbutton2').click(function (e) {
-        $(this).toggleClass('nav_events');
-        $(this).toggleClass('toggledMiddle');
-        var txt = $(e.target).text();
-        console.log(txt);
-        loadMap(map, txt);
+        counterMiddle += 1;
+        console.log(counterMiddle);
+        if (counterMiddle % 2 == 1) {
+            $(this).toggleClass('nav_events');
+            $(this).toggleClass('toggledMiddle');
+            var txt = $(e.target).text();
+            console.log(txt);
+            loadMap(map, txt);
+        } else {
+
+        }
+
     });
     $('#filterbutton3').click(function (e) {
-        $(this).toggleClass('nav_tools');
-        $(this).toggleClass('toggledRight');
-        var txt = $(e.target).text();
-        console.log(txt);
-        loadMap(map, txt);
+        counterRight += 1;
+        console.log(counterRight);
+        if (counterRight % 2 == 1) {
+            $(this).toggleClass('nav_tools');
+            $(this).toggleClass('toggledRight');
+            var txt = $(e.target).text();
+            console.log(txt);
+            loadMap(map, txt);
+        } else {
+
+        }
+
     });
 });
 
@@ -48,6 +75,7 @@ function loadMap(map, txtinput) {
                         position: latLng,
                         title: name,
                         map: map,
+                        icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
                     });
                     marker.addListener('click', function () {
                         infowindow.open(map, marker);
@@ -80,6 +108,7 @@ function loadMap(map, txtinput) {
                         position: latLng,
                         title: name,
                         map: map,
+                        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
                     });
                     marker.addListener('click', function () {
                         infowindow.open(map, marker);
@@ -116,6 +145,7 @@ function loadMap(map, txtinput) {
                         position: latLng,
                         title: name,
                         map: map,
+                        icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
                     });
                     marker.addListener('click', function () {
                         infowindow.open(map, marker);
