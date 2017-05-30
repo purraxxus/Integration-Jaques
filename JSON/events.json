@@ -2,7 +2,7 @@
     "evenementen": [
 
         {
-            "naam": "Bottlemania",
+            "naam": "Event 1 Naam",
             "naamEvent": "Anderlecht Brewery",
             "straatNummer": "Nijverheidskaai 01",
             "stad": "3000 Brussel",
@@ -10,22 +10,22 @@
             "uur": "13:00 tot 16:00",
             "url": "/img/Placeholder.jpg",
             "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1",
-            "review":"dit is de review van het eerste evenement.",
+            "review": "dit is de review van het eerste evenement.",
             "jobs": [
                 {
                     "welkeJob": "werk1",
                     "beschrijving": "beschrijving2",
-                    "fuctie":"vast werk"
+                    "fuctie": "vast werk"
                 },
                 {
-                   "welkeJob": "werk2",
+                    "welkeJob": "werk2",
                     "beschrijving": "beschrijving2",
-                    "fuctie":"jobstudent"
+                    "fuctie": "jobstudent"
                 },
                 {
                     "welkeJob": "werk3",
                     "beschrijving": "beschrijving3",
-                    "fuctie":"bediende"
+                    "fuctie": "bediende"
                   }
 
             ]
@@ -44,17 +44,17 @@
                 {
                     "welkeJob": "werk1",
                     "beschrijving": "beschrijving2",
-                    "fuctie":"vast werk"
+                    "fuctie": "vast werk"
                 },
                 {
-                   "welkeJob": "werk2",
+                    "welkeJob": "werk2",
                     "beschrijving": "beschrijving2",
-                    "fuctie":"jobstudent"
+                    "fuctie": "jobstudent"
                 },
                 {
                     "welkeJob": "werk3",
                     "beschrijving": "beschrijving3",
-                    "fuctie":"bediende"
+                    "fuctie": "bediende"
                   }
 
             ]
@@ -73,17 +73,17 @@
                 {
                     "welkeJob": "werk1",
                     "beschrijving": "beschrijving2",
-                    "fuctie":"vast werk"
+                    "fuctie": "vast werk"
                 },
                 {
-                   "welkeJob": "werk2",
+                    "welkeJob": "werk2",
                     "beschrijving": "beschrijving2",
-                    "fuctie":"jobstudent"
+                    "fuctie": "jobstudent"
                 },
                 {
                     "welkeJob": "werk3",
                     "beschrijving": "beschrijving3",
-                    "fuctie":"bediende"
+                    "fuctie": "bediende"
                   }
 
             ]
@@ -102,17 +102,17 @@
                 {
                     "welkeJob": "werk1",
                     "beschrijving": "beschrijving2",
-                    "fuctie":"vast werk"
+                    "fuctie": "vast werk"
                 },
                 {
-                   "welkeJob": "werk2",
+                    "welkeJob": "werk2",
                     "beschrijving": "beschrijving2",
-                    "fuctie":"jobstudent"
+                    "fuctie": "jobstudent"
                 },
                 {
                     "welkeJob": "werk3",
                     "beschrijving": "beschrijving3",
-                    "fuctie":"bediende"
+                    "fuctie": "bediende"
                   }
 
             ]
@@ -131,17 +131,17 @@
                 {
                     "welkeJob": "werk1",
                     "beschrijving": "beschrijving2",
-                    "fuctie":"vast werk"
+                    "fuctie": "vast werk"
                 },
                 {
-                   "welkeJob": "werk2",
+                    "welkeJob": "werk2",
                     "beschrijving": "beschrijving2",
-                    "fuctie":"jobstudent"
+                    "fuctie": "jobstudent"
                 },
                 {
                     "welkeJob": "werk3",
                     "beschrijving": "beschrijving3",
-                    "fuctie":"bediende"
+                    "fuctie": "bediende"
                   }
 
             ]
