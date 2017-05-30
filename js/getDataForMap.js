@@ -28,7 +28,7 @@ function loadMap(txtinput) {
         var map;
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         $.ajax({
-            url: '/JSON/Bedrijven.json',
+            url: 'JSON/Bedrijven.json',
             dataType: 'json',
             success: function (data) {
                 for (var i = 0; i < data.features.length; i++) {
@@ -61,7 +61,7 @@ function loadMap(txtinput) {
         var map;
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         $.ajax({
-            url: '/JSON/Events.json',
+            url: 'JSON/Events.json',
             dataType: 'json',
             success: function (data) {
                 for (var i = 0; i < data.features.length; i++) {
@@ -93,7 +93,7 @@ function loadMap(txtinput) {
         var map;
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         $.ajax({
-            url: '/JSON/Events.json',
+            url: 'JSON/Events.json',
             dataType: 'json',
             success: function (data) {
                 for (var i = 0; i < data.features.length; i++) {
