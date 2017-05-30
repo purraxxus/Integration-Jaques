@@ -4,7 +4,7 @@
       "type": "feature"
       , "properties": {
         "Naam": "Anderlechts Brewery"
-        , "Category": "food&Drinks"
+        , "Category": "foodDrinks"
         , "source": "../img/Placeholder.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
@@ -18,7 +18,7 @@
       "type": "feature"
       , "properties": {
         "Naam": "Brewery Kiekens"
-        , "Category": "food&Drinks"
+        , "Category": "foodDrinks"
         , "source": "../img/Placeholder.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
@@ -57,7 +57,7 @@
       "type": "feature"
       , "properties": {
         "Naam": "Bakery Vermeulen"
-        , "Category": "food&Drinks"
+        , "Category": "foodDrinks"
         , "source": "../img/Placeholder.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
@@ -70,7 +70,7 @@
       "type": "feature"
       , "properties": {
         "Naam": "Butcher Karel"
-        , "Category": "food&Drinks"
+        , "Category": "foodDrinks"
         , "source": "../img/Placeholder.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."
@@ -83,7 +83,7 @@
       "type": "feature"
       , "properties": {
         "Naam": "Heylens Jewelery"
-        , "Category": "clothing&Accessories"
+        , "Category": "clothingAccessories"
         , "source": "../img/Placeholder.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus"
@@ -122,7 +122,7 @@
       "type": "feature"
       , "properties": {
         "Naam": "Bycicles Jacques"
-        , "Category": "food&Drinks"
+        , "Category": "foodDrinks"
         , "source": "../img/Placeholder.jpg"
         , "Adres": "Goedestraat 25,1070 Anderlecht"
         , "Beschrijving": "Aenean volutpat molestie felis, sed fermentum turpis facilisis ut. Fusce faucibus ultrices mauris vitae facilisis. Nulla facilisi. Vivamus gravida arcu eu tincidunt maximus."

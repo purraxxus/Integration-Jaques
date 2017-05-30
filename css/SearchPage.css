@@ -164,3 +164,27 @@ main {
 .company p {
   float: left;
 }
+
+#foodDrinks span.before {
+  background-color: #1abc9c;
+}
+
+#Beauty span.before {
+  background-color: #955ba4;
+}
+
+#socialInitiatives span.before {
+  background-color: #e57e26;
+}
+
+#clothingAccessories span.before {
+  background-color: #eec31a;
+}
+
+#DIY span.before {
+  background-color: #e64e3c;
+}
+
+#Hobbies span.before {
+  background-color: #fae79f;
+}
