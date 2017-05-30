@@ -1,13 +1,13 @@
 var map;
-var counterLeft = 1;
+var counterLeft = 0;
 var counterMiddle = 0;
-var counterRight = 0;
+var counterRight = 1;
 var markersArray = [];
 
 $(document).ready(function () {
-    loadMap(map, 'Jobs');
-    $('#filterbutton').toggleClass('nav_jobs');
-    $('#filterbutton').toggleClass('toggledLeft');
+    loadMap(map, 'Startups');
+    $('#filterbutton3').toggleClass('nav_tools');
+    $('#filterbutton3').toggleClass('toggledRight');
 
     $('#filterbutton').click(function (e) {
         counterLeft += 1;
