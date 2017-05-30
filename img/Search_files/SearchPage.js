@@ -166,6 +166,8 @@ function LimitWordsInPTag(i, maxLength) // Limiteer de lengte van de tekstjes ov
 {
   var element = $("p")[i];
   var Textje = $(element).text();
+  console.log(Textje);
+  console.log(Textje.length > maxLength);
   if (Textje.length > maxLength) {
     Textje = Textje.substr(0, maxLength) + '...';
   }
