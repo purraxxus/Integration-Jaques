@@ -50,9 +50,6 @@ function ToggleFilters(e) //verander filters en past aan bij filters tijdens sea
   var listItemsText = $(listItems).text();
   var andereListItems = $("#filterMenu li")
   for (i = 0; i < andereListItems.length; i++) {
-    //    console.log(listItems.className);
-    //    console.log("notToggled");
-    //    console.log(listItems.className = "notToggled")
     if (listItemsText == $(andereListItems[i]).text()) {
       if (listItems.className == "notToggled") {
         console.log("hier gaat hem aldanniet in")
@@ -79,12 +76,12 @@ function Filterwaardes() // genereer string voor regex bij filter
   for (i = 0; i < filters.length; i++) {
     if (i == 0) {
       FilterwaardeArray += '(';
-      FilterwaardeArray += filters[0].textContent.replace(/\s/g, "");
+      FilterwaardeArray += filters[0].id.replace(/\s/g, "");
       FilterwaardeArray += ')'
     }
     else if (i !== 0) {
       FilterwaardeArray += '|(';
-      FilterwaardeArray += filters[i].textContent.replace(/\s/g, "");
+      FilterwaardeArray += filters[i].id.replace(/\s/g, "");
       FilterwaardeArray += ')'
     }
   }
