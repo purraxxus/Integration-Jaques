@@ -328,3 +328,12 @@ button.accordion:after {
     color: white;
     text-align: center;
 }
+
+.example_item_description {
+    margin-left: 32%;
+    width: 70%;
+}
+
+.example_item clearfix {
+    margin-bottom: 3%;
+}
