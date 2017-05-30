@@ -13,17 +13,17 @@
       , "jobs": [
         {
           "welkeJob": "Web Developer"
-          , "beschrijving": "E-HAck-B is op zoek naar een ervaren Web developer voor het creeeren van hun interactieve website "
+          , "beschrijving": "E-HAck-B is op zoek naar een ervaren Web developer voor het creeeren van hun interactieve website."
           , "fuctie": "vast werk"
                 }
         , {
-          "welkeJob": "werk2"
-          , "beschrijving": "beschrijving2"
+          "welkeJob": "Organisator"
+          , "beschrijving": "Heb je zin om je schouders eronder te zetten? Ben jij een goede planner met een neus voor IT en games? Wordt organisator van de nieuwe editie van E-Hack-B"
           , "fuctie": "jobstudent"
                 }
         , {
-          "welkeJob": "werk3"
-          , "beschrijving": "beschrijving3"
+          "welkeJob": "Programmeur"
+          , "beschrijving": "Gezocht: Programmeur met ervaring. Voor technologie festival in de Erasmus Hogeschool in Brussel."
           , "fuctie": "bediende"
                   }
 
@@ -34,29 +34,29 @@
       }
         }
     , {
-      "naam": "Evenement 2"
+      "naam": "BottleMania"
       , "naamEvent": "Anderlecht Brewery"
       , "straatNummer": "Nijverheidskaai 02"
       , "stad": "3000 Brussel"
       , "datum": "25 maart 2017"
       , "uur": "13:00 tot 16:00"
       , "url": "/img/Placeholder.jpg"
-      , "details": "details 2."
+      , "details": "De leukste dag van het jaar, bij de Anderlechtse brouwers. Met animatie voor de kinderen en natuurlijk bier en goede muziek voor jou! Help ons met het bottelen van 500 liter AnderBier."
       , "jobs": [
         {
-          "welkeJob": "werk1"
-          , "beschrijving": "beschrijving2"
-          , "fuctie": "vast werk"
+          "welkeJob": "Bottelcoordinator"
+          , "beschrijving": "Jij stuurt de vrijwilligers aan en zorgt dat het juiste bier in de juiste flesjes stroomt."
+          , "fuctie": "tijdelijk"
                 }
         , {
-          "welkeJob": "werk2"
-          , "beschrijving": "beschrijving2"
-          , "fuctie": "jobstudent"
+          "welkeJob": "Acrobaat"
+          , "beschrijving": "Ben jij een slangenmens of goochelaar? Kom de kindjes vermaken op onze bottelmiddag."
+          , "fuctie": "optreden"
                 }
         , {
-          "welkeJob": "werk3"
-          , "beschrijving": "beschrijving3"
-          , "fuctie": "bediende"
+          "welkeJob": "Ontwerper"
+          , "beschrijving": "We zijn op zoek naar een ontwerper voor de nieuwe etiketten. Verdien je gewicht in bier!"
+          , "fuctie": "freelancer"
                   }
 
             ]
@@ -66,29 +66,29 @@
       }
         }
     , {
-      "naam": "Evenement 3"
-      , "naamEvent": "Anderlecht Brewery"
-      , "straatNummer": "Nijverheidskaai 03"
+      "naam": "Super Schoenen Sales"
+      , "naamEvent": "Schoenwinkel Mohammed"
+      , "straatNummer": "Onderwijsstraat 33"
       , "stad": "3000 Brussel"
-      , "datum": "25 juni 2017"
-      , "uur": "13:00 tot 16:00"
+      , "datum": "01 juli 2017"
+      , "uur": "11:00 tot 18:00"
       , "url": "/img/Placeholder.jpg"
-      , "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1"
+      , "details": "Eindelijk die mooie schoenen aan een goede prijs. Het magazijn van Mo moet leeg. Twee voor de prijs van 1!"
       , "jobs": [
         {
-          "welkeJob": "werk1"
-          , "beschrijving": "beschrijving2"
+          "welkeJob": "verkoopster"
+          , "beschrijving": "Een vriendelijke dame voor in onze schoenenwinkel gezocht."
           , "fuctie": "vast werk"
                 }
         , {
-          "welkeJob": "werk2"
-          , "beschrijving": "beschrijving2"
+          "welkeJob": "Zomerjob"
+          , "beschrijving": "Wil je ervaring opdoen in de beste schoenenwinkel van Anderlecht?"
           , "fuctie": "jobstudent"
                 }
         , {
-          "welkeJob": "werk3"
-          , "beschrijving": "beschrijving3"
-          , "fuctie": "bediende"
+          "welkeJob": "Modellen"
+          , "beschrijving": "Voor de nieuwe collectie zoeken wij nog enkele modellen uit de buurt. Alle soorten en maten welkom, een mooie foto en eeuwige roem."
+          , "fuctie": "tijdelijk"
                   }
 
             ]
@@ -98,28 +98,28 @@
       }
         }
     , {
-      "naam": "Evenement 4"
-      , "naamEvent": "Anderlecht Brewery"
+      "naam": "Bakkerij Jansens"
+      , "naamEvent": "Brood en pudding-proeverij"
       , "straatNummer": "Nijverheidskaai 04"
       , "stad": "3000 Brussel"
-      , "datum": "25 juni 2017"
-      , "uur": "13:00 tot 16:00"
+      , "datum": "31 juni 2017"
+      , "uur": "15:00 tot 16:00"
       , "url": "/img/Placeholder.jpg"
-      , "details": "hsdkfhjks sfjkdf skjdqhf sdhfk qsh fkshqdkjf hqskjhfjkqs hfjksd kjs Prijs1"
+      , "details": "Proef onze nieuwe broodjes en pudding! Uw mening wordt genoteerd en gebruikt in de verbetering van onze recepten."
       , "jobs": [
         {
-          "welkeJob": "werk1"
-          , "beschrijving": "beschrijving2"
-          , "fuctie": "vast werk"
+          "welkeJob": "Proever"
+          , "beschrijving": "Kom langs om onze pudding te proeven."
+          , "fuctie": "vrijwillig"
                 }
         , {
-          "welkeJob": "werk2"
-          , "beschrijving": "beschrijving2"
+          "welkeJob": "Chef"
+          , "beschrijving": "Help ons bij het bereiden van de pudding."
           , "fuctie": "jobstudent"
                 }
         , {
-          "welkeJob": "werk3"
-          , "beschrijving": "beschrijving3"
+          "welkeJob": "Chauffeur"
+          , "beschrijving": "Breng onze pudding rond in de buurt."
           , "fuctie": "bediende"
                   }
 
@@ -130,29 +130,29 @@
       }
         }
     , {
-      "naam": "Evenement 5"
-      , "naamEvent": "Anderlecht Brewery"
-      , "straatNummer": "Nijverheidskaai 01"
+      "naam": "Knip-knip Marathon"
+      , "naamEvent": "Knip-Knip Eco Kapper"
+      , "straatNummer": "Nijverheidskaai 10"
       , "stad": "3000 Brussel"
-      , "datum": "25 juni 2017"
-      , "uur": "13:00 tot 16:00"
+      , "datum": "4 juli 2017"
+      , "uur": "09:00 tot 16:00"
       , "url": "/img/Placeholder.jpg"
-      , "details": "laatste"
+      , "details": "Kom langs voor een nieuwe coupe. Knip-knip gaat voor het knip-record."
       , "jobs": [
         {
-          "welkeJob": "werk1"
-          , "beschrijving": "beschrijving2"
+          "welkeJob": "Kapper"
+          , "beschrijving": "Kapper met ervaring gezocht. Voor het knippen van zowel mannen als vrouwen."
           , "fuctie": "vast werk"
                 }
         , {
-          "welkeJob": "werk2"
-          , "beschrijving": "beschrijving2"
+          "welkeJob": "Stylist m/v/x"
+          , "beschrijving": "Kunt u ons helpen bij het inrichten van onze zaak?"
           , "fuctie": "jobstudent"
                 }
         , {
-          "welkeJob": "werk3"
-          , "beschrijving": "beschrijving3"
-          , "fuctie": "bediende"
+          "welkeJob": "Zanger/Zangeres"
+          , "beschrijving": "We zoeken een muzikale act voor tijdens de Knip-knip Marathon."
+          , "fuctie": "tijdelijk"
                   }
 
             ]
