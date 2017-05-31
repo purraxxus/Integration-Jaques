@@ -116,6 +116,7 @@ function ToonFilterMenu() //Toon het meny voor te filteren
 //-_-_-_--_-_-_--_-_-_--_-_-_--_-_-HTML vullen--_-_-_--_-_-_--_-_-_--_-_-_--_-HTML vullen-_--_-_-_--_-_-_--_-_-_--_-_-_--_-_-_--_-_-_--HTML vullen-_--_-_-_--_-_-_--_-_-_--_-_-HTML vullen-_-_--_-_-_--_-_-_--_-_-_--_-_-_--_-_-_-
 function genereerLijstMetBedrijven() // Pas filters en zoek toe en genereer lijst in html
 {
+<<<<<<< HEAD
     newBedrijven = Bedrijven;
     Filter();
     zoek();
@@ -133,6 +134,22 @@ function genereerLijstMetBedrijven() // Pas filters en zoek toe en genereer lijs
         }
     } else {
         $('main#content').empty();
+=======
+  newBedrijven = Bedrijven;
+  Filter();
+  zoek();
+  FilterFunctie();
+  var htmlString = "";
+  if (newBedrijven.length) {
+    for (i = 0; i < newBedrijven.length; i++) {
+      console.log(newBedrijven[i].properties.Beschrijving);
+      htmlString += '<div id="' + i + '" class="Company"> <div class="left">';
+      htmlString += '<img class="Search" src="../img/' + newBedrijven[i].properties.source + '"/>';
+      htmlString += '<h3 id="' + newBedrijven[i].properties.Category + '" class="Search">' + newBedrijven[i].properties.Naam + '</h3> </div>'
+      htmlString += '<p>' + newBedrijven[i].properties.Beschrijving + '</p><button onclick="bewaarBedrijf(event)" id="' + newBedrijven[i].properties.Naam + '" class="More">></button></div>'
+      $("#content").html(htmlString);
+      cssChanger(newBedrijven.length);;
+>>>>>>> origin/master
     }
 }
 
