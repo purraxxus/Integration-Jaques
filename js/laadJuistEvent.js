@@ -20,6 +20,7 @@ $.getJSON("JSON/events.json", function (json) //json bestand inladen
             var titelEvent = "";
 
                  titelEvent += '<img src="'+welkEvent[i].url+'"/>'
+                 console.log(welkEvent[i].url);
             titelEvent += '<h1 id="naam_company">' + welkEvent[i].naam + ' </h1>'
 
 
